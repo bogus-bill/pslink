@@ -1,0 +1,5 @@
+"stainless steel alloy", "alloy"^, "stainless steel"^
+"iron alloy 660" , "stainless steel alloy 660"= , "stainless steel alloy"^
+"nickel alloy", "alloy"^, "nickel"^
+"nickel alloy 718", "nickel alloy"^
+
