@@ -4,7 +4,7 @@ import unittest
 import pslink.quant as quant
 
 
-class TestQuantityModule(unittest.TestCase):
+class QuantityModuleTest(unittest.TestCase):
 
     def test_length_cm(self):
         self.assertAlmostEqual(

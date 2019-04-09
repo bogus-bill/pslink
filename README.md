@@ -40,7 +40,10 @@ TODO:
 ### Syntactic mapping
 The `symap` module contains a set of functions ...
 
-* 
+* https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.optimize.linear_sum_assignment.html
+* https://stackoverflow.com/questions/1398822/the-assignment-problem-a-numpy-function
+* https://math.stackexchange.com/questions/760855/algorithm-to-compute-maximum-permutation-sum-in-matrix
+* https://en.wikipedia.org/wiki/Hungarian_algorithm
 
 ### Semantic mapping
 
@@ -62,6 +65,7 @@ Dependencies:
 
 * https://www.sympy.org | https://pypi.org/project/sympy/
 * https://github.com/jamesturk/jellyfish | https://pypi.org/project/jellyfish/
+* https://www.scipy.org/ | https://pypi.org/project/scipy/
 * olca-ipc
 
 
