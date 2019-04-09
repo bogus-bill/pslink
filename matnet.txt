@@ -1,5 +1,10 @@
-"stainless steel alloy", "alloy"^, "stainless steel"^
-"iron alloy 660" , "stainless steel alloy 660"= , "stainless steel alloy"^
-"nickel alloy", "alloy"^, "nickel"^
-"nickel alloy 718", "nickel alloy"^
-
+"aluminium alloy"               , "alloy"^, "aluminium"^
+"aluminum alloy 2024"           , "2024 aluminium alloy"= , "aluminium alloy"^ , 
+"fluoroelastomer"               , "fluorocarbon-based synthetic rubber"= , "synthetic rubber"^ , "fluoropolymer"^, "fluorocarbon"^
+"iron alloy 660"                , "stainless steel alloy 660"= , "stainless steel alloy"^
+"nickel alloy"                  , "alloy"^, "nickel"^
+"nickel alloy 718"              , "nickel alloy"^
+"polytetrafluoroethylene"       , "PTFE"= , "teflon"= , "fluoropolymers"^, "plastic"^
+"rubber fluorocarbon class fpm" , "fluoroelastomer"^
+"stainless steel alloy"         , "alloy"^, "stainless steel"^
+"synthetic rubber"              , "artificial elastomer"= , "elastomer"^
