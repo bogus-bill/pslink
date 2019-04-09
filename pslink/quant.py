@@ -25,7 +25,7 @@ class VolumeFormula(object):
                 return False
         return True
 
-    def volume_cm3(self, bindings: dict) -> float:
+    def get_cm3(self, bindings: dict) -> float:
         expr = sympy.sympify(self.function)
         for k, v in bindings.items():
             k = k.strip().lower()
@@ -40,13 +40,13 @@ class VolumeFormula(object):
     def register(attributes: dict, function: str):
         VolumeFormula._formulas.append(VolumeFormula(attributes, function))
 
-    @staticmethod
-    def get_cm3(bindings: dict) -> float:
-        for f in VolumeFormula._formulas:
-            if f.matches(bindings):
-                return f.volume_cm3(bindings)
-        logging.error("Could not find a volume formula for %s", bindings)
-        return 0
+
+def volume_cm3(bindings: dict) -> float:
+    for f in VolumeFormula._formulas:
+        if f.matches(bindings):
+            return f.get_cm3(bindings)
+    logging.error("Could not find a volume formula for %s", bindings)
+    return 0
 
 
 def length_cm(s: str) -> float:

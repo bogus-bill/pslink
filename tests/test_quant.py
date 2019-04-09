@@ -26,7 +26,7 @@ class TestQuantityModule(unittest.TestCase):
         for line in spec.strip().split("\n"):
             parts = line.split(";")
             bindings[parts[0].strip()] = parts[1].strip()
-        vol_cm3 = quant.VolumeFormula.get_cm3(bindings)
+        vol_cm3 = quant.volume_cm3(bindings)
         self.assertAlmostEqual(
             vol_cm3, (math.pi / 4) * 0.180 * (1.384**2 - 1.106**2) * 2.54**3)
 
