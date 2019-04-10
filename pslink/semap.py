@@ -32,6 +32,30 @@ class Graph(object):
         self.nodes = set()
         self.edges = {}
 
+    def add_relation(self, rel: Relation):
+        """ Add the given relation to this graph. If the relation is a same-as
+            relation it will also add the inverse of that relation to the graph.
+            """
+        self.nodes.add(rel.source)
+        self.nodes.add(rel.target)
+        rels = self.edges.get(rel.source)
+        if rels is None:
+            rels = []
+            self.edges[rel.source] = rels
+
+        # skip if it is a duplicate
+        for r in rels:  # type: Relation
+            if r.target == rel.target:
+                return
+        rels.append(rel)
+
+        if rel.rtype == RelationType.same:
+            trels = self.edges.get(rel.target)
+            if trels is None:
+                trels = []
+                self.edges[rel.target] = trels
+            trels.append(Relation(rel.target, rel.source, RelationType.same))
+
     def relations_of(self, source_node: str) -> list:
         """ Get all direct relations where the given node is the source node.
             This method does not follow same-as relations transitively. """
@@ -114,3 +138,53 @@ class Graph(object):
             if not has_more:
                 break
         return ()
+
+
+def parse_text(text: str) -> Graph:
+    """ Reads a graph from the given text. """
+    g = Graph()
+    for line in text.splitlines():
+        line = line.strip()
+        if line == "" or line.startswith("#"):
+            continue
+
+        in_quotes = False
+        source = None
+        buffer = ""
+        for char in line:
+
+            if not in_quotes:
+                if char == '"':
+                    in_quotes = True
+                    buffer = ""
+                    continue
+                if char.isspace() or char == ",":
+                    continue
+                if char == "=":
+                    if source is not None and buffer != "":
+                        rel = Relation(source, buffer, RelationType.same)
+                        g.add_relation(rel)
+                        buffer = ""
+                if char == "^":
+                    if source is not None and buffer != "":
+                        rel = Relation(source, buffer, RelationType.broader)
+                        g.add_relation(rel)
+                        buffer = ""
+
+            if in_quotes:
+                if char != '"':
+                    buffer += char
+                    continue
+                in_quotes = False
+                if source is None:
+                    if buffer == "":
+                        break
+                    source = buffer
+                    continue
+    return g
+
+
+def read_file(fpath: str, encoding="utf-8") -> Graph:
+    with open(fpath, "r", encoding=encoding) as f:
+        text = f.read()
+        return parse_text(text)
