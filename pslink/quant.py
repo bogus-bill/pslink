@@ -71,10 +71,22 @@ def length_cm(s: str) -> float:
     regex = r"([^\s]*) inches"
     match = re.search(regex, s)
     if match is not None:
-        inches = match.group(1)
         try:
+            inches = match.group(1)
             return float(inches) * 2.54
         except:
             logging.error("failed to parse inches in: %s", s)
             return 0.0
+
+    regex = r"([^\s]*) feet"
+    match = re.search(regex, s)
+    if match is not None:
+        try:
+            feet = match.group(1)
+            return float(feet) * 30.48
+        except:
+            logging.error("failed to parse feet in: %s", s)
+            return 0.0
+
     logging.error("no mathing pattern to extract length from: %s", s)
+    return 0.0
