@@ -26,19 +26,19 @@ quant.VolumeFormula.register(
 
 For a set of key value pairs `bindings`, that describe the attributes of a
 component the `quant.volume_cm3(bindings)` functions searches then for a
-registered formula and calculates and calculates a volume. The length attributes
+registered formula and calculates a volume. The length attributes
 can be texts like `42.42 inches nominal` or even ranges like
 `21.21 inches minimum and 42.42 inches maximum` where the mean value is then
 taken for calculating an estimated volume.
 
 TODO:
-
 * material density look up
-* multi-material components
-
+* handle multi-material components
+* generate 
 
 ### Syntactic mapping
-The `symap` module contains a set of functions ...
+The `symap` module contains a set of functions for mapping process and product
+names based on string similarity measures.
 
 * https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.optimize.linear_sum_assignment.html
 * https://stackoverflow.com/questions/1398822/the-assignment-problem-a-numpy-function

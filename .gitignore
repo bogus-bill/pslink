@@ -2,3 +2,7 @@
 *.egg-info/
 *.pyc
 /.vscode/
+/.idea/
+*.iml
+/env/
+

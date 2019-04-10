@@ -1,4 +1,8 @@
-import math
+"""
+This module contains a set of functions for mapping process and product names
+based on string similarity measures.
+"""
+
 import os
 
 import jellyfish
@@ -9,26 +13,30 @@ import scipy.optimize
 _stop_words = None
 
 
-def stopwords() -> list:
+def stopwords() -> set:
+    """ Returns a list of stopwords. """
     global _stop_words
     if _stop_words is not None:
-        return _words
+        return _stop_words
     folder = os.path.dirname(__file__)
-    _words = set()
+    _stop_words = set()
     with open(folder + os.sep + 'data' + os.sep + 'stopwords.txt',
               'r', encoding='utf-8') as f:
         for line in f:
-            _words.add(line.strip())
-    return _words
+            _stop_words.add(line.strip())
+    return _stop_words
 
 
 def is_stopword(word: str) -> bool:
+    """ Returns `True` when the given word is a stopword. """
     if word is None:
         return False
     return word.strip().lower() in stopwords()
 
 
 def keywords(phrase: str) -> list:
+    """ Returns the keywords from the given phrase (without duplicates). A
+        keyword is a word that is not a stopword. """
     if not isinstance(phrase, str):
         return []
     p = set()
@@ -48,12 +56,15 @@ def keywords(phrase: str) -> list:
 
 
 def best_match(s: str, phrases: list) -> str:
+    """ Searches for the best matching string for the given term `s` in the
+        given list based on the similarity of the keywords in the respecitive
+        strings """
     if len(phrases) == 0:
-        return None
+        return ""
 
     terms = keywords(s)
     if len(terms) == 0:
-        return None
+        return ""
 
     candidate = None
     score = 0.0
@@ -61,6 +72,13 @@ def best_match(s: str, phrases: list) -> str:
         comps = keywords(phrase)
         if len(comps) == 0:
             continue
+
+        # create a matrix with the string similarities and calculate
+        # the best score using the "Hungarian method"
+        # (see https://en.wikipedia.org/wiki/Hungarian_algorithm).
+        # we use negative values for the similarities in the matrix
+        # because the implementation in SciPy searches for the minimum
+        # https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.optimize.linear_sum_assignment.html
         rows = len(comps)
         cols = len(terms)
         mat = numpy.zeros((rows, cols))
@@ -68,6 +86,10 @@ def best_match(s: str, phrases: list) -> str:
             for col in range(0, cols):
                 mat[row, col] = -similarity(comps[row], terms[col])
         row_ind, col_ind = scipy.optimize.linear_sum_assignment(mat)
+
+        # dividing the score by the number of keywords considers unmatched
+        # keywords; however, this is not perfect when the number of keywords
+        # is small
         n = max(rows, cols)
         c_score = abs(mat[row_ind, col_ind].sum()) / n
         if candidate is None or c_score > score:
@@ -78,6 +100,9 @@ def best_match(s: str, phrases: list) -> str:
 
 
 def similarity(a: str, b: str) -> float:
+    """ Calculates a value between 0 and 1 that describes the similarity of
+        the given strings `a` and `b` where 0 means completely different and `1`
+        means equal. """
     if not isinstance(a, str) or not isinstance(b, str):
         return 0.0
     dist = jellyfish.levenshtein_distance(a, b)
