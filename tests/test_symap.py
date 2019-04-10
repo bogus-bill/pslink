@@ -25,9 +25,10 @@ class SymapTest(unittest.TestCase):
     def test_best_match(self):
         match = symap.best_match("stainless steel", [
             "World Stainless Steel. 2005.  World Stainless Steel LCI",
-            "Steel, stainless 304, quarto plate",
+            "Steel, stainless 304",
+            "steel, generic",
             "Stainless steel; Manufacture; Production mix, at plant; 316 2B"])
-        self.assertEqual(match, "Steel, stainless 304, quarto plate")
+        self.assertEqual(match, "Steel, stainless 304")
 
 
 if __name__ == "__main__":

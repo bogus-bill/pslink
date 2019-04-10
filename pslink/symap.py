@@ -68,12 +68,8 @@ def best_match(s: str, phrases: list) -> str:
             for col in range(0, cols):
                 mat[row, col] = -similarity(comps[row], terms[col])
         row_ind, col_ind = scipy.optimize.linear_sum_assignment(mat)
-        c_score = abs(mat[row_ind, col_ind].sum())
-
-        if rows != cols:
-            f = 1 - 0.25 * (min(rows, cols) / max(rows, cols))
-            c_score = c_score * f
-
+        n = max(rows, cols)
+        c_score = abs(mat[row_ind, col_ind].sum()) / n
         if candidate is None or c_score > score:
             candidate = phrase
             score = c_score
@@ -82,4 +78,11 @@ def best_match(s: str, phrases: list) -> str:
 
 
 def similarity(a: str, b: str) -> float:
-    return jellyfish.jaro_winkler(a, b)
+    if not isinstance(a, str) or not isinstance(b, str):
+        return 0.0
+    dist = jellyfish.levenshtein_distance(a, b)
+    max_len = max(len(a), len(b))
+    if dist >= max_len:
+        return 0.0
+    sim = 1 - (dist / max_len)
+    return sim
