@@ -10,11 +10,11 @@ class VolumeFormula(object):
 
     _formulas = []
 
-    def __init__(self, attributes: dict, function: str):
+    def __init__(self, attributes: dict, formula: str):
         self.attributes = {}
         for k, v in attributes.items():
             self.attributes[k.strip().lower()] = v.strip()
-        self.function = function
+        self.formula = formula
 
     def matches(self, bindings: dict) -> bool:
         if not isinstance(bindings, dict):
@@ -26,7 +26,7 @@ class VolumeFormula(object):
         return True
 
     def get_cm3(self, bindings: dict) -> float:
-        expr = sympy.sympify(self.function)
+        expr = sympy.sympify(self.formula)
         for k, v in bindings.items():
             k = k.strip().lower()
             if k not in self.attributes:
@@ -37,8 +37,8 @@ class VolumeFormula(object):
         return expr.evalf()
 
     @staticmethod
-    def register(attributes: dict, function: str):
-        VolumeFormula._formulas.append(VolumeFormula(attributes, function))
+    def register(attributes: dict, formula: str):
+        VolumeFormula._formulas.append(VolumeFormula(attributes, formula))
 
 
 def volume_cm3(bindings: dict) -> float:
@@ -63,7 +63,7 @@ def length_cm(s: str) -> float:
             mini = float(match.group(1))
             maxi = float(match.group(2))
             return 2.54 * (mini + maxi) / 2
-        except:
+        except ValueError:
             logging.error("failed to parse inches in: %s", s)
             return 0.0
 
@@ -74,7 +74,7 @@ def length_cm(s: str) -> float:
         try:
             inches = match.group(1)
             return float(inches) * 2.54
-        except:
+        except ValueError:
             logging.error("failed to parse inches in: %s", s)
             return 0.0
 
@@ -84,7 +84,7 @@ def length_cm(s: str) -> float:
         try:
             feet = match.group(1)
             return float(feet) * 30.48
-        except:
+        except ValueError:
             logging.error("failed to parse feet in: %s", s)
             return 0.0
 

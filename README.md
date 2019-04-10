@@ -51,17 +51,18 @@ TODO:
 
 ### Installation
 
-```bash
-# get the project
+```batch
+rem get the project
 cd <your project folder>
 git clone https://github.com/msrocka/pslink.git
 cd pslink
 
-# create a virtual environment
-# https://packaging.python.org/guides/installing-using-pip-and-virtualenv/
+rem create a virtual environment and activate it
+rem https://packaging.python.org/guides/installing-using-pip-and-virtualenv/
+.\env\Scripts\activate
 python -m virtualenv env
-# install the requirements
+rem install the requirements
 pip install -r requirements.txt
-# install the project
+rem install the project
 pip install -e .
 ```
