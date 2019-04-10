@@ -7,9 +7,8 @@ in online databases like [PartTarget](http://www.parttarget.com).
 
 ### Estimating the material composition of a component
 The respective components can have very different attributes that describe
-their dimensions. To estimate the volume of a component, the quantity module
-allows to flexibly register a formula for a set of length attributes that
-calculates a volume in `cm3`: 
+their dimensions. To estimate the volumes of such component, formulas for
+different length attributes can be registered in the quantity module: 
 
 ```python
 import pslink.quant as quant
@@ -24,53 +23,45 @@ quant.VolumeFormula.register(
 )
 ```
 
-For a set of key value pairs `bindings`, that describe the attributes of a
-component the `quant.volume_cm3(bindings)` functions searches then for a
+For a set of key value pairs (`bindings`), that describe the attributes of a
+component the function `quant.volume_cm3(bindings)` searches then for a
 registered formula and calculates a volume. The length attributes
 can be texts like `42.42 inches nominal` or even ranges like
-`21.21 inches minimum and 42.42 inches maximum` where the mean value is then
-taken for calculating an estimated volume.
+`21.21 inches minimum and 42.42 inches maximum` (where the mean value is then
+taken for calculating an estimated volume).
 
 TODO:
 * material density look up
 * handle multi-material components
-* generate 
+* generate material inputs in components
 
-### Syntactic mapping
+
+### Mapping of product and processes
 The `symap` module contains a set of functions for mapping process and product
-names based on string similarity measures.
+names based on string similarity measures which are specifically tuned to
+work well with product and process names in LCI databases.
 
-* https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.optimize.linear_sum_assignment.html
-* https://stackoverflow.com/questions/1398822/the-assignment-problem-a-numpy-function
-* https://math.stackexchange.com/questions/760855/algorithm-to-compute-maximum-permutation-sum-in-matrix
-* https://en.wikipedia.org/wiki/Hungarian_algorithm
+TODO:
 
-### Semantic mapping
+* acyclic graph for storing and receiving semantic relations
+* data format inspired by WordNet https://wordnet.princeton.edu/documentation/wninput5wn
+  * `=` is same as
+  * `^` is broader (we do not store narrower relations as they are just the inverse)
 
-The `semap` module ...
-
-https://wordnet.princeton.edu/documentation/wninput5wn
-
-* `=` is same as
-* `^` is broader (we do not store narrower relations as they are just the inverse)
-* (`<` is precursor)
 
 ### Installation
 
-```
+```bash
+# get the project
+cd <your project folder>
+git clone https://github.com/msrocka/pslink.git
+cd pslink
+
+# create a virtual environment
+# https://packaging.python.org/guides/installing-using-pip-and-virtualenv/
+python -m virtualenv env
+# install the requirements
+pip install -r requirements.txt
+# install the project
 pip install -e .
 ```
-
-Dependencies:
-
-* https://www.sympy.org | https://pypi.org/project/sympy/
-* https://github.com/jamesturk/jellyfish | https://pypi.org/project/jellyfish/
-* https://www.scipy.org/ | https://pypi.org/project/scipy/
-* olca-ipc
-
-
-## Sources
-
-* http://www.cs.utexas.edu/~ml/papers/marlin-kdd-03.pdf
-* http://www.semantic-web-journal.net/system/files/swj1470.pdf
-* https://www.kushaldave.com/p451-dave.pdf
