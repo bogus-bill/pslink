@@ -128,12 +128,12 @@ class Graph(object):
                 broader_a = self.broader_of(na)
                 if len(broader_a) > 0:
                     has_more = True
-                    nodes_a.extend([(level, b) for b in broader_a])
+                    nodes_a.extend([(b, level) for b in broader_a])
             if nb is not None:
                 broader_b = self.broader_of(nb)
                 if len(broader_b) > 0:
                     has_more = True
-                    nodes_b.extend([(level, b) for b in broader_b])
+                    nodes_b.extend([(b, level) for b in broader_b])
 
             if not has_more:
                 break
