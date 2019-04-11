@@ -8,18 +8,22 @@ if __name__ == "__main__":
                 "seat material", "flow control device material",
                 "spring material", "screw material"}
 
+    known_materials = partatts.from_file("../densities.txt").keys()
+
     new_keys = {}
-    materials = set()
+    new_materials = set()
     for fpath in glob.glob("../data/components/*.txt"):
         atts = partatts.from_file(fpath)
-        materials.update(partatts.materials(atts))
+        for mat in partatts.materials(atts):
+            if mat not in known_materials:
+                new_materials.add(mat)
         for akey in atts.keys():
             k = akey.strip().lower()
             if "material" in k and k not in mat_atts:
                 new_keys[k] = atts[akey]
 
-    print("\nExtracted materials")
-    for material in materials:
+    print("\nNew materials:")
+    for material in new_materials:
         print(material)
 
     print("\nCandidates for additional material keys:")

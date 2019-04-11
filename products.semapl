@@ -23,11 +23,13 @@
 "steel, cres, qq-s-764, comp. 303se"        , "303se stainless steel"=, "steel alloy"^
 "steel, qq-s-763, class 303"                , "stainless steel"^
 "steel comp e51100"                         , "e51100 steel"=, "high carbon steel"^, "steel alloy"^
+"iron alloy 660"                            , "stainless steel alloy 660"= , "stainless steel alloy"^
 
 # rubbers
 "synthetic rubber"                          , "artificial elastomer"= , "elastomer"^
 "fluoroelastomer"                           , "fluorocarbon-based synthetic rubber"= , "synthetic rubber"^ , "fluoropolymer"^, "fluorocarbon"^
 "nitrile rubber"                            , "synthetic rubber"^
-"acrylonitrile butadiene rubber"            , "nitrile rubber"^, 
+"acrylonitrile butadiene rubber"            , "nitrile rubber"^
 "rubber butadiene-acrylonitrile class nbr"  , "acrylonitrile butadiene rubber"^
 "rubber fluorocarbon class fpm"             , "fluoroelastomer"^
+"rubber butadiene nitrile"                  , "nitrile rubber"^

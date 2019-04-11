@@ -2,6 +2,16 @@ import pslink.quant as quant
 
 # register volume formulas; formulas with more
 # parameters should be registered first
+
+quant.VolumeFormula.register(
+    {
+        "Width": "a",
+        "Thickness": "b",
+        "Length": "c"
+    },
+    "a * b * c"
+)
+
 quant.VolumeFormula.register(
     {
         "Outside Diameter": "d_outer",
@@ -22,6 +32,19 @@ quant.VolumeFormula.register(
     },
     "(pi / 4) * (head_h * head_d^2 + t_length * " +
     "t_diameter^2 + f_length * head_d^2)"
+)
+
+quant.VolumeFormula.register(
+    {
+        "Thread Length": "t_length",
+        "Fastener Length": "f_length",
+        "Head Height": "head_h",
+        "Shoulder Diameter": "s_diameter",
+        "Shoulder Length": "s_length",
+        "Nominal Thread Diameter": "t_diameter",
+    },
+    "(pi / 4) * (head_h * s_diameter^2 + t_length * " +
+    "t_diameter^2 + f_length * s_diameter^2)"
 )
 
 quant.VolumeFormula.register(
@@ -88,6 +111,14 @@ quant.VolumeFormula.register(
 
 quant.VolumeFormula.register(
     {
+        "Cross-Sectional Height": "h",
+        "Peripheral Diameter": "d",
+    },
+    "(pi / 4) * h * d^2"
+)
+
+quant.VolumeFormula.register(
+    {
         "Overall Height": "h",
         "Washer Outside Diameter": "d",
     },
@@ -101,7 +132,6 @@ quant.VolumeFormula.register(
     },
     "(pi / 4) * h * d^2"
 )
-
 
 quant.VolumeFormula.register(
     {
