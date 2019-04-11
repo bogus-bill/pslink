@@ -13,9 +13,30 @@ def main():
         densities[mat.lower().strip()] = float(dens.strip())
     print("found %i material densities" % len(densities))
 
-    xlsx_path = "../data/MLG F18EFG ABL.xlsx"
+    xlsx_path = "../data/MLG F18EFG ABL_c.xlsx"
     print("Try to read data from", xlsx_path)
     wb = xlrd.open_workbook(xlsx_path)
+
+    # define some categories
+    root_part_category = olca.Category()
+    root_part_category.name = "Root components"
+    root_part_category.id = str(uuid.uuid4())
+    root_part_category.model_type = olca.ModelType.PROCESS
+
+    used_part_category = olca.Category()
+    used_part_category.name = "Used components"
+    used_part_category.id = str(uuid.uuid4())
+    used_part_category.model_type = olca.ModelType.PROCESS
+
+    component_category = olca.Category()
+    component_category.name = "Components"
+    component_category.id = str(uuid.uuid4())
+    component_category.model_type = olca.ModelType.FLOW
+
+    material_category = olca.Category()
+    material_category.name = "Materials"
+    material_category.id = str(uuid.uuid4())
+    material_category.model_type = olca.ModelType.FLOW
 
     products = {}
     processes = {}
@@ -28,13 +49,24 @@ def main():
                 break
             uid = part_number.lower()
             part_name = _cell_str(sheet, r, 4)
+            parent_number = _cell_str(sheet, r, 5)
             product = products.get(uid)
 
             # create the product flow and corresponding process
             if product is None:
+
                 product = create_product(part_number, part_name)
+                product.category = olca.ref(
+                    olca.Category, component_category.id)
                 products[uid] = product
+
                 process = create_process(part_number, part_name, product)
+                if parent_number == "":
+                    process.category = olca.ref(
+                        olca.Category, root_part_category.id)
+                else:
+                    process.category = olca.ref(
+                        olca.Category, used_part_category.id)
                 processes[uid] = process
 
                 # create material inputs
@@ -43,13 +75,15 @@ def main():
                     inputs = partatts.material_inputs(atts, densities)
                     for inp in inputs:
                         material = get_material(inp[0], products)
+                        # not so nice but we will change this anyhow
+                        material.category = olca.ref(
+                            olca.Category, material_category.id)
                         e = olca.Exchange()
                         e.amount = inp[1]
                         e.input = True
                         e.flow = material
                         process.exchanges.append(e)
 
-            parent_number = _cell_str(sheet, r, 5)
             if parent_number != "":
                 parent = processes.get(parent_number.lower())
                 if parent is None:
@@ -59,6 +93,10 @@ def main():
                 add_input(parent, product)
 
     w = olca.pack.Writer(xlsx_path + "_olca_jsonld.zip")
+    w.write(root_part_category)
+    w.write(used_part_category)
+    w.write(component_category)
+    w.write(material_category)
     for product in products.values():
         w.write(product)
     for process in processes.values():
