@@ -2,6 +2,10 @@
 This module containts functions for extracting attributes of component parts.
 """
 
+import logging
+
+import pslink.quant as quant
+
 
 def from_file(fpath: str, encoding="utf-8") -> dict:
     """ Read the attributes of a component part from the given file. We
@@ -39,3 +43,27 @@ def materials(atts: dict) -> set:
                     break
             s.add(mat)
     return s
+
+
+def material_inputs(atts: dict, densities: dict) -> list:
+    """ Calculates the material inputs from the given attributes and material
+        densities. It returns a list of tuples with the respective material
+        names and masses in kilogram. """
+    vol_cm3 = quant.volume_cm3(atts)
+    if vol_cm3 == 0:
+        return []
+    mats = []
+    for mat in materials(atts):
+        if mat not in densities:
+            logging.warning("no density for material %s given", mat)
+            continue
+        mats.append(mat)
+    if len(mats) == 0:
+        logging.warning("no materials with densities found in %s", atts)
+        return []
+    vol = vol_cm3 / len(mats)
+    inputs = []
+    for mat in mats:
+        grams = float(vol * float(densities[mat]))
+        inputs.append((mat, grams / 1000.0))
+    return inputs

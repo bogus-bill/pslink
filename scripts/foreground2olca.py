@@ -1,18 +1,21 @@
-import sys
+import os
+import uuid
 
+import pslink.partatts as partatts
 import olca
 import olca.pack
 import xlrd
 
 
 def main():
-    args = sys.argv
-    if len(args) < 2:
-        print("No Excel file given")
-        return
+    densities = {}
+    for mat, dens in partatts.from_file("../densities.txt").items():
+        densities[mat.lower().strip()] = float(dens.strip())
+    print("found %i material densities" % len(densities))
 
-    print("Try to read data from", sys.argv[1])
-    wb = xlrd.open_workbook(args[1])
+    xlsx_path = "../data/MLG F18EFG ABL.xlsx"
+    print("Try to read data from", xlsx_path)
+    wb = xlrd.open_workbook(xlsx_path)
 
     products = {}
     processes = {}
@@ -26,21 +29,36 @@ def main():
             uid = part_number.lower()
             part_name = _cell_str(sheet, r, 4)
             product = products.get(uid)
+
+            # create the product flow and corresponding process
             if product is None:
                 product = create_product(part_number, part_name)
                 products[uid] = product
                 process = create_process(part_number, part_name, product)
                 processes[uid] = process
+
+                # create material inputs
+                atts = find_part_atts(part_number)
+                if atts is not None:
+                    inputs = partatts.material_inputs(atts, densities)
+                    for inp in inputs:
+                        material = get_material(inp[0], products)
+                        e = olca.Exchange()
+                        e.amount = inp[1]
+                        e.input = True
+                        e.flow = material
+                        process.exchanges.append(e)
+
             parent_number = _cell_str(sheet, r, 5)
             if parent_number != "":
                 parent = processes.get(parent_number.lower())
                 if parent is None:
                     print("Unknown parent: %s -> %s" % (
-                          part_number, parent_number))
+                        part_number, parent_number))
                     continue
                 add_input(parent, product)
 
-    w = olca.pack.Writer(sys.argv[1] + "_olca_jsonld.zip")
+    w = olca.pack.Writer(xlsx_path + "_olca_jsonld.zip")
     for product in products.values():
         w.write(product)
     for process in processes.values():
@@ -97,6 +115,32 @@ def add_input(process: olca.Process, product: olca.Flow):
     e.input = True
     e.flow = product
     process.exchanges.append(e)
+
+
+def find_part_atts(part_number: str):
+    path = "../data/components/%s.txt" % part_number.replace("/", "_")
+    if os.path.isfile(path):
+        return partatts.from_file(path)
+    return None
+
+
+def get_material(name: str, flows: dict) -> olca.Flow:
+    uid = str(uuid.uuid3(uuid.NAMESPACE_OID, "material/" + name))
+    flow = flows.get(uid)
+    if flow is not None:
+        return flow
+    flow = olca.Flow()
+    flow.name = name
+    flow.id = uid
+    flow.flow_type = olca.FlowType.PRODUCT_FLOW
+    fp = olca.FlowPropertyFactor()
+    fp.conversion_factor = 1.0
+    fp.reference_flow_property = True
+    fp.flow_property = olca.ref(
+        olca.FlowProperty, "93a60a56-a3c8-11da-a746-0800200b9a66")
+    flow.flow_properties = [fp]
+    flows[uid] = flow
+    return flow
 
 
 if __name__ == "__main__":
