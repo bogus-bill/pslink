@@ -13,6 +13,19 @@ quant.VolumeFormula.register(
 
 quant.VolumeFormula.register(
     {
+        "Thread Length": "t_length",
+        "Fastener Length": "f_length",
+        "Nominal Thread Diameter": "t_diameter",
+        "Hole Diameter": "hole_diameter",
+        "Head Diameter": "head_d",
+        "Head Height": "head_h"
+    },
+    "(pi / 4) * (head_h * head_d^2 + t_length * " +
+    "t_diameter^2 + f_length * head_d^2)"
+)
+
+quant.VolumeFormula.register(
+    {
         "Peripheral Diameter": "d_outer",
         "Center Hole Diameter": "d_inner",
         "Cross-Sectional Height": "h"
@@ -58,6 +71,15 @@ quant.VolumeFormula.register(
 
 quant.VolumeFormula.register(
     {
+        "Outside Diameter": "d_outer",
+        "Inside Diameter": "d_inner",
+        "Material Thickness": "h"
+    },
+    "(pi / 4) * h * (d_outer^2 - d_inner^2)"
+)
+
+quant.VolumeFormula.register(
+    {
         "Length": "h",
         "Nominal Thread Size": "d",
     },
@@ -66,10 +88,35 @@ quant.VolumeFormula.register(
 
 quant.VolumeFormula.register(
     {
+        "Overall Height": "h",
+        "Washer Outside Diameter": "d",
+    },
+    "(pi / 4) * h * d^2"
+)
+
+quant.VolumeFormula.register(
+    {
+        "Nut Height": "h",
+        "Width Across Flats": "d",
+    },
+    "(pi / 4) * h * d^2"
+)
+
+
+quant.VolumeFormula.register(
+    {
         "Length": "h",
         "Cross Section Outside Diameter": "d",
     },
     "(pi / 4) * h * d^2"
+)
+
+quant.VolumeFormula.register(
+    {
+        "Underloop Length": "h",
+        "Diameter": "d",
+    },
+    "(pi / 4) * (2 * h) * d^2"
 )
 
 quant.VolumeFormula.register(
@@ -100,6 +147,13 @@ quant.VolumeFormula.register(
 quant.VolumeFormula.register(
     {
         "Rolling Element Diameter": "d",
+    },
+    "(pi / 6) * d^3"
+)
+
+quant.VolumeFormula.register(
+    {
+        "Second End Outside Diameter Tube Accommodated": "d",
     },
     "(pi / 6) * d^3"
 )
