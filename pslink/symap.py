@@ -34,14 +34,20 @@ def is_stopword(word: str) -> bool:
     return word.strip().lower() in stopwords()
 
 
-def keywords(phrase: str) -> list:
+def keywords(phrase: str, strip_lci_terms=False) -> list:
     """ Returns the keywords from the given phrase (without duplicates). A
         keyword is a word that is not a stopword. """
     if not isinstance(phrase, str):
         return []
+    feed = phrase.lower()
+    if strip_lci_terms:
+        lci_terms = ["production mix", "at plant"]
+        for lci_term in lci_terms:
+            feed = feed.replace(lci_term, "")
+
     p = set()
     buffer = ""
-    for char in phrase:
+    for char in feed:
         if char.isalnum() or char == "-":
             buffer = buffer + char
             continue
@@ -72,31 +78,37 @@ def best_match(s: str, phrases: list) -> str:
         comps = keywords(phrase)
         if len(comps) == 0:
             continue
-
-        # create a matrix with the string similarities and calculate
-        # the best score using the "Hungarian method"
-        # (see https://en.wikipedia.org/wiki/Hungarian_algorithm).
-        # we use negative values for the similarities in the matrix
-        # because the implementation in SciPy searches for the minimum
-        # https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.optimize.linear_sum_assignment.html
-        rows = len(comps)
-        cols = len(terms)
-        mat = numpy.zeros((rows, cols))
-        for row in range(0, rows):
-            for col in range(0, cols):
-                mat[row, col] = -similarity(comps[row], terms[col])
-        row_ind, col_ind = scipy.optimize.linear_sum_assignment(mat)
-
-        # dividing the score by the number of keywords considers unmatched
-        # keywords; however, this is not perfect when the number of keywords
-        # is small
-        n = max(rows, cols)
-        c_score = abs(mat[row_ind, col_ind].sum()) / n
+        c_score = words_similarity(terms, comps)
         if candidate is None or c_score > score:
             candidate = phrase
             score = c_score
 
     return candidate
+
+
+def words_similarity(words_a: list, words_b: list) -> float:
+    """ Calculate the similarity of the given word lists a and b. """
+    if len(words_a) == 0 or len(words_b) == 0:
+        return 0.0
+    # create a matrix with the string similarities and calculate
+    # the best score using the "Hungarian method"
+    # (see https://en.wikipedia.org/wiki/Hungarian_algorithm).
+    # we use negative values for the similarities in the matrix
+    # because the implementation in SciPy searches for the minimum
+    # https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.optimize.linear_sum_assignment.html
+    rows = len(words_a)
+    cols = len(words_b)
+    mat = numpy.zeros((rows, cols))
+    for row in range(0, rows):
+        for col in range(0, cols):
+            mat[row, col] = -similarity(words_a[row], words_b[col])
+    row_ind, col_ind = scipy.optimize.linear_sum_assignment(mat)
+
+    # dividing the score by the number of keywords considers unmatched
+    # keywords; however, this is not perfect when the number of keywords
+    # is small
+    n = max(rows, cols)
+    return abs(mat[row_ind, col_ind].sum()) / n
 
 
 def similarity(a: str, b: str) -> float:
