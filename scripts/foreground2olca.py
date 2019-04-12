@@ -90,7 +90,13 @@ def main():
                     print("Unknown parent: %s -> %s" % (
                         part_number, parent_number))
                     continue
-                add_input(parent, product)
+                amount = 1.0
+                try:
+                    amount = float(_cell_str(sheet, r, 3))
+                except ValueError:
+                    print("err: not a numeric quantity? sheet=%s, row=%i" %
+                          (sheet_name, r))
+                add_input(parent, product, amount)
 
     w = olca.pack.Writer(xlsx_path + "_olca_jsonld.zip")
     w.write(root_part_category)
@@ -147,9 +153,9 @@ def create_process(number: str, name: str, product: olca.Flow) -> olca.Process:
     return process
 
 
-def add_input(process: olca.Process, product: olca.Flow):
+def add_input(process: olca.Process, product: olca.Flow, amount: float):
     e = olca.Exchange()
-    e.amount = 1.0
+    e.amount = amount
     e.input = True
     e.flow = product
     process.exchanges.append(e)

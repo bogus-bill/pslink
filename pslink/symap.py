@@ -111,6 +111,18 @@ def words_similarity(words_a: list, words_b: list) -> float:
     return abs(mat[row_ind, col_ind].sum()) / n
 
 
+def words_equality(words_a: list, words_b: list) -> float:
+    a = set(words_a)
+    b = set(words_b)
+    s = 0
+    for wa in a:
+        if wa in b:
+            s += 1
+            b.remove(wa)
+    n = max(len(words_a), len(words_b))
+    return s / n
+
+
 def similarity(a: str, b: str) -> float:
     """ Calculates a value between 0 and 1 that describes the similarity of
         the given strings `a` and `b` where 0 means completely different and `1`
