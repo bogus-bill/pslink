@@ -125,16 +125,14 @@ def words_similarity(words_a, words_b) -> float:
 
 
 def words_equality(phrase_a: str, phrase_b: str) -> float:
-    words_a = keywords(phrase_a)
-    words_b = keywords(phrase_b)
-    a = set(words_a)
-    b = set(words_b)
+    a = keywords(phrase_a)
+    b = keywords(phrase_b)
     s = 0
     for wa in a:
         if wa in b:
             s += 1
             b.remove(wa)
-    n = max(len(phrase_a), len(phrase_b))
+    n = max(len(a), len(b))
     return s / n
 
 
@@ -142,7 +140,7 @@ def compare_with_lci_name(product_name: str, lci_name: str) -> float:
     base_name, qualifiers = qpartition(lci_name)
     score = words_equality(product_name, base_name)
     for qualifier in qualifiers:
-        score += 0.5 * words_equality(product_name, qualifier)
+        score += 0.25 * words_equality(product_name, qualifier)
     return score
 
 

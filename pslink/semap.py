@@ -268,10 +268,10 @@ class Graph(object):
             return []
         _, node = match
         queue = [(1.0, node)]
-        visited = set(node)
+        visited = {node}
         products = []
         while len(queue) > 0:
-            score, node = queue.pop()
+            score, node = queue.pop(0)
             product = self.product_infos.get(node)
             if product is not None:
                 products.append((score, product))
@@ -348,3 +348,15 @@ def read_file(fpath: str, encoding="utf-8") -> Graph:
     with open(fpath, "r", encoding=encoding) as f:
         text = f.read()
         return parse_text(text)
+
+
+def write_file(g: Graph, fpath: str, encoding="utf-8"):
+    lines = set()
+    for node in g.nodes:
+        for r in g.relations_of(node):  # type: Relation
+            lines.add(r.semapl())
+    text = ''
+    for line in lines:
+        text += line + "\n"
+    with open(fpath, "w", encoding=encoding) as f:
+        f.write(text)

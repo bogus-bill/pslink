@@ -23,11 +23,11 @@ def main():
     g.link_products(product_infos)
     print(len(g.nodes))
 
+    semap.write_file(g, '../data/graph.semapl')
+
     materials = partatts.from_file("../densities.txt").keys()
     for material in materials:
         print(material)
-        if material != "steel":
-            continue
         products = g.find_products(material)
         for product in products:  # type: semap.ProductInfo
             print("  -> ", product.product_name)
