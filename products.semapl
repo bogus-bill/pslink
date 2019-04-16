@@ -33,3 +33,8 @@
 "rubber butadiene-acrylonitrile class nbr"  , "acrylonitrile butadiene rubber"^
 "rubber fluorocarbon class fpm"             , "fluoroelastomer"^
 "rubber butadiene nitrile"                  , "nitrile rubber"^
+
+#
+"metal product"                             , "metal"<
+"aluminium product"                         , "metal product"^, "aluminium"<
+""

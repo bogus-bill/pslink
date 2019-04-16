@@ -10,10 +10,14 @@ class RelationType(Enum):
               target node is a synonym of the source node).
     * `broader`: the target node has a broader meaning than the source node (the
                  target is a hyponym of the source node).
+    * `narrower`: the target node has a narrower meaning that the source node.
+    * `derived`: the source node is derived from the target node.
     """
 
     same = 0
     broader = 1
+    narrower = 2
+    derived = 3
 
 
 class Relation(object):
@@ -24,18 +28,59 @@ class Relation(object):
         self.target = target
         self.rtype = rtype
 
+    def factor(self) -> float:
+        if self.rtype == RelationType.same:
+            return 1.0
+        if self.rtype == RelationType.narrower:
+            return 0.75
+        if self.rtype == RelationType.broader:
+            return 0.75
+        if self.rtype == RelationType.derived:
+            return 0.5
+        return 0.0
+
+    def semapl(self) -> str:
+        """ Returns a semapl representation of this relation. """
+        if self.rtype == RelationType.same:
+            return '"%s" , "%s"=' % (self.source, self.target)
+        if self.rtype == RelationType.broader:
+            return '"%s" , "%s"^' % (self.source, self.target)
+        if self.rtype == RelationType.narrower:
+            return '"%s" , "%s"^' % (self.target, self.source)
+        if self.rtype == RelationType.derived:
+            return '"%s" , "%s"<' % (self.source, self.target)
+        return '"%s" , "%s"?' % (self.source, self.target)
+
+
+class ProductInfo(object):
+
+    def __init__(self):
+        self.process_uuid = ''
+        self.process_name = ''
+        self.product_uuid = ''
+        self.product_name = ''
+        self.product_unit = ''
+
 
 class Graph(object):
-    """ A simple graph model for searching semantic relations. """
+    """ A simple graph model for searching semantic relations between products. """
 
     def __init__(self):
         self.nodes = set()
         self.edges = {}
+        self.product_infos = {}
+
+    def add_product_info(self, node: str, info: ProductInfo):
+        """ Tag the given node with the given product information. """
+        self.product_infos[node] = info
 
     def add_relation(self, rel: Relation):
         """ Add the given relation to this graph. If the relation is a same-as
             relation it will also add the inverse of that relation to the graph.
             """
+        if rel.source is None or rel.target is None or rel.rtype is None:
+            return
+
         self.nodes.add(rel.source)
         self.nodes.add(rel.target)
         rels = self.edges.get(rel.source)
