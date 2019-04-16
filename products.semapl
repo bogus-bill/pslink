@@ -34,7 +34,10 @@
 "rubber fluorocarbon class fpm"             , "fluoroelastomer"^
 "rubber butadiene nitrile"                  , "nitrile rubber"^
 
-#
+# metal products
 "metal product"                             , "metal"<
 "aluminium product"                         , "metal product"^, "aluminium"<
+"steel product"                             , "metal product"^, "steel"<
+"chromium steel product"                    , "steel product"^, "chromium steel"<
+"copper product"                            , "metal product", "copper"<
 ""

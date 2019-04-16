@@ -75,8 +75,9 @@ class Graph(object):
         self.product_infos[node] = info
 
     def add_relation(self, rel: Relation):
-        """ Add the given relation to this graph. If the relation is a same-as
-            relation it will also add the inverse of that relation to the graph.
+        """ Add the given relation to this graph. If the relation is a same-as,
+            broader, or narrower relation it will also add the inverse of that
+            relation to the graph.
             """
         if rel.source is None or rel.target is None or rel.rtype is None:
             return
@@ -94,12 +95,21 @@ class Graph(object):
                 return
         rels.append(rel)
 
-        if rel.rtype == RelationType.same:
+        # add the inverse relation
+        if rel.rtype != RelationType.derived:
             trels = self.edges.get(rel.target)
             if trels is None:
                 trels = []
                 self.edges[rel.target] = trels
-            trels.append(Relation(rel.target, rel.source, RelationType.same))
+            if rel.rtype == RelationType.same:
+                trels.append(Relation(
+                    rel.target, rel.source, RelationType.same))
+            elif rel.rtype == RelationType.broader:
+                trels.append(Relation(
+                    rel.target, rel.source, RelationType.narrower))
+            elif rel.rtype == RelationType.narrower:
+                trels.append(Relation(
+                    rel.target, rel.source, RelationType.broader))
 
     def relations_of(self, source_node: str) -> list:
         """ Get all direct relations where the given node is the source node.
@@ -184,6 +194,24 @@ class Graph(object):
                 break
         return ()
 
+    def find_node(self, name: str, matcher) -> tuple:
+        """Find a node for the given name and matcher function. For each node
+           we pass the node label as first argument and the given name as
+           second argument into the matcher function. This function call
+           should return a score between 0 and 1. We return a tuple
+           (score:float, node:str) for the highest scoring node. If there
+           is no node with score > 0 in the graph we return the empty tuple. """
+        node = None
+        score = 0.0
+        for n in self.nodes:
+            s = matcher(n, name)
+            if not isinstance(s, (int, float)):
+                continue
+            if s > score:
+                node = n
+                score = float(s)
+        return () if score == 0.0 else (score, node)
+
 
 def parse_text(text: str) -> Graph:
     """ Reads a graph from the given text. """
@@ -205,14 +233,16 @@ def parse_text(text: str) -> Graph:
                     continue
                 if char.isspace() or char == ",":
                     continue
-                if char == "=":
+                if char in ("=", "^", "<"):
                     if source is not None and buffer != "":
-                        rel = Relation(source, buffer, RelationType.same)
-                        g.add_relation(rel)
-                        buffer = ""
-                if char == "^":
-                    if source is not None and buffer != "":
-                        rel = Relation(source, buffer, RelationType.broader)
+                        rtype = None
+                        if char == "=":
+                            rtype = RelationType.same
+                        if char == "^":
+                            rtype = RelationType.broader
+                        if char == "<":
+                            rtype = RelationType.derived
+                        rel = Relation(source, buffer, rtype)
                         g.add_relation(rel)
                         buffer = ""
 

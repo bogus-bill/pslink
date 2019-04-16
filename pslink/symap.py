@@ -9,7 +9,6 @@ import jellyfish
 import numpy
 import scipy.optimize
 
-
 _stop_words = None
 
 
@@ -34,7 +33,7 @@ def is_stopword(word: str) -> bool:
     return word.strip().lower() in stopwords()
 
 
-def keywords(phrase: str, strip_lci_terms=False) -> list:
+def keywords(phrase: str, strip_lci_terms=False) -> set:
     """ Returns the keywords from the given phrase (without duplicates). A
         keyword is a word that is not a stopword. """
     if not isinstance(phrase, str):
@@ -58,7 +57,21 @@ def keywords(phrase: str, strip_lci_terms=False) -> list:
         buffer = ""
     if buffer != "" and not is_stopword(buffer):
         p.add(buffer.lower())
-    return list(p)
+    return p
+
+
+def qpartition(s: str) -> tuple:
+    """Assuming that `s` is a typical product name in an LCI database then this
+       function extracts the qualifiers from the base name of the product. It
+       returns a tuple where the first item is the base name and the second
+       item the list of qualifiers. """
+    parts_ = s.split(',')
+    parts = []
+    for p in parts_:
+        parts.extend([x.strip().lower() for x in p.split(';')])
+    if len(parts) > 1:
+        return parts[0], parts[1:]
+    return parts[0], []
 
 
 def best_match(s: str, phrases: list) -> str:
@@ -86,7 +99,7 @@ def best_match(s: str, phrases: list) -> str:
     return candidate
 
 
-def words_similarity(words_a: list, words_b: list) -> float:
+def words_similarity(words_a, words_b) -> float:
     """ Calculate the similarity of the given word lists a and b. """
     if len(words_a) == 0 or len(words_b) == 0:
         return 0.0
@@ -111,7 +124,9 @@ def words_similarity(words_a: list, words_b: list) -> float:
     return abs(mat[row_ind, col_ind].sum()) / n
 
 
-def words_equality(words_a: list, words_b: list) -> float:
+def words_equality(phrase_a: str, phrase_b: str) -> float:
+    words_a = keywords(phrase_a)
+    words_b = keywords(phrase_b)
     a = set(words_a)
     b = set(words_b)
     s = 0
@@ -119,8 +134,16 @@ def words_equality(words_a: list, words_b: list) -> float:
         if wa in b:
             s += 1
             b.remove(wa)
-    n = max(len(words_a), len(words_b))
+    n = max(len(phrase_a), len(phrase_b))
     return s / n
+
+
+def compare_with_lci_name(product_name: str, lci_name: str) -> float:
+    base_name, qualifiers = qpartition(lci_name)
+    score = words_equality(product_name, base_name)
+    for qualifier in qualifiers:
+        score += 0.5 * words_equality(product_name, qualifier)
+    return score
 
 
 def similarity(a: str, b: str) -> float:
