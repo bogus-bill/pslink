@@ -1,5 +1,7 @@
 from enum import Enum
 
+import pslink.symap as symap
+
 
 class RelationType(Enum):
     """
@@ -211,6 +213,89 @@ class Graph(object):
                 node = n
                 score = float(s)
         return () if score == 0.0 else (score, node)
+
+    def link_products(self, infos: list, matcher=symap.compare_with_lci_name):
+        """ Links a list with product information (see ProductInfo) to the
+            nodes in this graph using a syntactical matcher function. When
+            multiple products map to the same node only the nodes with the
+            highest scores are added to the graph. """
+        matches = {}
+        for product_info in infos:  # type: ProductInfo
+            match = self.find_node(product_info.product_name, matcher)
+            if match == ():
+                continue
+            score, node = match
+            m = matches.get(node)
+            if m is None:
+                # found a new match for a node
+                matches[node] = [(score, product_info)]
+                continue
+
+            # there is at least one existing match
+            other_score = m[0][0]
+            if abs(score - other_score) < 1e-6:
+                # we have an equal score
+                m.append((score, product_info))
+                continue
+
+            if score < other_score:
+                # there are already better matching products
+                # assigned to that node
+                continue
+
+            if score > other_score:
+                # the new product has a better score
+                matches[node] = [(score, product_info)]
+                continue
+
+        # now add relations for the best scoring products to the
+        # graph. we currently use the product names to identify
+        # these new nodes : TODO: this does not work for all
+        # database types
+        for node, info_scores in matches.items():
+            for score, info in info_scores:
+                if score > 0.9999:
+                    self.add_relation(Relation(
+                        info.product_name, node, RelationType.same))
+                else:
+                    self.add_relation(Relation(
+                        info.product_name, node, RelationType.broader))
+                self.add_product_info(info.product_name, info)
+
+    def find_products(self, name) -> list:
+        match = self.find_node(name, symap.words_equality)
+        if match == ():
+            return []
+        _, node = match
+        queue = [(1.0, node)]
+        visited = set(node)
+        products = []
+        while len(queue) > 0:
+            score, node = queue.pop()
+            product = self.product_infos.get(node)
+            if product is not None:
+                products.append((score, product))
+            relations = self.relations_of(node)
+            relations.sort(key=lambda r: -r.factor())
+            for rel in relations:  # type: Relation
+                target = rel.target
+                if target in visited:
+                    continue
+                visited.add(target)
+                target_score = score * rel.factor()
+                queue.append((target_score, target))
+
+        if len(products) == 0:
+            return []
+        products.sort(key=lambda p: -p[0])
+        max_score = products[0][0]
+        infos = [products[0][1]]
+        for i in range(1, len(products)):
+            p = products[i]
+            if abs(p[0] - max_score) > 1e-3:
+                break
+            infos.append(p[1])
+        return infos
 
 
 def parse_text(text: str) -> Graph:
