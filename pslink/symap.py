@@ -127,12 +127,12 @@ def words_similarity(words_a, words_b) -> float:
 def words_equality(phrase_a: str, phrase_b: str) -> float:
     a = keywords(phrase_a)
     b = keywords(phrase_b)
+    n = max(len(a), len(b))
     s = 0
     for wa in a:
         if wa in b:
             s += 1
             b.remove(wa)
-    n = max(len(a), len(b))
     return s / n
 
 
