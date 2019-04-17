@@ -363,11 +363,38 @@ def read_file(fpath: str, encoding="utf-8") -> Graph:
 
 def write_file(g: Graph, fpath: str, encoding="utf-8"):
     lines = set()
-    for node in g.nodes:
-        for r in g.relations_of(node):  # type: Relation
-            lines.add(r.semapl())
     text = ''
-    for line in lines:
-        text += line + "\n"
+    nodes = list(g.nodes)
+    nodes.sort()
+    for node in nodes:
+        wrote_header = False
+        for r in g.relations_of(node):  # type: Relation
+            s = r.semapl()
+            if s in lines:
+                continue
+            lines.add(s)
+            if not wrote_header:
+                text += "# %s\n" % node
+                wrote_header = True
+            text += s + "\n"
+        if wrote_header:
+            text += "\n"
+
+    # write possible product relations
+    wrote_product_header = False
+    for node in nodes:
+        products = g._product_infos.get(node)
+        if products is None:
+            continue
+        if not wrote_product_header:
+            text += "\n# linked products; remove them for" \
+                    " restoring the original graph\n"
+            wrote_product_header = True
+        text += "# %s\n" % node
+        syn_factor = g._syn_factors.get(node, 0.0)
+        for p in products:  # type: ProductInfo
+            text += '"%s" , "%s"^%f\n' % (p.product_name, node, syn_factor)
+        text += "\n"
+
     with open(fpath, "w", encoding=encoding) as f:
         f.write(text)
