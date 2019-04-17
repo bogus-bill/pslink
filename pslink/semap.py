@@ -70,11 +70,14 @@ class Graph(object):
     def __init__(self):
         self.nodes = set()
         self.edges = {}
-        self.product_infos = {}
 
-    def add_product_info(self, node: str, info: ProductInfo):
-        """ Tag the given node with the given product information. """
-        self.product_infos[node] = info
+        # a map node->ProductInfo* that contains for a node
+        # a list of linked products
+        self._product_infos = {}
+
+        # when a node has linked products, this map contains
+        # the (maximum) syntax factor for these products
+        self._syn_factors = {}
 
     def add_relation(self, rel: Relation):
         """ Add the given relation to this graph. If the relation is a same-as,
@@ -219,62 +222,58 @@ class Graph(object):
             nodes in this graph using a syntactical matcher function. When
             multiple products map to the same node only the nodes with the
             highest scores are added to the graph. """
-        matches = {}
-        for product_info in infos:  # type: ProductInfo
-            match = self.find_node(product_info.product_name, matcher)
-            if match == ():
-                continue
-            score, node = match
-            m = matches.get(node)
-            if m is None:
-                # found a new match for a node
-                matches[node] = [(score, product_info)]
-                continue
 
-            # there is at least one existing match
-            other_score = m[0][0]
-            if abs(score - other_score) < 1e-6:
-                # we have an equal score
-                m.append((score, product_info))
-                continue
+        for node in self.nodes:
+            products = []
+            syn_factor = 0.0
+            for info in infos:  # type: ProductInfo
+                score = matcher(node, info.product_name)
+                if score < 1e-6:
+                    continue
+                if abs(score - syn_factor) < 1e-6:
+                    # we have an equal score
+                    products.append(info)
+                    continue
+                if score < syn_factor:
+                    # there are already better matching products
+                    # assigned to that node
+                    continue
+                if score > syn_factor:
+                    # the new product has a better score
+                    syn_factor = score
+                    products = [info]
+                    continue
 
-            if score < other_score:
-                # there are already better matching products
-                # assigned to that node
-                continue
-
-            if score > other_score:
-                # the new product has a better score
-                matches[node] = [(score, product_info)]
-                continue
-
-        # now add relations for the best scoring products to the
-        # graph. we currently use the product names to identify
-        # these new nodes : TODO: this does not work for all
-        # database types
-        for node, info_scores in matches.items():
-            for score, info in info_scores:
-                if score > 0.9999:
-                    self.add_relation(Relation(
-                        info.product_name, node, RelationType.same))
-                else:
-                    self.add_relation(Relation(
-                        info.product_name, node, RelationType.broader))
-                self.add_product_info(info.product_name, info)
+            if len(products) > 0:
+                self._product_infos[node] = products
+                self._syn_factors[node] = syn_factor
 
     def find_products(self, name) -> list:
         match = self.find_node(name, symap.words_equality)
         if match == ():
             return []
         _, node = match
+
+        # a queue of tuples: (relation_factor, node) of the
+        # nodes that still need to be visited
         queue = [(1.0, node)]
         visited = {node}
+
+        # the selected products as list of tuples:
+        # (syn_factor * relation_factor, product_info)
         products = []
         while len(queue) > 0:
-            score, node = queue.pop(0)
-            product = self.product_infos.get(node)
-            if product is not None:
-                products.append((score, product))
+            rel_factor, node = queue.pop(0)
+
+            # collect the products from the node
+            n_products = self._product_infos.get(node)
+            if n_products is not None:
+                syn_factor = self._syn_factors.get(node, 0.0)
+                for p in n_products:
+                    products.append((rel_factor * syn_factor, p))
+
+            # visit the next nodes; we try to visit the
+            # relations with the higher relation factor first
             relations = self.relations_of(node)
             relations.sort(key=lambda r: -r.factor())
             for rel in relations:  # type: Relation
@@ -282,20 +281,32 @@ class Graph(object):
                 if target in visited:
                     continue
                 visited.add(target)
-                target_score = score * rel.factor()
-                queue.append((target_score, target))
+                queue.append((rel_factor * rel.factor(), target))
 
         if len(products) == 0:
             return []
-        products.sort(key=lambda p: -p[0])
-        max_score = products[0][0]
-        infos = [products[0][1]]
-        for i in range(1, len(products)):
-            p = products[i]
-            if abs(p[0] - max_score) > 1e-3:
-                break
-            infos.append(p[1])
-        return infos
+
+        max_score = 0.0
+        for p in products:
+            if p[0] > max_score:
+                max_score = p[0]
+
+        # select the final product list
+        # avoiding duplicate product-process pairs
+        selected = []
+        selected_keys = set()
+        for p in products:
+            score = p[0]
+            if abs(score - max_score) > 1e-3:
+                continue
+            info = p[1]  # type: ProductInfo
+            pkey = info.process_uuid + "#" + info.product_uuid
+            if pkey in selected_keys:
+                continue
+            selected_keys.add(pkey)
+            selected.append(info)
+
+        return selected
 
 
 def parse_text(text: str) -> Graph:

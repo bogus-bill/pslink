@@ -37,7 +37,7 @@ def keywords(phrase: str, strip_lci_terms=False) -> set:
     """ Returns the keywords from the given phrase (without duplicates). A
         keyword is a word that is not a stopword. """
     if not isinstance(phrase, str):
-        return []
+        return set()
     feed = phrase.lower()
     if strip_lci_terms:
         lci_terms = ["production mix", "at plant"]
