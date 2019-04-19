@@ -1,14 +1,24 @@
 # pslink
 
-Given is a tree of (standard) components. Attributes, like dimensions and
-used materials, of such components can be partly looked up via their part number
-in online databases like [PartTarget](http://www.parttarget.com).
+pslink is an experimental project for the creation of product systems from
+assembly part and component trees and the linking of the resulting processes
+with LCI data from background databases like the
+[LCA Commons](https://www.lcacommons.gov/). To achieve this, different
+functions are implemented in `pslink` which are described in the following.
 
 
-### Estimating the material composition of a component
-The respective components can have very different attributes that describe
-their dimensions. To estimate the volumes of such component, formulas for
-different length attributes can be registered in the quantity module: 
+## Quantification
+In order to combine the parts and components of the foreground system with
+background data in a meaningful way, their dimensions and material composition
+have to be quantified in some way. For standard parts and components there are
+online databases, such as [PartTarget](http://www.parttarget.com), from which
+such information can be retrieved. The corresponding masses can then be
+estimated by the resulting volumes and material densities.
+
+However, for different parts and components very different attributes that
+describe their dimensions can occur. In order to solve this, volume formulas
+can be dynamically registered in `pslink`, which determine the volume for a
+given set of dimension attributes, e.g.:
 
 ```python
 import pslink.quant as quant
@@ -23,20 +33,16 @@ quant.VolumeFormula.register(
 )
 ```
 
-For a set of key value pairs (`bindings`), that describe the attributes of a
-component the function `quant.volume_cm3(bindings)` searches then for a
-registered formula and calculates a volume. The length attributes
-can be texts like `42.42 inches nominal` or even ranges like
+For a set of properties of an assembly part (saved as key-value pairs), 
+the function `volume_cm3(properties)` in the `pslink.quant` then searches
+for a matching formula and calculates a volume. Length attributes, that `pslink`
+understands, can be texts like `42.42 inches nominal` or even ranges like
 `21.21 inches minimum and 42.42 inches maximum` (where the mean value is then
-taken for calculating an estimated volume).
-
-TODO:
-* material density look up
-* handle multi-material components
-* generate material inputs in components
+taken for calculating an estimated volume). With a set of corresponding
+densities, the weights of the materials in an assembly part can be estimated.
 
 
-### A semantic network of product relations
+## A semantic network of product relations
 
 The core component of `pslink` is a 
 [semantic network](https://en.wikipedia.org/wiki/Semantic_network)
