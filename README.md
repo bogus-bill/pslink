@@ -36,6 +36,60 @@ TODO:
 * generate material inputs in components
 
 
+### A semantic network of product relations
+
+The core component of `pslink` is a 
+[semantic network](https://en.wikipedia.org/wiki/Semantic_network)
+of products in which the following types of relations between these
+products are stored:
+
+* is exactly the same
+* is more generic (is broader) 
+* is more specific (is narrower)
+* is derived from
+
+In order to quickly create such a semantic product network, a simple,
+text based, and from [WordNet](https://wordnet.princeton.edu/documentation/wninput5wn)
+inspired data format with the following properties was developed:
+
+* Each line contains the relationships of a product (the _subject_),
+  which comes first, to one or several other products (the _objects_),
+  which follow the subject in the same line.
+* Product names are enclosed in quotation marks. The relationship
+  of the subject to an object is indicated by a symbol at the end of
+  the object's product name, where
+
+  * `=` means `is same`
+  * `^` means `is broader` (the inverse relation `is narrower` is
+    automatically added)
+  * `<` means `is derived from`
+
+* Commas can be set as visual separators but are ignored like
+  whitespaces. Lines that start with a `#` are ignored as
+  comments.
+
+The following example describes that "stainless steel" `is a`
+"steel" and the `same as` "corrosion resistant steel", and
+that a "steel product" `is a` "metal product" which is
+`derived from` (made from) "steel".
+
+```r
+# a simple example
+"stainless steel" ,  "corrosion resistant steel"=  ,  "steel"^
+"steel product"   ,  "metal product"^              ,  "steel"<
+```
+
+The function `read_file` in the `semap` module parses such a
+file and creates the corresponding graph data structure:
+
+
+```python
+import pslink.semap as semap
+
+graph = semap.read_file("path/to/file.smapl")
+```
+
+
 ### Mapping of product and processes
 The `symap` module contains a set of functions for mapping process and product
 names based on string similarity measures which are specifically tuned to
