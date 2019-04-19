@@ -96,17 +96,52 @@ graph = semap.read_file("path/to/file.smapl")
 ```
 
 
-### Mapping of product and processes
-The `symap` module contains a set of functions for mapping process and product
-names based on string similarity measures which are specifically tuned to
-work well with product and process names in LCI databases.
+## Connect LCI background data to the network
 
-TODO:
+The product names in the semantic network can be very generic (e.g. from a
+product classification or from sources such as of Wikipedia). These generic
+product names can then be linked to concrete product information from an LCI
+background database with the `link_products` method of the `pslink` graph
+structure. This method takes a function as input which calculates
+a _syntactic matching score_ between the generic product names in the graph and
+the product names in the LCI database. The products from the LCI database with
+the maximum score (if exist) are then linked to the respective (generic)
+product name in the graph.
 
-* acyclic graph for storing and receiving semantic relations
-* data format inspired by WordNet https://wordnet.princeton.edu/documentation/wninput5wn
-  * `=` is same as
-  * `^` is broader (we do not store narrower relations as they are just the inverse)
+The syntax of product names in an LCI database often follows certain rules,
+such as:
+
+```ebnf
+<product name> = <primary product>, {"," | ";", <qualifier>}.
+```
+
+This is considered with functions like `compare_with_lci_name` in the
+`pslink.symap` module that will give the matching primary product name
+a higher score than the matching of qualifiers (like `at plant`) when
+comparing them with a (generic) product name in the graph. The assigned
+products and their syntax scores can be explored when writing the graph
+back to a file with the `write_file` function in the `pslink.semap` module,
+e.g.:
+
+```r
+# fluorocarbon-based synthetic rubber
+"synthetic rubber, at plant" , "fluorocarbon-based synthetic rubber"^0.666667
+
+# high carbon steel
+"steel, electric, chromium steel 18/8, at plant" , "high carbon steel"^0.562500
+"steel, converter, chromium steel 18/8, at plant" , "high carbon steel"^0.562500
+```
+
+
+## Product search: combining syntax and semantic
+
+TODO
+
+
+## Meta-data filter
+
+TODO
+
 
 
 ### Installation
