@@ -1,3 +1,4 @@
+import pslink.linker
 import pslink.quant as quant
 
 # register volume formulas; formulas with more
@@ -187,3 +188,8 @@ quant.VolumeFormula.register(
     },
     "(pi / 6) * d^3"
 )
+
+
+def link(data_dir: str, output="out.zip"):
+    lin = pslink.linker.Linker(data_dir)
+    lin.run(output)

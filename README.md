@@ -4,8 +4,37 @@ pslink is an experimental project for the creation of product systems from
 assembly part and component trees and the linking of the resulting processes
 with LCI data from background databases like the
 [LCA Commons](https://www.lcacommons.gov/). To achieve this, different
-functions are implemented in `pslink` which are described in the following.
+functions are implemented in `pslink` which are described below.
 
+## Usage
+Checkout the project and install it (preferably in a
+[virtual environment](https://docs.python.org/3/library/venv.html)):
+
+```bash
+# get the project
+cd <your project folder>
+git clone https://github.com/msrocka/pslink.git
+cd pslink
+
+# create a virtual environment and activate it
+python -m venv env
+.\env\Scripts\activate.bat
+
+# install the requirements
+pip install -r requirements.txt
+# install the project
+pip install -e .
+```
+
+```python
+import pslink
+pslink.link("./data")
+```
+
+```python
+import logging as log
+log.basicConfig(level=log.INFO)
+```
 
 ## Quantification
 In order to combine the parts and components of the foreground system with
@@ -144,20 +173,4 @@ TODO
 
 
 
-### Installation
 
-```batch
-rem get the project
-cd <your project folder>
-git clone https://github.com/msrocka/pslink.git
-cd pslink
-
-rem create a virtual environment and activate it
-rem https://packaging.python.org/guides/installing-using-pip-and-virtualenv/
-.\env\Scripts\activate
-python -m virtualenv env
-rem install the requirements
-pip install -r requirements.txt
-rem install the project
-pip install -e .
-```
