@@ -19,9 +19,12 @@ class Linker(object):
     def __init__(self, data_dir: str):
         self.data_dir = data_dir
         self.densities = {}
-        self.created_products = {}
         self.created_processes = {}
+        self.created_products = {}
+        self.created_materials = {}
+
         self.g = None  # type: Optional[semap.Graph]
+        self.matched_products = {}
 
         # categories
         self.root_part_category = None  # type: Optional[olca.Ref]
@@ -136,7 +139,8 @@ class Linker(object):
             self.writer.write(product)
         for process in self.created_processes.values():
             self.writer.write(process)
-        # TODO: write created materials
+        for material in self.created_materials.values():
+            self.writer.write(material)
         self.writer.close()
 
     def __parse_xlsx(self, xpath: str):
@@ -223,7 +227,62 @@ class Linker(object):
         return process
 
     def __infer_inputs(self, part_number: str, process: olca.Process):
-        pass
+        part_file = self.data_dir + "/components/%s.txt" % part_id(part_number)
+        if not os.path.isfile(part_file):
+            log.info("no part data for %s", part_number)
+            return
+        part_atts = partatts.from_file(part_file)
+        inputs = partatts.material_inputs(part_atts, self.densities)
+        if len(inputs) == 0:
+            log.info("could not extract materials from file %s", part_file)
+            return
+        for inp in inputs:
+            mat_name = inp[0]  # type: str
+            flow, matches = self.__get_material(mat_name)
+            if len(matches) == 0:
+                e = olca.Exchange()
+                e.amount = inp[1]
+                e.input = True
+                e.flow = olca.ref(olca.Flow, flow.id)
+                process.exchanges.append(e)
+            else:
+                for match in matches:  # type: semap.ProductInfo
+                    e = olca.Exchange()
+                    e.amount = inp[1] / len(matches)
+                    e.input = True
+                    e.flow = olca.ref(
+                        olca.Flow, match.product_uuid)
+                    e.default_provider = olca.ref(
+                        olca.Process, match.process_uuid)
+                    process.exchanges.append(e)
+
+    def __get_material(self, name: str):
+        uid = str(uuid.uuid3(uuid.NAMESPACE_OID,
+                             "material/" + name.strip().lower()))
+        flow = self.created_materials.get(uid)
+        if flow is not None:
+            return flow, self.matched_products[uid]
+
+        log.info("new material %s found; search for background links", name)
+        matches = self.g.find_products(name)
+        log.info("found %i possible matches", len(matches))
+        self.matched_products[uid] = matches
+
+        flow = olca.Flow()
+        flow.name = name
+        flow.id = uid
+        flow.flow_type = olca.FlowType.PRODUCT_FLOW
+        flow.category = self.material_category
+
+        # set mass as flow property
+        fp = olca.FlowPropertyFactor()
+        fp.conversion_factor = 1.0
+        fp.reference_flow_property = True
+        fp.flow_property = olca.ref(
+            olca.FlowProperty, "93a60a56-a3c8-11da-a746-0800200b9a66")
+        flow.flow_properties = [fp]
+        self.created_materials[uid] = flow
+        return flow, matches
 
 
 def _cell_str(sheet, row, col) -> str:
