@@ -132,9 +132,9 @@ class Linker(object):
 
     def __write_data(self):
         log.info("write generated data")
-        for product in self.created_products:
+        for product in self.created_products.values():
             self.writer.write(product)
-        for process in self.created_processes:
+        for process in self.created_processes.values():
             self.writer.write(process)
         # TODO: write created materials
         self.writer.close()
@@ -149,7 +149,7 @@ class Linker(object):
                 part_number = _cell_str(sheet, r, 1)
                 if part_number == "":
                     break
-                uid = part_number.lower()
+                uid = part_id(part_number)
                 part_name = _cell_str(sheet, r, 4)
                 parent_number = _cell_str(sheet, r, 5)
                 product = self.created_products.get(uid)
@@ -165,7 +165,7 @@ class Linker(object):
 
                 # create input in parent component
                 if parent_number != "":
-                    puid = parent_number.lower()
+                    puid = part_id(parent_number)
                     parent = self.created_processes.get(puid)
                     if parent is None:
                         log.warning("Unknown parent link: %s => %s",
@@ -180,7 +180,9 @@ class Linker(object):
                                     "default to 1.0; sheet=%s, row=%i",
                                     sheet_name, r)
                     inp.input = True
-                    inp.flow = product
+                    inp.flow = olca.ref(olca.Flow, product.id)
+                    inp.default_provider = olca.ref(
+                        olca.Process, "proc_" + product.id)
                     parent.exchanges.append(inp)
 
     def __create_product(self, number: str, name: str) -> olca.Flow:
@@ -190,7 +192,7 @@ class Linker(object):
         else:
             flow.name = "%s - %s" % (number, name)
         log.info("create product %s", flow.name)
-        flow.id = number.lower()
+        flow.id = part_id(number)
         flow.flow_type = olca.FlowType.PRODUCT_FLOW
         flow.category = self.component_category
         # set "number of items as the reference flow property
@@ -215,7 +217,7 @@ class Linker(object):
         exchange = olca.Exchange()
         exchange.amount = 1.0
         exchange.input = False
-        exchange.flow = product
+        exchange.flow = olca.ref(olca.Flow, product.id)
         exchange.quantitative_reference = True
         process.exchanges = [exchange]
         return process
@@ -231,3 +233,7 @@ def _cell_str(sheet, row, col) -> str:
     if cell.value is None:
         return ""
     return str(cell.value).strip()
+
+
+def part_id(part_number: str):
+    return part_number.strip().replace("/", "_")
