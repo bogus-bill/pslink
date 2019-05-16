@@ -209,6 +209,6 @@ quant.VolumeFormula.register(
 )
 
 
-def link(data_dir: str, output="out.zip"):
+def link(data_dir: str):
     lin = pslink.linker.Linker(data_dir)
-    lin.run(output)
+    lin.run()

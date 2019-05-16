@@ -1,4 +1,3 @@
-import csv
 import glob
 import logging as log
 import os
@@ -8,6 +7,7 @@ import olca
 import olca.pack
 import xlrd
 
+import pslink.backs as backs
 import pslink.semap as semap
 import pslink.partatts as partatts
 
@@ -52,18 +52,7 @@ class Linker(object):
             log.error("could not find background products: %s", bpath)
             return
         log.info("read background products from %s", bpath)
-        background_products = []
-        with open(bpath, 'r', encoding='utf-8') as f:
-            reader = csv.reader(f, delimiter='\t')
-            next(reader)
-            for row in reader:
-                pinfo = semap.ProductInfo()
-                pinfo.process_uuid = row[0]
-                pinfo.process_name = row[1]
-                pinfo.product_uuid = row[2]
-                pinfo.product_name = row[3]
-                pinfo.product_unit = row[4]
-                background_products.append(pinfo)
+        background_products = backs.read_products(bpath)
         log.info("found %s background products", len(background_products))
 
         # read the graph
@@ -246,7 +235,7 @@ class Linker(object):
                 e.flow = olca.ref(olca.Flow, flow.id)
                 process.exchanges.append(e)
             else:
-                for match in matches:  # type: semap.ProductInfo
+                for match in matches:  # type: backs.ProductInfo
                     e = olca.Exchange()
                     e.amount = inp[1] / len(matches)
                     e.input = True

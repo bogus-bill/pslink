@@ -1,6 +1,7 @@
 from enum import Enum
 
 import pslink.symap as symap
+import pslink.backs as backs
 
 
 class RelationType(Enum):
@@ -52,16 +53,6 @@ class Relation(object):
         if self.rtype == RelationType.derived:
             return '"%s" , "%s"<' % (self.source, self.target)
         return '"%s" , "%s"?' % (self.source, self.target)
-
-
-class ProductInfo(object):
-
-    def __init__(self):
-        self.process_uuid = ''
-        self.process_name = ''
-        self.product_uuid = ''
-        self.product_name = ''
-        self.product_unit = ''
 
 
 class Graph(object):
@@ -226,7 +217,7 @@ class Graph(object):
         for node in self.nodes:
             products = []
             syn_factor = 0.0
-            for info in infos:  # type: ProductInfo
+            for info in infos:  # type: backs.ProductInfo
                 score = matcher(node, info.product_name)
                 if score < 1e-6:
                     continue
@@ -299,7 +290,7 @@ class Graph(object):
             score = p[0]
             if abs(score - max_score) > 1e-3:
                 continue
-            info = p[1]  # type: ProductInfo
+            info = p[1]  # type: backs.ProductInfo
             pkey = info.process_uuid + "#" + info.product_uuid
             if pkey in selected_keys:
                 continue
@@ -392,7 +383,7 @@ def write_file(g: Graph, fpath: str, encoding="utf-8"):
             wrote_product_header = True
         text += "# %s\n" % node
         syn_factor = g._syn_factors.get(node, 0.0)
-        for p in products:  # type: ProductInfo
+        for p in products:  # type: backs.ProductInfo
             text += '"%s" , "%s"^%f\n' % (p.product_name, node, syn_factor)
         text += "\n"
 

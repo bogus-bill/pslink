@@ -9,7 +9,7 @@ import pslink.partatts as partatts
 if __name__ == "__main__":
 
     # the known materials are the keys in the density file
-    known_materials = partatts.from_file("../densities.txt").keys()
+    known_materials = partatts.from_file("../data/densities.txt").keys()
 
     files = 0
     errors = 0
