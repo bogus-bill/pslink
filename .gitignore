@@ -1,4 +1,8 @@
-/data/
+/data/components/
+/data/out/
+/data/*.xlsx
+/data/background_products.txt
+
 *.egg-info/
 *.pyc
 /.vscode/
