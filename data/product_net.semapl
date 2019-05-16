@@ -1,0 +1,42 @@
+# aluminium
+"aluminium alloy"                           , "alloy"^, "aluminium"^
+"aluminum alloy 2024"                       , "aluminium alloy"^
+"aluminum alloy 2117"                       , "aluminium alloy"^
+
+"copper alloy"                              , "alloy"^, "copper"^
+"iron alloy 660"                            , "stainless steel alloy 660"= , "stainless steel alloy"^
+"nickel alloy"                              , "alloy"^, "nickel"^
+"nickel alloy 718"                          , "nickel alloy"^
+"nickel alloy 400"                          , "nickel alloy"^ , "monel 400"= , "nickel-copper alloy"^
+"polytetrafluoroethylene"                   , "PTFE"= , "teflon"= , "fluoropolymers"^, "plastic"^
+
+# steels
+"steel"                                     , "ferrous metal"^
+"stainless steel"                           , "steel"^
+"stainless steel alloy"                     , "alloy"^, "stainless steel"^
+"steel corrosion resisting"                 , "stainless steel"=
+"steel comp 302"                            , "stainless steel 302"=, "stainless steel"^
+"steel comp 304"                            , "stainless steel 304"=, "stainless steel"^
+"steel comp 410"                            , "stainless steel 410"=, "stainless steel, grade 410"=, "stainless steel"^
+"steel comp 630"                            , "stainless steel 630"=, "stainless steel, grade 630"=, "stainless steel"^
+"steel comp e52100"                         , "52100 alloy steel"=, "steel alloy"^, "high carbon, chromium containing low alloy steel"^
+"steel, cres, qq-s-764, comp. 303se"        , "303se stainless steel"=, "steel alloy"^
+"steel, qq-s-763, class 303"                , "stainless steel"^
+"steel comp e51100"                         , "e51100 steel"=, "high carbon steel"^, "steel alloy"^
+"iron alloy 660"                            , "stainless steel alloy 660"= , "stainless steel alloy"^
+
+# rubbers
+"synthetic rubber"                          , "artificial elastomer"= , "elastomer"^
+"fluoroelastomer"                           , "fluorocarbon-based synthetic rubber"= , "synthetic rubber"^ , "fluoropolymer"^, "fluorocarbon"^
+"nitrile rubber"                            , "synthetic rubber"^
+"acrylonitrile butadiene rubber"            , "nitrile rubber"^
+"rubber butadiene-acrylonitrile class nbr"  , "acrylonitrile butadiene rubber"^
+"rubber fluorocarbon class fpm"             , "fluoroelastomer"^
+"rubber butadiene nitrile"                  , "nitrile rubber"^
+
+# metal products
+"metal product"                             , "metal"<
+"aluminium product"                         , "metal product"^, "aluminium"<
+"steel product"                             , "metal product"^, "steel"<
+"chromium steel product"                    , "steel product"^, "chromium steel"<
+"copper product"                            , "metal product", "copper"<

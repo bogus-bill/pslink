@@ -1,0 +1,27 @@
+nickel alloy 400                             ;   8.8   ; https://www.thebalance.com/monel-400-properties-and-composition-2340256
+nickel alloy 718                             ;   8.19  ; http://asm.matweb.com/search/SpecificMaterial.asp?bassnum=NINC34
+copper alloy                                 ;   8.53  ; https://www.amesweb.info/Materials/Density_of_Copper.aspx
+plastic polytetrafluoroethylene              ;   2.2   ; https://en.wikipedia.org/wiki/Polytetrafluoroethylene
+aluminum alloy 2117                          ;   2.75  ; https://www.azom.com/article.aspx?ArticleID=8714
+steel                                        ;   8.5   ;
+steel comp 301                               ;   8.0   ;
+steel comp 302                               ;   8.0   ; https://www.alloywire.com/products/stainless-steel-302/
+steel comp 304                               ;   8.0   ; https://www.thyssenkrupp-materials.co.uk/stainless-steel-304-14301.html
+steel comp 316                               ;   8.0   ;
+steel comp 321                               ;   8.0   ;
+steel comp 347                               ;   8.0   ;
+steel comp 410                               ;   7.8   ; https://www.azom.com/article.aspx?ArticleID=970
+steel comp 630                               ;   7.75  ; https://www.azom.com/article.aspx?ArticleID=1025
+steel comp e51100                            ;   7.85  ; http://www.matweb.com/search/datasheet.aspx?matguid=7a199e0fd6d94597b400aea5157c1a3e
+steel comp e52100                            ;   7.81  ; https://www.azom.com/article.aspx?ArticleID=6704
+steel corrosion resisting                    ;   8.5   ; https://hypertextbook.com/facts/2004/KarenSutherland.shtml
+steel, fed std 66, comp 1345                 ;   8.5   ;
+steel, cres, qq-s-764, comp. 303se           ;   8.00  ; https://www.ulbrich.com/uploads/data-sheets/303Se-Stainless-Steel-Wire-UNS-S30323-wire.pdf
+rubber butadiene-acrylonitrile class nbr     ;   1.25  ; http://www.matweb.com/search/datasheet.aspx?matguid=75d3830136414f58802f3f8a1a1ed9a3&ckck=1
+rubber butadiene nitrile                     ;   1.25  ;
+rubber synthetic                             ;   0.912 ; https://rubberchemtechnol.org/doi/abs/10.5254/1.3540104
+steel, qq-s-763, class 303                   ;   8.0   ; http://asm.matweb.com/search/SpecificMaterial.asp?bassnum=mq303h
+rubber fluorocarbon class fpm                ;   2.01  ; http://www.matweb.com/search/datasheet.aspx?matguid=da4ca2c21399401aa00b2bc4f1c46cb6
+iron alloy 660                               ;   7.92  ; http://www.matweb.com/search/datasheet.aspx?matguid=7ae5eeb5e3b548c59225f8feda7e2a7d&ckck=1
+aluminum alloy                               ;   2.7   ; https://www.amesweb.info/Materials/Density_of_Aluminum.aspx
+aluminum                                     ;   2.7   ; https://www.amesweb.info/Materials/Density_of_Aluminum.aspx
