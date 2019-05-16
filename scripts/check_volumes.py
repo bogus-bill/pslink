@@ -1,4 +1,4 @@
-# check the volume calculation for the component in the data folder
+# check the volume calculation for the components in the data folder
 
 import glob
 
