@@ -95,7 +95,36 @@ This folder contains the generated output:
 ```
 
 ### `background_products.txt`
+The file `background_products.txt` contains the information of the products
+in the background database against which the foreground system should be linked.
+It is a plain text file with the following tab-separated columns:
 
+```
+0: PROCESS_UUID
+1: PROCESS_NAME
+2: FLOW_UUID
+3: FLOW_NAME
+4: UNIT
+```
+
+This file can be easily generated for any database by executing the following
+script in the openLCA SQL editor and pasting the result into the file:
+
+```sql
+select
+  p.ref_id as process_uuid,
+  p.name   as process_name,
+  f.ref_id as flow_uuid,
+  f.name   as flow_name,
+  u.name   as unit
+  from tbl_processes p
+  inner join tbl_exchanges e on p.id = e.f_owner
+  inner join tbl_flows f on e.f_flow = f.id
+  inner join tbl_units u on e.f_unit = u.id
+  where f.flow_type = 'PRODUCT_FLOW'
+    and e.is_input  = 0
+    and u.name      = 'kg'
+```
 
 ## How it works
 
