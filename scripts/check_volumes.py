@@ -1,3 +1,5 @@
+# check the volume calculation for the component in the data folder
+
 import glob
 
 import pslink.partatts as partatts

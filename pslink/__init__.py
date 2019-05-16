@@ -6,6 +6,25 @@ import pslink.quant as quant
 
 quant.VolumeFormula.register(
     {
+        "Grip Diameter": "gd",
+        "Grip Length": "gl",
+        "Nominal Thread Diameter": "td",
+        "Thread Length": "tl",
+    },
+    "(pi / 4) * (gl * gd^2 + tl * td^2)"
+)
+
+quant.VolumeFormula.register(
+    {
+        "Overall Height": "h",
+        "Bore Diameter": "d_inner",
+        "End Diameter": "d_outer",
+    },
+    "(pi / 4) * h * (d_outer^2 - d_inner^2)"
+)
+
+quant.VolumeFormula.register(
+    {
         "Width": "a",
         "Thickness": "b",
         "Length": "c"
