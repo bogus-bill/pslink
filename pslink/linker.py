@@ -34,7 +34,7 @@ class Linker(object):
 
         self.writer = None  # type: Optional[olca.pack.Writer]
 
-    def run(self, fname="out.zip"):
+    def run(self):
 
         # read the material densities
         dpath = os.path.join(self.data_dir, "densities.txt")
@@ -76,7 +76,7 @@ class Linker(object):
         self.g.link_products(background_products)
         log.info("created graph with %i nodes and %i edges",
                  len(self.g.nodes), len(self.g.edges))
-        gpath = os.path.join(self.data_dir, fname + "_graph.semapl")
+        gpath = os.path.join(self.data_dir, "out", "linked_graph.semapl")
         semap.write_file(self.g, gpath)
         log.info("dumped graph with linked products to %s", gpath)
 
@@ -92,7 +92,7 @@ class Linker(object):
         log.info("found %i xlsx files", len(xlsx_files))
 
         # initialize the pack writer
-        fpath = os.path.join(self.data_dir, fname)
+        fpath = os.path.join(self.data_dir, "out", "generated_jsonld.zip")
         if os.path.exists(fpath):
             log.warning("file %s already exists and will be overwritten", fpath)
             os.remove(fpath)

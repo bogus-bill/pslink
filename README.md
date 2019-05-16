@@ -12,31 +12,94 @@ Checkout the project and install it (preferably in a
 
 ```bash
 # get the project
-cd <your project folder>
-git clone https://github.com/msrocka/pslink.git
-cd pslink
+$ git clone https://github.com/msrocka/pslink.git
+$ cd pslink
 
 # create a virtual environment and activate it
-python -m venv env
-.\env\Scripts\activate.bat
+$ python -m venv env
+$ .\env\Scripts\activate.bat
 
 # install the requirements
-pip install -r requirements.txt
+$ pip install -r requirements.txt
+
 # install the project
-pip install -e .
+$ pip install -e .
+
+# ... then start the Python interpreter
+$ python
 ```
+
+`pslink` has a single entry point that reads data files from a folder and
+writes back its output to this folder:
 
 ```python
 import pslink
 pslink.link("./data")
 ```
 
+The content and layout of this data foder is described below. `pslink` uses
+the standard logger from the `logging` package which you can configure like
+this:
+
 ```python
 import logging as log
-log.basicConfig(level=log.INFO)
+
+# set the log level to info to see more details
+log.basicConfig(level=log.INFO)  
 ```
 
-## Quantification
+## The data folder
+The data folder has the following layout:
+
+```
+data/
+|-- components/
+|   |-- [component ID 1].txt
+|   |-- [component ID 2].txt
+|   +-- ...
+|-- out/
+|   |-- generated_jsonld.zip
+|   +-- linked_graph.semapl
+|-- background_products.txt
+|-- densities.txt
+|-- product_net.semapl
+|-- [component tree 1].xlsx
+|-- [component tree 2].xslx
++-- ...
+```
+
+### `components/`
+This folder containts simple text files that contain component attributes like
+dimensions or material compositions as key-value pairs. The files are stored
+with the respective component IDs as names. In such a file, each line contains
+a key-value pair seperated by semicolon (leading and trailing whitespaces are
+ignored):
+
+```
+[attribute name] ; [attribute value]
+```
+
+### `out/`
+This folder contains the generated output: 
+
+* `generated_jsonld.zip`: is the generated JSON-LD package that contains the
+  foreground processes linked to the products and processes of the background
+  database that can be imported into this database (in openLCA).
+* `linked_graph.semapl`: the semantic product graph with mapped products of the
+  background database containing syntax factors (see below for details), e.g.:
+
+```r
+# "synthetic rubber, at plant" is mapped with a syntax factor of 0.333333
+# to "acrylonitrile butadiene rubber"
+"synthetic rubber, at plant" , "acrylonitrile butadiene rubber"^0.333333
+```
+
+### `background_products.txt`
+
+
+## How it works
+
+### Quantification
 In order to combine the parts and components of the foreground system with
 background data in a meaningful way, their dimensions and material composition
 have to be quantified in some way. For standard parts and components there are
@@ -125,7 +188,7 @@ graph = semap.read_file("path/to/file.smapl")
 ```
 
 
-## Connect LCI background data to the network
+### Connect LCI background data to the network
 
 The product names in the semantic network can be very generic (e.g. from a
 product classification or from sources such as of Wikipedia). These generic
