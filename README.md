@@ -128,6 +128,23 @@ select
     and u.name      = 'kg'
 ```
 
+### `densities.txt`
+This file contains the material densities of the foreground system which are
+used to estimate the mass of the components.
+
+### `*.xlsx`
+`pslink` assumes that all Excel files in the data folder contain sheets with
+component trees with th following columns:
+
+```
+0: Level
+1: Part number (ID)
+2: _
+3: Quantity
+4: Part name
+5: Parent ID
+``` 
+
 ## How it works
 
 ### Quantification
