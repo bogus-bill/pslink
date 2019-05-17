@@ -190,23 +190,22 @@ class Graph(object):
                 break
         return ()
 
-    def find_node(self, name: str, matcher) -> tuple:
-        """Find a node for the given name and matcher function. For each node
-           we pass the node label as first argument and the given name as
-           second argument into the matcher function. This function call
-           should return a score between 0 and 1. We return a tuple
-           (score:float, node:str) for the highest scoring node. If there
-           is no node with score > 0 in the graph we return the empty tuple. """
-        node = None
-        score = 0.0
-        for n in self.nodes:
-            s = matcher(n, name)
-            if not isinstance(s, (int, float)):
+    def find_nodes(self, name: str, matcher) -> list:
+        """Find all nodes for the given name and matcher function with a
+           matching score > 0. For each node we pass the node label as first
+           argument and the given name as second argument into the matcher
+           function. This function call should return a score between 0 and 1.
+           We return a list of tuples (score:float, node:str) for nodes with
+           a score > 0. If there is no node with score > 0 in the graph we
+           return an empty list."""
+        matches = []
+        for node in self.nodes:
+            score = matcher(node, name)
+            if not isinstance(score, (int, float)):
                 continue
-            if s > score:
-                node = n
-                score = float(s)
-        return () if score == 0.0 else (score, node)
+            if score > 1e-16:
+                matches.append((score, node))
+        return matches
 
     def link_products(self, infos: list, matcher=symap.compare_with_lci_name):
         """ Links a list with product information (see ProductInfo) to the
@@ -240,15 +239,20 @@ class Graph(object):
                 self._syn_factors[node] = syn_factor
 
     def find_products(self, name) -> list:
-        match = self.find_node(name, symap.words_equality)
-        if match == ():
+        """Searches the graph for matching products for the given name. It
+           returns a list of meta data for the products with the highest
+           ranking (or an empty list when nothing was found)."""
+
+        matches = self.find_nodes(name, symap.words_equality)
+        if len(matches) == 0:
             return []
-        _, node = match
 
         # a queue of tuples: (relation_factor, node) of the
         # nodes that still need to be visited
-        queue = [(1.0, node)]
-        visited = {node}
+        queue = matches.copy()
+        visited = {}
+        for score, node in matches:
+            visited[node] = score
 
         # the selected products as list of tuples:
         # (syn_factor * relation_factor, product_info)
@@ -263,16 +267,21 @@ class Graph(object):
                 for p in n_products:
                     products.append((rel_factor * syn_factor, p))
 
-            # visit the next nodes; we try to visit the
-            # relations with the higher relation factor first
+            # visit the next nodes
             relations = self.relations_of(node)
-            relations.sort(key=lambda r: -r.factor())
             for rel in relations:  # type: Relation
                 target = rel.target
-                if target in visited:
+                next_factor = rel_factor * rel.factor()
+                if next_factor < 1e-16:
                     continue
-                visited.add(target)
-                queue.append((rel_factor * rel.factor(), target))
+                if target not in visited:
+                    queue.append((next_factor, target))
+                    visited[target] = next_factor
+                else:
+                    old_factor = visited[target]
+                    if (next_factor - old_factor) > 1e-9:
+                        queue.append((next_factor, target))
+                        visited[target] = next_factor
 
         if len(products) == 0:
             return []
