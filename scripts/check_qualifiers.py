@@ -1,3 +1,5 @@
+# collects the qualifiers in the names of the background products
+
 import csv
 
 import pslink.symap as symap
@@ -5,7 +7,7 @@ import pslink.symap as symap
 
 def main():
     ranking = {}
-    with open('../data/link_products.txt', 'r', encoding='utf-8') as f:
+    with open('../data/background_products.txt', 'r', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter='\t')
         next(reader)
         for row in reader:

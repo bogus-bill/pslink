@@ -109,6 +109,12 @@ def words_similarity(words_a, words_b) -> float:
     # we use negative values for the similarities in the matrix
     # because the implementation in SciPy searches for the minimum
     # https://docs.scipy.org/doc/scipy-0.18.1/reference/generated/scipy.optimize.linear_sum_assignment.html
+
+    if not isinstance(words_a, list):
+        words_a = list(words_a)
+    if not isinstance(words_b, list):
+        words_b = list(words_b)
+
     rows = len(words_a)
     cols = len(words_b)
     mat = numpy.zeros((rows, cols))

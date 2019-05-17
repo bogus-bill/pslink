@@ -26,16 +26,6 @@ class SemapTest(unittest.TestCase):
         self.assertEqual(("milk and milk based products", 2, 2),
                          g.closest_broader("cow milk", "cheese, goat"))
 
-    def test_product_link(self):
-        g = semap.read_file('../products.semapl')
-        pinfo = semap.ProductInfo()
-        pinfo.process_uuid = "a"
-        pinfo.process_name = "b"
-        pinfo.product_uuid = "c"
-        pinfo.product_name = "silicon, electronic grade, at plant"
-        pinfo.product_unit = "kg"
-        g.link_products([pinfo])
-
 
 if __name__ == "__main__":
     unittest.main()
