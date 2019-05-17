@@ -165,7 +165,7 @@ taken for calculating an estimated volume). With a set of corresponding
 densities, the weights of the materials in an assembly part can be estimated.
 
 
-## A semantic network of product relations
+### A semantic network of product relations
 
 The core component of `pslink` is a 
 [semantic network](https://en.wikipedia.org/wiki/Semantic_network)
@@ -256,15 +256,36 @@ e.g.:
 ```
 
 
-## Product search: combining syntax and semantic
+### Product search
+The image below shows how the search for products in a background database for
+a given foreground product works. First, (generic) product nodes are searched
+via syntax and text analysis. Starting from each such node with a matching
+factor (syntax factor; `0.9` in the example) `> 0` the graph is traversed along
+the product relations. Each relation type has a specific factor assigned:
+
+* `= is same`: `1.0`
+* `^ is broader | is narrower`: `0.75`
+* `< is derived from` : `0.5`
+
+The background products which are bound to the nodes, again with a syntax
+factor, are collected during this traversal and ranked by a score that is
+calculated by multiplying the syntax and relation factors along a traversal
+path. The background products with the maximum score are then returned from
+the search.
 
 ![](./pslink.png)
 
 
-## Meta-data filter
+**Note**: Currently only background products with the same, maximum, syntax
+score are bound to a node. This is fine, but when an additional
+meta-data score is applied all background products with a syntax score `> 0`
+should be bound to a node.
 
-TODO
 
+### Meta-data scoring
 
-
-
+This is currently not implemented but the product search could be easily
+extended to also include meta-data like geography or time into the ranking:
+Just store these meta-data fields into additional columns in the
+`background_products.txt` file and rank these fields against an extended
+search query.
