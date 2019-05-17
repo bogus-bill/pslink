@@ -256,7 +256,7 @@ e.g.:
 
 ## Product search: combining syntax and semantic
 
-TODO
+![](./pslink.png)
 
 
 ## Meta-data filter
