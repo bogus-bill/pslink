@@ -1,0 +1,753 @@
+PROCESS_UUID	PROCESS_NAME	FLOW_UUID	FLOW_NAME	UNIT	
+90e6ea39-1ed4-32bc-9b03-0129c6d5b2f0	Coal mine tailings storage and disposal; Production mix, underground mine	edb2b1ea-9734-464c-aaf7-a3e94c28a1a8	Coal mine tailings storage and disposal; Production mix, underground mine	kg	
+ef39cdc1-cf56-45ba-ba5d-5db23349ddea	Coal cleaning; Underground mine	756647e7-8bf4-49d8-9190-7d9cf39a2345	Coal; Cleaned; Underground mine	kg	
+cbc64321-512c-4b49-9d28-ed656d6aa8e6	Coal handling; Underground mine	8bf6708a-0a0f-41e4-9b1a-54a92b11dd21	Coal; Handled; From underground mine	kg	
+4b4db9ff-6ce1-4b10-9353-baae83afbee1	Coal extraction; Underground mine	31c2fb00-53ac-4ab1-984d-dd9791b7ca0f	Coal; Production mix, from underground mine	kg	
+93d8ea2e-7a50-4fb3-a3b5-cf489aa1937d	Coal extraction; Surface mine	65ea5547-806a-4557-b1cd-d629d4f0aa66	Coal; Production mix, from surface mine	kg	
+d04ff0ad-5535-353e-aabc-27b89137bc92	Mixed recyclables, at collection, dropoff center	6e4fea52-8f29-321a-b1af-c1d1cfbf7da5	Mixed recyclables, at collection, dropoff center	kg	
+e93ae1c1-8454-328d-aef7-3698311ae06a	Mixed recyclables, to MRF	1f0bd7aa-6cb7-3b9d-86a5-ef1b7668e8aa	Mixed recyclables, to MRF	kg	
+11a07256-81f3-3c25-b46e-f3b9998d7bcf	Soybeans, at field, 1998-2001	96a1b941-f5eb-3ac4-b831-9ffda7a8c7cb	Soybeans, at field, 1998-2001	kg	
+11a07256-81f3-3c25-b46e-f3b9998d7bcf	Soybeans, at field, 1998-2001	82860409-cc55-31f3-874c-d028dab21f51	Soybean grains, at field, 1998-2001	kg	
+11a07256-81f3-3c25-b46e-f3b9998d7bcf	Soybeans, at field, 1998-2001	a2fbcaf0-917f-37bd-ba28-f1acaa83abe4	Soybean residues, at field, 1998-2001	kg	
+956b53b9-dd05-35ae-a072-69f1f6906290	Soybean grains, at field	517e2dc3-1415-3feb-b7ae-45c65dca3802	Soybean residues, at field	kg	
+3ffdd525-d623-363f-8876-1999b0f5130f	Cotton, whole plant, at field	4fbbb19a-bc25-3265-b196-04feec6ace45	Cotton, at field	kg	
+3ffdd525-d623-363f-8876-1999b0f5130f	Cotton, whole plant, at field	8517bbb8-f754-3ad5-bace-edaa0743b9ff	Cotton straw, at field	kg	
+c77a668e-733b-3e86-9a1d-bcec8b0064dc	Crude palm kernel oil, at plant	7e7a192b-c431-3883-aba5-802625561ade	Crude palm kernel oil, at plant	kg	
+a9f691e0-2be5-376a-ba35-294bb7849840	Palm kernels, at plant	f5be8e72-c62d-3d59-98a2-039b844e0d36	Palm kernels, at plant	kg	
+5abfba66-c3cb-38f2-8b01-9f566c5ab656	Rapeseed, whole plant, at field	e7ba8c87-72ef-37ff-ba46-68fcf13e09ea	Rapeseed, at field	kg	
+5abfba66-c3cb-38f2-8b01-9f566c5ab656	Rapeseed, whole plant, at field	15a4d63d-6c88-3196-a2cc-471e1313a399	Rapeseed residues, at field	kg	
+91663389-8cd1-3272-9f06-cdc87c8ce7d9	Potato, whole plant, at field	916af898-c73f-3a20-83c2-939b84a631e6	Potato leaves, at field	kg	
+a3b730ce-d657-383b-b485-e5d082d96424	Winter wheat straw, production, average, US, 2022	010fd805-fa43-382c-8332-2a8303335002	Winter wheat straw, production, average, US, 2022	kg	
+d6439ada-877c-30ff-92b2-875e88b88141	Wheat, at field	e0f376d5-b43c-383a-8eb5-8b6a957301f0	Wheat grains, at field	kg	
+d6439ada-877c-30ff-92b2-875e88b88141	Wheat, at field	bc29539c-0b2c-38cf-9e60-cdff0267d348	Wheat straw, at field	kg	
+4c6eed4c-5f5e-30c7-8948-956c79c4806d	Rice, at field	c4d1204a-67a3-395d-9b59-ba34528b3ba6	Rice grain, at field	kg	
+4c6eed4c-5f5e-30c7-8948-956c79c4806d	Rice, at field	13ecfdb9-d784-3cd2-8662-32b2eb662162	Rice straw, at field	kg	
+9c36427d-76de-314c-bfca-4d714b71c9a5	Switchgrass, production, US, 2022	eb35a3fc-2c19-32e2-8789-3c69e2071855	Switchgrass, production, US, 2022	kg	
+f04300c5-ea44-3525-b6ab-c4b8b27b127e	Switchgrass, harvested, wet	1da072f7-6853-3388-b30c-0b09e55dd721	Switchgrass, harvested, wet	kg	
+155839ec-d6ab-3ed6-b7c8-45586e676f6d	Harvesting, fresh fruit bunch, at farm	9dfc9e7c-3c20-3f4d-9d79-d54ec2d8d08b	Harvesting, fresh fruit bunch, at farm	kg	
+0375c701-8d66-3b47-af2e-26b0c43c722f	Harvesting, fresh fruit bunch, at farm, 2003	9dfc9e7c-3c20-3f4d-9d79-d54ec2d8d08b	Harvesting, fresh fruit bunch, at farm	kg	
+ccc739c2-aec2-30d0-a1f1-a7ae81af1e8a	Grinding	aa3f78a4-9fec-3904-886f-443aa760a4ae	Grinding	kg	
+11256034-2355-3add-ade9-59983025dded	Corn, whole plant, at field	8db31b1d-1a59-304c-801f-a3cd8a23ba45	Corn, at field	kg	
+11256034-2355-3add-ade9-59983025dded	Corn, whole plant, at field	b7127e3e-f5a7-307e-8072-30378b9ed1c2	Corn stover, at field	kg	
+1cbbcd09-ea17-3d9b-bc34-2cf42efe26ba	Corn, production, average, US, 2022	5c3261bf-f870-3ba9-91e0-402b95a94a51	Corn, production, average, US, 2022	kg	
+6e19103d-ed39-3b71-8c51-0c65b85002a4	Corn, decomposition, 15.5% moisture	a3e87cf9-1690-3d33-b60e-695150337e42	Corn, decomposition, 15.5% moisture	kg	
+4d09380a-6297-392c-b1bb-74534b4d3d8e	Corn stover, production, average, US, 2022	6dd94277-87e0-32e8-bfe7-628e6db871a0	Corn stover, production, average, US, 2022	kg	
+659d5d48-92b7-3b01-aa2f-4da4c69811c9	Roundwood, softwood, green, at mill, NE-NC	cdfae0a6-7116-3385-995f-e691dab919ae	Bark, softwood, green, at mill, NE-NC	kg	
+867e7c9e-178d-394a-8d82-a87226fb9331	Bark, softwood, average, state or private moist cold forest, at forest road, INW	ea00adb9-1cf5-39ff-b2a8-b9b8d24de113	Bark, softwood, average, state or private moist cold forest, at forest road, INW	kg	
+2ad41b7a-ee80-3e8a-946c-b2d06dc532af	Roundwood, softwood, state-private moist cold forest, gentle slope, at frst rd, INW	5b0e9b4a-e8e0-39d2-adc5-354c51ffc3b8	Bark, softwood, state-private moist cold forest, gentle slope, at frst rd, INW	kg	
+c3c32dfd-2cc0-3df4-b4b9-22c1f2e8f99d	Roundwood, softwd, state or private dry forest, gentle slope, at forest rd, INW	7dd3045c-35cc-3424-b6cb-893ab73190ad	Bark, softwd, state or private dry forest, gentle slope, at forest rd, INW	kg	
+cb5600fe-948c-3fd0-80f3-35cf5b0d7832	Bark, softwood, average, state or private dry forest, at forest road, INW	65de349d-0103-3feb-8c35-99b7e07523a4	Bark, softwood, average, state or private dry forest, at forest road, INW	kg	
+d18fec71-abe4-3cf5-ad82-4cf4fb8eadc7	Bark, softwood, national forest, average, at forest road, INW	2700bc4b-663a-3b2f-b863-9cb7e9aa9861	Bark, softwood, national forest, average, at forest road, INW	kg	
+648ab051-f062-3090-aa14-8e1a42150eee	Roundwood, hardwood, average, Med Intensity Management, NE-NC	201779e6-7154-34a9-91a2-e9cde5a5af76	Bark, hardwood, average, Med Intensity Management, NE-NC	kg	
+f1c2831e-ff3d-3b74-95b5-0f8f5f910872	Roundwood, softwood, average, High Intensity Management, NE-NC	fd1b47a5-b3b9-3924-9eaa-419b619e244d	Bark, softwood, average, High Intensity Management, NE-NC	kg	
+c39dbfd7-d8de-3df9-8e9b-d2bdc3037cf4	Bark, softwood, average, at forest road, NE-NC	a9354422-7e84-3f28-b64f-c038c3b0052b	Bark, softwood, average, at forest road, NE-NC	kg	
+18ecd091-9cf4-3a59-a169-d0a4cb646a96	Bark, softwood, average, at forest road, INW	39f1cf7a-1832-3aaf-b9f7-4d0da500f14f	Bark, softwood, average, at forest road, INW	kg	
+9bcab02c-bc04-3cd6-a756-74974141530c	Roundwood, hardwood, average, High Intensity Management, NE-NC	80e2a33d-c18f-36b9-8437-34696f075df9	Bark, hardwood, average, High Intensity Management, NE-NC	kg	
+65c1eb74-6e07-3e75-8702-81ac26ce6f0e	Roundwood, softwd, state or private dry forest, steep slope, at forest rd, INW	730b6a52-3659-3ec0-af09-48533b50cb4b	Bark, softwd, state or private dry forest, steep slope, at forest rd, INW	kg	
+37e105da-2559-3d50-a090-b75a18408184	Roundwood, softwood, green, at mill, INW	92a5812c-8007-3614-97f8-d3a8f8c3b689	Roundwood, softwood, green, at mill, INW	kg	
+37e105da-2559-3d50-a090-b75a18408184	Roundwood, softwood, green, at mill, INW	0207530f-e790-302a-9cca-2ca9b4656b30	Bark, softwood, green, at mill, INW	kg	
+3525fc2c-7317-3436-9eba-b702ba6cfb00	Roundwood, hardwood, average, Low Intensity Management, NE-NC	39e5fecd-0772-3879-8636-7e25c6a5423b	Bark, hardwood, average, Low Intensity Management, NE-NC	kg	
+cac29502-4a46-3ed6-9acc-e34f4b43b84d	Roundwood, softwood, average, Low Intensity Management, NE-NC	ed440dcf-413f-3965-85cf-06e3d9e03f25	Bark, softwood, average, Low Intensity Management, NE-NC	kg	
+fee9ad93-5bbf-37f0-b2ab-8147a847a5b0	Roundwood, softwood, average, Med Intensity Management, NE-NC	d595944e-0723-3468-b55b-4682dc332d8f	Bark, softwood, average, Med Intensity Management, NE-NC	kg	
+655c14ed-5b78-3e50-96e5-e21f710143fe	Roundwood, hardwood, green, at mill, NE-NC	37a2149d-f1d6-3e56-9584-8a896fb4163a	Bark, hardwood, green, at mill, NE-NC	kg	
+ca503028-9715-3865-8410-14f0f85d3974	Roundwood, sftwd, state-private moist cold forest, steep slope, at forest rd,INW	61d8d9dc-de9f-32c2-9b9a-2b21f528d716	Bark, sftwd, state-private moist cold forest, steep slope, at forest rd,INW	kg	
+56287b68-7130-3856-802f-572699013145	Roundwood, softwood, national forest, steep slope, at forest road, INW	813f227d-31ee-3198-850d-dce3eea1df3e	Bark, softwood, national forest, steep slope, at forest road, INW	kg	
+da07c7c2-7425-38b3-bcb0-608c45565e81	Roundwood, softwood, national forest, gentle slope, at forest road, INW	318ddf7f-2def-3dca-9fee-ced811100506	Bark, softwood, national forest, gentle slope, at forest road, INW	kg	
+db6bf165-40de-494b-a4cd-eebb9d7bae9d	southern bleached softwood kraft pulp process; elemental chlorine free (ECF) bleached; at mill	c7bee6bb-333f-4c29-ad2a-2288b3e33b3e	CUTOFF_Tall oil soap, kraft unrefined, at mill	kg	
+4bedddf6-2341-471d-a972-48f8cb707562	kraft lignin extraction; from southern bleached softwood kraft, elemental chlorine free (ECF) bleached process; at mill	c7bee6bb-333f-4c29-ad2a-2288b3e33b3e	CUTOFF_Tall oil soap, kraft unrefined, at mill	kg	
+c7650da3-17f4-3e5d-98d8-4a44ad837e09	piglets; deep pit manure mgmt; at farm	a5181ce3-025d-3cd0-97d4-9c54076aa4ae	lean sow meat; deep pit manure mgmt; at farm	kg	
+dccebb54-7df2-33f6-a807-d9f8630ee3a5	dead animal management (pigs); average mix; disposal at farm	5de61b83-f96f-3ad3-91ca-011b8f190adc	dead animal management (pigs); average mix; disposal at farm	kg	
+46c3c3dc-9ff6-3fd7-aadb-9e4b0867bffc	durum wheat; at harvest; at farm; wet basis	936cac77-c00f-3f88-8f44-0b9c09ad26bc	durum wheat residue; at harvest; at farm; wet basis	kg	
+4e808c96-0ea0-38d8-af94-bcd4300d5ba5	durum wheat; at harvest; at farm; wet basis	936cac77-c00f-3f88-8f44-0b9c09ad26bc	durum wheat residue; at harvest; at farm; wet basis	kg	
+46c3c3dc-9ff6-3fd7-aadb-9e4b0867bffc	durum wheat; at harvest; at farm; wet basis	76bffd27-85b5-3c4f-b719-7d50149b4c19	durum wheat; at harvest; at farm; wet basis	kg	
+4e808c96-0ea0-38d8-af94-bcd4300d5ba5	durum wheat; at harvest; at farm; wet basis	76bffd27-85b5-3c4f-b719-7d50149b4c19	durum wheat; at harvest; at farm; wet basis	kg	
+00eb634f-6381-3bbb-a301-5b79a8d7435e	spring wheat, excluding durum; at harvest; at farm; wet basis	05c51814-12ed-3ee3-bdd6-7bf9cb5f542e	spring wheat residue; at harvest; at farm; wet basis	kg	
+8e9bca36-2373-31e5-b401-171e82dc8c77	spring wheat, excluding durum; at harvest; at farm; wet basis	05c51814-12ed-3ee3-bdd6-7bf9cb5f542e	spring wheat residue; at harvest; at farm; wet basis	kg	
+38e935b2-f233-3b9e-b732-229bc5008edc	spring wheat, excluding durum; at harvest; at farm; wet basis	05c51814-12ed-3ee3-bdd6-7bf9cb5f542e	spring wheat residue; at harvest; at farm; wet basis	kg	
+8495cc9e-6cbf-3961-8ad7-76482690928c	spring wheat, excluding durum; at harvest; at farm; wet basis	05c51814-12ed-3ee3-bdd6-7bf9cb5f542e	spring wheat residue; at harvest; at farm; wet basis	kg	
+9fb12b4d-e170-3e05-8787-fafd49d15551	spring wheat, excluding durum; at harvest; at farm; wet basis	05c51814-12ed-3ee3-bdd6-7bf9cb5f542e	spring wheat residue; at harvest; at farm; wet basis	kg	
+15878f45-4d46-3390-a9cd-48300ecd2a8d	spring wheat, excluding durum; at harvest; at farm; wet basis	05c51814-12ed-3ee3-bdd6-7bf9cb5f542e	spring wheat residue; at harvest; at farm; wet basis	kg	
+884dce1a-006d-3359-b43f-e9c7ecd0cd7f	spring wheat, excluding durum; at harvest; at farm; wet basis	05c51814-12ed-3ee3-bdd6-7bf9cb5f542e	spring wheat residue; at harvest; at farm; wet basis	kg	
+00eb634f-6381-3bbb-a301-5b79a8d7435e	spring wheat, excluding durum; at harvest; at farm; wet basis	1ca542fe-dec7-3074-adc1-951d5783162c	spring wheat, excluding durum; at harvest; at farm; wet basis	kg	
+8e9bca36-2373-31e5-b401-171e82dc8c77	spring wheat, excluding durum; at harvest; at farm; wet basis	1ca542fe-dec7-3074-adc1-951d5783162c	spring wheat, excluding durum; at harvest; at farm; wet basis	kg	
+38e935b2-f233-3b9e-b732-229bc5008edc	spring wheat, excluding durum; at harvest; at farm; wet basis	1ca542fe-dec7-3074-adc1-951d5783162c	spring wheat, excluding durum; at harvest; at farm; wet basis	kg	
+8495cc9e-6cbf-3961-8ad7-76482690928c	spring wheat, excluding durum; at harvest; at farm; wet basis	1ca542fe-dec7-3074-adc1-951d5783162c	spring wheat, excluding durum; at harvest; at farm; wet basis	kg	
+9fb12b4d-e170-3e05-8787-fafd49d15551	spring wheat, excluding durum; at harvest; at farm; wet basis	1ca542fe-dec7-3074-adc1-951d5783162c	spring wheat, excluding durum; at harvest; at farm; wet basis	kg	
+15878f45-4d46-3390-a9cd-48300ecd2a8d	spring wheat, excluding durum; at harvest; at farm; wet basis	1ca542fe-dec7-3074-adc1-951d5783162c	spring wheat, excluding durum; at harvest; at farm; wet basis	kg	
+884dce1a-006d-3359-b43f-e9c7ecd0cd7f	spring wheat, excluding durum; at harvest; at farm; wet basis	1ca542fe-dec7-3074-adc1-951d5783162c	spring wheat, excluding durum; at harvest; at farm; wet basis	kg	
+549a5879-e3eb-3cb6-be54-572567fa3ff8	oats; at harvest; at farm; wet basis	34c338f2-f1fe-38ef-8384-d6f24e80166d	oats residue; at harvest; at farm; wet basis	kg	
+b35d61f3-fcae-3f42-8adb-4ebe6ad5eb0f	oats; at harvest; at farm; wet basis	34c338f2-f1fe-38ef-8384-d6f24e80166d	oats residue; at harvest; at farm; wet basis	kg	
+2a0790dc-5f8a-31d1-bdd9-1c162e2e0881	oats; at harvest; at farm; wet basis	34c338f2-f1fe-38ef-8384-d6f24e80166d	oats residue; at harvest; at farm; wet basis	kg	
+630f3136-3c09-3efe-90dc-f14d7a74afd8	oats; at harvest; at farm; wet basis	34c338f2-f1fe-38ef-8384-d6f24e80166d	oats residue; at harvest; at farm; wet basis	kg	
+088fe5b4-0ece-3eab-9ba9-e18dba46a367	oats; at harvest; at farm; wet basis	34c338f2-f1fe-38ef-8384-d6f24e80166d	oats residue; at harvest; at farm; wet basis	kg	
+03b2fe64-67ea-3076-abd3-740f1b3a3afb	oats; at harvest; at farm; wet basis	34c338f2-f1fe-38ef-8384-d6f24e80166d	oats residue; at harvest; at farm; wet basis	kg	
+52d31e28-869f-32ed-a6c3-22696a331aaf	oats; at harvest; at farm; wet basis	34c338f2-f1fe-38ef-8384-d6f24e80166d	oats residue; at harvest; at farm; wet basis	kg	
+a573c59f-7607-343b-ab18-d99c98ac3d00	oats; at harvest; at farm; wet basis	34c338f2-f1fe-38ef-8384-d6f24e80166d	oats residue; at harvest; at farm; wet basis	kg	
+18c52508-5544-3864-bef1-011909ef4fb6	oats; at harvest; at farm; wet basis	34c338f2-f1fe-38ef-8384-d6f24e80166d	oats residue; at harvest; at farm; wet basis	kg	
+549a5879-e3eb-3cb6-be54-572567fa3ff8	oats; at harvest; at farm; wet basis	3528b622-fd2c-357e-8f11-7423940b12e7	oats; at harvest; at farm; wet basis	kg	
+b35d61f3-fcae-3f42-8adb-4ebe6ad5eb0f	oats; at harvest; at farm; wet basis	3528b622-fd2c-357e-8f11-7423940b12e7	oats; at harvest; at farm; wet basis	kg	
+2a0790dc-5f8a-31d1-bdd9-1c162e2e0881	oats; at harvest; at farm; wet basis	3528b622-fd2c-357e-8f11-7423940b12e7	oats; at harvest; at farm; wet basis	kg	
+630f3136-3c09-3efe-90dc-f14d7a74afd8	oats; at harvest; at farm; wet basis	3528b622-fd2c-357e-8f11-7423940b12e7	oats; at harvest; at farm; wet basis	kg	
+088fe5b4-0ece-3eab-9ba9-e18dba46a367	oats; at harvest; at farm; wet basis	3528b622-fd2c-357e-8f11-7423940b12e7	oats; at harvest; at farm; wet basis	kg	
+03b2fe64-67ea-3076-abd3-740f1b3a3afb	oats; at harvest; at farm; wet basis	3528b622-fd2c-357e-8f11-7423940b12e7	oats; at harvest; at farm; wet basis	kg	
+52d31e28-869f-32ed-a6c3-22696a331aaf	oats; at harvest; at farm; wet basis	3528b622-fd2c-357e-8f11-7423940b12e7	oats; at harvest; at farm; wet basis	kg	
+a573c59f-7607-343b-ab18-d99c98ac3d00	oats; at harvest; at farm; wet basis	3528b622-fd2c-357e-8f11-7423940b12e7	oats; at harvest; at farm; wet basis	kg	
+18c52508-5544-3864-bef1-011909ef4fb6	oats; at harvest; at farm; wet basis	3528b622-fd2c-357e-8f11-7423940b12e7	oats; at harvest; at farm; wet basis	kg	
+759058a8-58da-3ae5-9b48-31f3c93f431c	peanuts; at harvest; at farm; wet basis	7e0781a1-220b-3891-a22a-a39ae651f4d9	peanuts residue; at harvest; at farm; wet basis	kg	
+d6eb4d07-bedd-3dcd-86ef-08e0aa88bb9f	peanuts; at harvest; at farm; wet basis	7e0781a1-220b-3891-a22a-a39ae651f4d9	peanuts residue; at harvest; at farm; wet basis	kg	
+e5b4559f-faa4-3209-858c-40a6fb3add7f	peanuts; at harvest; at farm; wet basis	7e0781a1-220b-3891-a22a-a39ae651f4d9	peanuts residue; at harvest; at farm; wet basis	kg	
+52a3a8ff-5781-3449-a18d-8a553aebe8aa	peanuts; at harvest; at farm; wet basis	7e0781a1-220b-3891-a22a-a39ae651f4d9	peanuts residue; at harvest; at farm; wet basis	kg	
+9d7ebc9d-6b40-3ce5-a1af-9fcb7ae8c876	peanuts; at harvest; at farm; wet basis	7e0781a1-220b-3891-a22a-a39ae651f4d9	peanuts residue; at harvest; at farm; wet basis	kg	
+759058a8-58da-3ae5-9b48-31f3c93f431c	peanuts; at harvest; at farm; wet basis	9143fe1f-4b09-3ddf-80c1-217d09a75859	peanuts; at harvest; at farm; wet basis	kg	
+d6eb4d07-bedd-3dcd-86ef-08e0aa88bb9f	peanuts; at harvest; at farm; wet basis	9143fe1f-4b09-3ddf-80c1-217d09a75859	peanuts; at harvest; at farm; wet basis	kg	
+e5b4559f-faa4-3209-858c-40a6fb3add7f	peanuts; at harvest; at farm; wet basis	9143fe1f-4b09-3ddf-80c1-217d09a75859	peanuts; at harvest; at farm; wet basis	kg	
+52a3a8ff-5781-3449-a18d-8a553aebe8aa	peanuts; at harvest; at farm; wet basis	9143fe1f-4b09-3ddf-80c1-217d09a75859	peanuts; at harvest; at farm; wet basis	kg	
+9d7ebc9d-6b40-3ce5-a1af-9fcb7ae8c876	peanuts; at harvest; at farm; wet basis	9143fe1f-4b09-3ddf-80c1-217d09a75859	peanuts; at harvest; at farm; wet basis	kg	
+58d5b53d-d197-3252-8e6e-e912e76d250a	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+053eb6cd-a390-356e-b343-d75a9b69d0e2	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+82f5510f-b718-38da-b42d-d0d18f5c9a89	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+9c112f70-9def-3353-bbc8-be2b6380c0b5	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+dcaecd56-118a-31c7-9881-8d11c09a84c5	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+732e938d-7d19-3bd6-a129-806f8a1e8b63	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+b30dcf95-e41b-3669-a2fe-4c056e8debb4	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+c484c9c6-b562-3904-8085-878b2c9bd905	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+f5803e2c-053f-3f7f-8e89-4f12792bfaee	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+51124812-ff81-32f1-904c-4ebdd38503c1	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+a85fd7ae-4a7b-318c-8405-9e7632088531	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+0fb49118-1208-3b2d-92ae-79e96544b2fe	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+aecee43d-bbf3-3b9a-985c-064b6d88afe1	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+01302358-ca5d-324f-9abf-c2c450150435	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+b6ab2d78-5ca3-3033-bc6a-05ec7338d5da	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+ff0d1486-4403-39e0-aacd-9dfc78eec840	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+d99d737d-a677-3aac-92d6-47ad9b82791d	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+ade7d478-4cc7-36c4-990e-7ef4cee243b7	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+22ed1513-5797-3979-8782-5323df1e5f7d	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+29709941-ad78-3400-b0e2-e934973f4119	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+448d0e46-23f5-3127-a073-35f8b18ddbeb	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+d0b78246-7d76-36c9-ac63-4ebf4dc49fec	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+1c6fb838-7253-3ebb-9f7a-c89ccbf1aec9	winter wheat; at harvest; at farm; wet basis	91cb6589-e102-33e0-94d4-1fdcda43e8b3	winter wheat residue; at harvest; at farm; wet basis	kg	
+58d5b53d-d197-3252-8e6e-e912e76d250a	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+053eb6cd-a390-356e-b343-d75a9b69d0e2	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+82f5510f-b718-38da-b42d-d0d18f5c9a89	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+9c112f70-9def-3353-bbc8-be2b6380c0b5	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+dcaecd56-118a-31c7-9881-8d11c09a84c5	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+732e938d-7d19-3bd6-a129-806f8a1e8b63	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+b30dcf95-e41b-3669-a2fe-4c056e8debb4	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+c484c9c6-b562-3904-8085-878b2c9bd905	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+f5803e2c-053f-3f7f-8e89-4f12792bfaee	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+51124812-ff81-32f1-904c-4ebdd38503c1	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+a85fd7ae-4a7b-318c-8405-9e7632088531	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+0fb49118-1208-3b2d-92ae-79e96544b2fe	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+aecee43d-bbf3-3b9a-985c-064b6d88afe1	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+01302358-ca5d-324f-9abf-c2c450150435	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+b6ab2d78-5ca3-3033-bc6a-05ec7338d5da	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+ff0d1486-4403-39e0-aacd-9dfc78eec840	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+d99d737d-a677-3aac-92d6-47ad9b82791d	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+ade7d478-4cc7-36c4-990e-7ef4cee243b7	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+22ed1513-5797-3979-8782-5323df1e5f7d	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+29709941-ad78-3400-b0e2-e934973f4119	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+448d0e46-23f5-3127-a073-35f8b18ddbeb	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+d0b78246-7d76-36c9-ac63-4ebf4dc49fec	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+1c6fb838-7253-3ebb-9f7a-c89ccbf1aec9	winter wheat; at harvest; at farm; wet basis	329c4cc3-d95e-32af-bd13-8ea98073a724	winter wheat; at harvest; at farm; wet basis	kg	
+69d1f310-af10-30a3-a4ca-d1fc6384d54e	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+1abd2099-2ff2-31d0-8984-b6cbd519ebec	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+59ec3900-70f9-396c-b94d-a6e07fa8adf8	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+a4a780ab-98ec-3dd5-a376-908a473b76b9	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+bdeb6e55-4611-3e32-983e-adbcef975c98	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+8d2e395a-34ff-38e5-bc51-0137ba1d1967	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+8a953f56-5bb5-3f66-82e0-5f671710222c	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+651c67d4-6fdf-3704-a7f9-b177e9d00015	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+3a42fb23-7cd3-3981-8cca-0641a74dfa7f	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+4a2c995b-270a-3e35-9a96-417f77cb0c25	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+9644b21b-5bec-3a05-aeb8-15afbd9e811e	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+7a5b5759-1ae0-39e6-aaf8-28b288e0b5cc	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+113caf9d-b82d-3ae3-94bc-7dc9b2b62d10	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+dc952234-ff3c-3089-836f-f4e447905613	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+076e1b2a-6ada-3a4b-9ed0-dc87585758fb	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+49124cd6-bc87-32ae-8dad-18e1f5905956	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+5d434cd0-a043-3474-92d0-3ae0a5394768	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+d470faa4-ccf5-3cac-82f5-7a8468145ffa	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+be548ebe-5e21-3a41-ad34-4a8c81fe1ab6	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+a08a4697-d24a-308b-adca-9cd1c28363d4	corn grain; at harvest; at farm; wet basis	53321e2d-11af-3585-afc8-1a78e9693ead	corn residue; at harvest; at farm; wet basis	kg	
+69d1f310-af10-30a3-a4ca-d1fc6384d54e	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+1abd2099-2ff2-31d0-8984-b6cbd519ebec	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+59ec3900-70f9-396c-b94d-a6e07fa8adf8	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+a4a780ab-98ec-3dd5-a376-908a473b76b9	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+bdeb6e55-4611-3e32-983e-adbcef975c98	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+8d2e395a-34ff-38e5-bc51-0137ba1d1967	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+8a953f56-5bb5-3f66-82e0-5f671710222c	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+651c67d4-6fdf-3704-a7f9-b177e9d00015	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+3a42fb23-7cd3-3981-8cca-0641a74dfa7f	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+4a2c995b-270a-3e35-9a96-417f77cb0c25	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+9644b21b-5bec-3a05-aeb8-15afbd9e811e	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+7a5b5759-1ae0-39e6-aaf8-28b288e0b5cc	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+113caf9d-b82d-3ae3-94bc-7dc9b2b62d10	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+dc952234-ff3c-3089-836f-f4e447905613	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+076e1b2a-6ada-3a4b-9ed0-dc87585758fb	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+49124cd6-bc87-32ae-8dad-18e1f5905956	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+5d434cd0-a043-3474-92d0-3ae0a5394768	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+d470faa4-ccf5-3cac-82f5-7a8468145ffa	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+be548ebe-5e21-3a41-ad34-4a8c81fe1ab6	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+a08a4697-d24a-308b-adca-9cd1c28363d4	corn grain; at harvest; at farm; wet basis	0ba73ccc-da2f-3e3d-990c-689c1b4f3589	corn silage; at harvest; at farm; wet basis	kg	
+69d1f310-af10-30a3-a4ca-d1fc6384d54e	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+1abd2099-2ff2-31d0-8984-b6cbd519ebec	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+59ec3900-70f9-396c-b94d-a6e07fa8adf8	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+a4a780ab-98ec-3dd5-a376-908a473b76b9	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+bdeb6e55-4611-3e32-983e-adbcef975c98	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+8d2e395a-34ff-38e5-bc51-0137ba1d1967	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+8a953f56-5bb5-3f66-82e0-5f671710222c	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+651c67d4-6fdf-3704-a7f9-b177e9d00015	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+3a42fb23-7cd3-3981-8cca-0641a74dfa7f	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+4a2c995b-270a-3e35-9a96-417f77cb0c25	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+9644b21b-5bec-3a05-aeb8-15afbd9e811e	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+7a5b5759-1ae0-39e6-aaf8-28b288e0b5cc	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+113caf9d-b82d-3ae3-94bc-7dc9b2b62d10	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+dc952234-ff3c-3089-836f-f4e447905613	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+076e1b2a-6ada-3a4b-9ed0-dc87585758fb	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+49124cd6-bc87-32ae-8dad-18e1f5905956	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+5d434cd0-a043-3474-92d0-3ae0a5394768	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+d470faa4-ccf5-3cac-82f5-7a8468145ffa	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+be548ebe-5e21-3a41-ad34-4a8c81fe1ab6	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+a08a4697-d24a-308b-adca-9cd1c28363d4	corn grain; at harvest; at farm; wet basis	8cf89fcb-4b36-3dd7-b1a7-47df7de207ba	corn grain; at harvest; at farm; wet basis	kg	
+b7d77465-e6c1-367c-a8f6-8e4e1b242272	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+c6154126-b352-3fbc-b3c1-1fcf1d9e950d	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+5316455b-5c7d-3d4b-80a1-cddb59a67bea	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+21d3e942-a243-3d78-934e-15a08c6d6c94	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+0dbe0bea-7c97-354e-b7ed-37a97db8f79d	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+cb421abf-95c0-3d85-aba8-136963b7240a	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+a23272de-6c2e-30da-9d11-43425e2dec7c	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+734e7fef-fded-3005-9be7-975544440514	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+c21343f2-3841-34f2-b4aa-675a57b189b5	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+677cf356-e1ff-34c2-ab9a-1882842c4b35	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+406e1aaf-cc14-3f7f-99bf-e6bad2ab7594	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+b852d7ec-071a-3084-82ac-c529db0610ce	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+f07fc720-e78e-3428-88cf-128e63458d5e	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+e594c5f8-4f6a-3b1a-a1d3-fd79f1794a8a	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+6ca0ff2a-56e3-31ba-9bf0-0be4490279bd	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+b704af20-2bec-3ff3-8555-941331be9f2d	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+6ab5c6cf-2cba-339a-864d-abd6b4cfd14c	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+802b4bf3-d560-3158-be6a-7c981a60c502	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+6e7fd604-10f5-36a8-b2e5-1ddb749f51bd	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+665fa1ee-030b-3628-99cf-ec301ae0037b	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+0caed4fd-582d-36c4-a5a3-35cf0a2fb6cf	soybeans; at harvest; at farm; wet basis	c4ec2725-2416-3d11-8478-38d8967bd0be	soybeans residue; at harvest; at farm; wet basis	kg	
+b7d77465-e6c1-367c-a8f6-8e4e1b242272	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+c6154126-b352-3fbc-b3c1-1fcf1d9e950d	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+5316455b-5c7d-3d4b-80a1-cddb59a67bea	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+21d3e942-a243-3d78-934e-15a08c6d6c94	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+0dbe0bea-7c97-354e-b7ed-37a97db8f79d	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+cb421abf-95c0-3d85-aba8-136963b7240a	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+a23272de-6c2e-30da-9d11-43425e2dec7c	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+734e7fef-fded-3005-9be7-975544440514	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+c21343f2-3841-34f2-b4aa-675a57b189b5	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+677cf356-e1ff-34c2-ab9a-1882842c4b35	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+406e1aaf-cc14-3f7f-99bf-e6bad2ab7594	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+b852d7ec-071a-3084-82ac-c529db0610ce	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+f07fc720-e78e-3428-88cf-128e63458d5e	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+e594c5f8-4f6a-3b1a-a1d3-fd79f1794a8a	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+6ca0ff2a-56e3-31ba-9bf0-0be4490279bd	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+b704af20-2bec-3ff3-8555-941331be9f2d	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+6ab5c6cf-2cba-339a-864d-abd6b4cfd14c	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+802b4bf3-d560-3158-be6a-7c981a60c502	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+6e7fd604-10f5-36a8-b2e5-1ddb749f51bd	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+665fa1ee-030b-3628-99cf-ec301ae0037b	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+0caed4fd-582d-36c4-a5a3-35cf0a2fb6cf	soybeans; at harvest; at farm; wet basis	3e36daf8-0258-35a8-b0e0-2a168442fc54	soybeans; at harvest; at farm; wet basis	kg	
+9aba69ab-cf03-3eec-a096-97c08fda923b	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+6ef50386-ab20-33bf-9f34-f636a2cda689	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+9f666cc6-754f-38da-b3f7-33546b645a38	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+9c8506df-f50d-31f7-9e50-cb102fb1473f	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+8b433f43-b28b-37a8-924a-9f10f2bb6ecd	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+26777f1e-6c00-35f2-958b-5d0e97dde273	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+4b62c920-5a2a-3823-b0db-b8a5804f96cb	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+03c1c840-45c4-3acb-8f93-9abf84cca4d0	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+048871d1-ff1e-3670-a999-cc9103c51d44	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+1c4b5975-657e-39b9-8715-8099baf48795	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+6783ceaf-87a9-3bba-8f3e-57a5e15daef3	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+92139743-8503-32e1-bd86-5fe8c690df31	cotton lint; at harvest; at farm; wet basis	85d847bc-adb3-3d6c-b0e2-a183bb412af5	cotton residue; at harvest; at farm; wet basis	kg	
+9aba69ab-cf03-3eec-a096-97c08fda923b	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+6ef50386-ab20-33bf-9f34-f636a2cda689	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+9f666cc6-754f-38da-b3f7-33546b645a38	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+9c8506df-f50d-31f7-9e50-cb102fb1473f	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+8b433f43-b28b-37a8-924a-9f10f2bb6ecd	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+26777f1e-6c00-35f2-958b-5d0e97dde273	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+4b62c920-5a2a-3823-b0db-b8a5804f96cb	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+03c1c840-45c4-3acb-8f93-9abf84cca4d0	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+048871d1-ff1e-3670-a999-cc9103c51d44	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+1c4b5975-657e-39b9-8715-8099baf48795	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+6783ceaf-87a9-3bba-8f3e-57a5e15daef3	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+92139743-8503-32e1-bd86-5fe8c690df31	cotton lint; at harvest; at farm; wet basis	62961b7c-2160-337f-9d91-d419c108921c	cottonseed; at harvest; at farm; wet basis	kg	
+9aba69ab-cf03-3eec-a096-97c08fda923b	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+6ef50386-ab20-33bf-9f34-f636a2cda689	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+9f666cc6-754f-38da-b3f7-33546b645a38	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+9c8506df-f50d-31f7-9e50-cb102fb1473f	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+8b433f43-b28b-37a8-924a-9f10f2bb6ecd	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+26777f1e-6c00-35f2-958b-5d0e97dde273	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+4b62c920-5a2a-3823-b0db-b8a5804f96cb	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+03c1c840-45c4-3acb-8f93-9abf84cca4d0	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+048871d1-ff1e-3670-a999-cc9103c51d44	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+1c4b5975-657e-39b9-8715-8099baf48795	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+6783ceaf-87a9-3bba-8f3e-57a5e15daef3	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+92139743-8503-32e1-bd86-5fe8c690df31	cotton lint; at harvest; at farm; wet basis	18f7184a-5bab-3f9f-8e11-b121d3baecb3	cotton lint; at harvest; at farm; wet basis	kg	
+74ed46c9-691f-36d8-8099-e773a575c3be	rice; at harvest; at farm; wet basis	9f2e78a6-f992-323a-9f0f-8afd673956eb	rice residue; at harvest; at farm; wet basis	kg	
+9bf27f00-f4e5-35d5-a154-8acc0cfea2d1	rice; at harvest; at farm; wet basis	9f2e78a6-f992-323a-9f0f-8afd673956eb	rice residue; at harvest; at farm; wet basis	kg	
+7660bbd0-f874-31b2-9033-2d7d171be871	rice; at harvest; at farm; wet basis	9f2e78a6-f992-323a-9f0f-8afd673956eb	rice residue; at harvest; at farm; wet basis	kg	
+7357b66c-2c84-319f-bbcf-356ee405331e	rice; at harvest; at farm; wet basis	9f2e78a6-f992-323a-9f0f-8afd673956eb	rice residue; at harvest; at farm; wet basis	kg	
+9cfffed5-b985-34fa-83ca-5e4e2016a2a8	rice; at harvest; at farm; wet basis	9f2e78a6-f992-323a-9f0f-8afd673956eb	rice residue; at harvest; at farm; wet basis	kg	
+b9c69d3d-2040-3383-86f6-5273c899d337	rice; at harvest; at farm; wet basis	9f2e78a6-f992-323a-9f0f-8afd673956eb	rice residue; at harvest; at farm; wet basis	kg	
+74ed46c9-691f-36d8-8099-e773a575c3be	rice; at harvest; at farm; wet basis	308e1cb8-1352-3789-8eec-bd51d4d1e442	rice; at harvest; at farm; wet basis	kg	
+9bf27f00-f4e5-35d5-a154-8acc0cfea2d1	rice; at harvest; at farm; wet basis	308e1cb8-1352-3789-8eec-bd51d4d1e442	rice; at harvest; at farm; wet basis	kg	
+7660bbd0-f874-31b2-9033-2d7d171be871	rice; at harvest; at farm; wet basis	308e1cb8-1352-3789-8eec-bd51d4d1e442	rice; at harvest; at farm; wet basis	kg	
+7357b66c-2c84-319f-bbcf-356ee405331e	rice; at harvest; at farm; wet basis	308e1cb8-1352-3789-8eec-bd51d4d1e442	rice; at harvest; at farm; wet basis	kg	
+9cfffed5-b985-34fa-83ca-5e4e2016a2a8	rice; at harvest; at farm; wet basis	308e1cb8-1352-3789-8eec-bd51d4d1e442	rice; at harvest; at farm; wet basis	kg	
+b9c69d3d-2040-3383-86f6-5273c899d337	rice; at harvest; at farm; wet basis	308e1cb8-1352-3789-8eec-bd51d4d1e442	rice; at harvest; at farm; wet basis	kg	
+1b97b691-7c00-4150-9e97-df2020bfd203	beef cattle finishing; CCF operation; at auction; LW	f7afe52c-8ae2-45be-9db6-18f9465ec8d8	beef cattle; CCF operation; finishers and culls at auction; LW	kg	
+2fa4907e-4632-4f6c-a371-6c974e075614	poultry meat production; for human consumption; at farm gate; live weight	cb3d82e9-6d3b-4fba-a913-7134a744e458	poultry meat; for human consumption; at farm gate; live weight	kg	
+9a221d22-201e-3a1a-abf1-128d4d0fb0ce	broiler production; national average production; at farm	d3e3bccb-ee44-30e2-a755-7f7138448dc0	poultry litter; from broiler barn; at farm	kg	
+e90c915f-8853-3ce9-baba-b8d939feec0d	hatching egg production; layers for broiler production; at multiplier farm	09f58cf5-f7c3-3815-810d-eea3c10acbea	poultry litter; from broiler breeder hens; at farm	kg	
+0f4451df-c658-3d01-9a91-e021cc692ef3	hatching egg production; for broiler breeder production; at primary breeder farm	af76c2be-b30b-3af8-94ec-410e9d320dc7	poultry litter; from primary breeding; at primary breeder farm	kg	
+be180d4a-fb5a-3249-bebc-ae1c8a333276	poultry mortality management; average mix; disposal at farm	acc77cf4-1517-303c-9921-731d56ae8fee	poultry mortality management; average mix; disposal at farm	kg	
+c31f3f7d-f631-310a-9cc5-2b04c03ff60a	corn grain storage; dry processing; regional mix, at farm	ce3a46f2-6432-30e1-a4e4-eb230456392c	corn grain feed; dry processing; regional mix; at farm	kg	
+97779324-2f80-3950-a8e0-4b2bd32f951f	Mixed recyclables, at collection, curbside, weight basis	34e7bdd1-21a3-375c-bbfa-7275ef4df586	Mixed recyclables, at collection, curbside, weight basis	kg	
+353b477b-8319-3538-b2a4-c771e17424de	Phenol Resorcinol Formaldehyde resin, neat, 60% solids	08d86eb7-9bc9-37a5-8700-69cf45f673a8	Phenol Resorcinol Formaldehyde resin, neat, 60% solids	kg	
+cd04cced-a75c-30c6-b05f-1fe6fbefb934	Phenol formaldehyde resin,  neat, 47% solids	3c2baf23-665a-3c7a-b1df-19b89be18ec1	Phenol formaldehyde resin,  neat, 47% solids	kg	
+eb47caa1-9f81-3bf1-bf9b-3829f0c466d5	Glue laminated beam processing, at plant, US PNW	408daddc-bf2e-3d1b-89d9-243481a2c893	Co-products of glue laminated beam production, at plant, unspecified, US PNW	kg	
+eb47caa1-9f81-3bf1-bf9b-3829f0c466d5	Glue laminated beam processing, at plant, US PNW	e644eb66-0184-3044-bcaa-7341cccf92fa	Glue laminated beam processing, at plant, US PNW	kg	
+70bfc14c-0e69-36e9-918a-908cc713f7f8	Oriented strand board processsing, at plant, US SE	e5d5a1b3-7a8e-3c48-aee5-4bcc7b3dd11c	Dust and scrap, at oriented strand board production, US SE	kg	
+70bfc14c-0e69-36e9-918a-908cc713f7f8	Oriented strand board processsing, at plant, US SE	d4be86b3-fd03-3fc8-ad70-3780b8ad6db5	Bark mulch, at oriented strand board production, US SE	kg	
+3b8f9374-31f3-3e8b-9149-062f8f6511f0	Composite wood I-joist processing, at plant, US PNW	d775f6c4-dc65-388e-b0bd-3f090ac37d8a	Sawdust, from I-Joist processing, at plant, US PNW	kg	
+3b8f9374-31f3-3e8b-9149-062f8f6511f0	Composite wood I-joist processing, at plant, US PNW	f40be501-9f1c-3158-8f6a-082cb19b8bd2	Composite wood I-joist, at plant, US PNW	kg	
+7fecaec4-9fbf-3f51-98fe-0e6e19150620	Composite wood I-joist processing, at plant, US SE	f401fbac-09c5-3723-9dff-fddd2ea5c1f4	Sawdust from I-Joist processing, at plant, US SE	kg	
+7fecaec4-9fbf-3f51-98fe-0e6e19150620	Composite wood I-joist processing, at plant, US SE	25c175cd-2e46-3a10-81e5-20a70cf3ec4c	Composite wood I-joist, at plant, US SE	kg	
+4b4bf45b-2bfd-3e0f-bdde-bae1bd5d7c41	Pressed raw panels, hardwood, at engineered wood flooring plant, E	249e7a19-e940-32c5-9591-4cc0a06d53c6	Pressed raw panels, hardwood, at engineered wood flooring plant, E	kg	
+89268f85-c58a-3224-8a61-28e8848a2797	Pressed raw panels, purchased, hardwood, at eng wood flooring plant, E	e4a5b60f-dee4-3648-b2fd-7e7131fa21b2	Pressed raw panels, purchased, hardwood, at eng wood flooring plant, E	kg	
+3b1cd62b-7788-3096-8b6e-9cb6cdc359f2	Engineered flooring, hardwood, unfinished, E	2ff86a3f-6fb4-3437-939c-3c42d6d037d6	Sawdust, hardwood, dry, at engineered wood flooring plant, E	kg	
+3b1cd62b-7788-3096-8b6e-9cb6cdc359f2	Engineered flooring, hardwood, unfinished, E	90317723-deb2-3db0-8b02-233704e100b7	Shavings, hardwood, dry, at engineered wood flooring plant, E	kg	
+ad753af6-8f5f-39a4-bad0-0d6a53304263	Glue laminated beam processing, at plant, US SE	13b8e1fb-a6bd-3bec-98b7-2758656c16a5	Co-products of glue laminated beam production, at plant, unspecified, US SE	kg	
+ad753af6-8f5f-39a4-bad0-0d6a53304263	Glue laminated beam processing, at plant, US SE	c608d7ec-afcf-3e01-a7d6-c1606ae9397d	Glue laminated beam processing, at plant, US SE	kg	
+7e57a70b-5821-35c8-a8be-496bc9872632	Sawn Lumber, softwood, planed, kiln dried, at planer mill, INW	4c444fa0-abe3-30df-87be-00c0dc62bb56	Wood chips, softwood, kiln dried, at planer mill, INW	kg	
+7e57a70b-5821-35c8-a8be-496bc9872632	Sawn Lumber, softwood, planed, kiln dried, at planer mill, INW	33164af6-3bdb-3d72-b808-9460ae54186f	Shavings, softwood, kiln dried, at planer mill, INW	kg	
+d1207240-9af9-316b-b1a9-b54e9b4b05cf	Rough green lumber processing, at sawmill, US PNW	33e549d4-c027-3466-b02c-ab7e95936472	Bark, at rough green lumber sawmill, softwood, US PNW	kg	
+5a425809-27f8-33f5-acc7-ffd017af43b6	Debarking, at plywood plant, US SE	5eb82d4e-52ed-3882-87c4-cfaeb2f54f49	Bark, at plywood plant, US SE	kg	
+1cd0e864-1ec2-377a-a0dd-7b9872eba81a	Sawn lumber, softwood, planed, kiln dried, at planer, NE-NC	e943a736-09ac-3c94-86a4-7c48c40882fe	Shavings, softwood, kiln dried, NE-NC	kg	
+eb664f4e-2615-3b3a-aac4-b09b91fe8f1f	Sawn lumber, hardwood, planed, kiln dried, at planer mill, NE-NC	cc70243f-dbba-39a8-8f26-6259a319d2a9	Shavings, hardwood, kiln-dried, at planer mill, NE-NC	kg	
+eb664f4e-2615-3b3a-aac4-b09b91fe8f1f	Sawn lumber, hardwood, planed, kiln dried, at planer mill, NE-NC	c55aaf7f-cb1e-33df-a1ee-ae05d3e485d6	Sawdust, hardwood, kiln-dried, at planer mill, NE-NC	kg	
+eb664f4e-2615-3b3a-aac4-b09b91fe8f1f	Sawn lumber, hardwood, planed, kiln dried, at planer mill, NE-NC	1eb7c8d5-434d-3403-b1dc-da06c8c0a608	Mixings, hardwood, kiln-dried, at planer mill, NE-NC	kg	
+2468b04f-b9b1-364d-bfbf-8ba12178096e	Sawn lumber, hardwood, rough, green, at sawmill, NE-NC	6c82dea9-169e-30a8-bd63-640fab56f36e	Bark, hardwood, green, at sawmill, NE-NC	kg	
+baaac50f-23d5-3bd1-8970-1cae058f4234	Roundwood, hardwood, green, at logyard, NE-NC	1681b02e-e02b-3f56-b6d4-64872d512411	Bark, hardwood, green, at logyard, NE-NC	kg	
+2468b04f-b9b1-364d-bfbf-8ba12178096e	Sawn lumber, hardwood, rough, green, at sawmill, NE-NC	58f94ad0-b7ac-3c95-80a6-d7f8faf5bb14	Hogged fuel, hardwood, green, at sawmill, NE-NC	kg	
+2468b04f-b9b1-364d-bfbf-8ba12178096e	Sawn lumber, hardwood, rough, green, at sawmill, NE-NC	6f256ff4-5121-352a-9b85-7c3a79431d7c	Sawn lumber, hardwood, rough, green, at sawmill, NE-NC	kg	
+35bd31d8-b0b1-3da8-a553-df33ccd9e452	Sawn lumber, hardwood, planed, kiln dried, at planer mill, SE	2d72c700-2547-3c4d-b509-e3b3dfb1942a	Shavings, hardwood, kiln-dried, at planer mill, SE	kg	
+35bd31d8-b0b1-3da8-a553-df33ccd9e452	Sawn lumber, hardwood, planed, kiln dried, at planer mill, SE	fe26fae6-a458-3a9d-8aac-bdc2748d145d	Sawdust, hardwood, kiln-dried, at planer mill, SE	kg	
+ce587724-1be4-3da0-b7a2-988592c28b9a	Sawn lumber, hardwood, rough, green, at sawmill, SE	9d8c4200-5dc8-3515-9c23-31c577722fce	Hogged fuel, hardwood, green, at sawmill, SE	kg	
+ce587724-1be4-3da0-b7a2-988592c28b9a	Sawn lumber, hardwood, rough, green, at sawmill, SE	0110f37f-ed9a-3108-bb4a-291f0042e6cd	Sawdust, hardwood, green, at sawmill, SE	kg	
+ce587724-1be4-3da0-b7a2-988592c28b9a	Sawn lumber, hardwood, rough, green, at sawmill, SE	76dd64c9-130f-3803-bdf2-ae1445a7372d	Bark, hardwood, green, at sawmill, SE	kg	
+ce587724-1be4-3da0-b7a2-988592c28b9a	Sawn lumber, hardwood, rough, green, at sawmill, SE	6170b901-641c-3088-a8c0-799f9e5f766f	Sawn lumber, hardwood, rough, green, at sawmill, SE	kg	
+bbb16d92-dd0c-33c5-92c7-feca45646d83	Railroad tie, hardwood, rough, green, at sawmill, SE	a1c12aba-9009-3cc4-90a0-6dd555e434dd	Railroad tie, hardwood, rough, green, at sawmill, SE	kg	
+3433e67e-014b-3b45-b2c9-5e91c2a1cc51	Debarking, at plywood plant, US PNW	70d86b67-6f57-34d8-919d-a0012087913c	Bark, at plywood plant, US PNW	kg	
+ff599dd1-991f-3153-99c0-04e79a093703	Sawn lumber, softwood, rough, green, at sawmill, INW	365db03d-0a7c-3cac-8d1e-7450aca16ec0	Wood fiber, softwood, green, at sawmill, INW	kg	
+ff599dd1-991f-3153-99c0-04e79a093703	Sawn lumber, softwood, rough, green, at sawmill, INW	c96075a2-7e75-364c-909d-528c1fa24845	Sawdust, softwood, green, at sawmill, INW	kg	
+ff599dd1-991f-3153-99c0-04e79a093703	Sawn lumber, softwood, rough, green, at sawmill, INW	90a2da23-9185-34e1-a872-ebf1d672d726	Bark, softwood, green, at sawmill, INW	kg	
+ff599dd1-991f-3153-99c0-04e79a093703	Sawn lumber, softwood, rough, green, at sawmill, INW	54928c44-3f41-3374-aa76-42453752acaa	Wood chips, softwood, green, at sawmill, INW	kg	
+2a9a4868-cf47-3ac8-87a7-d6291290a664	Roundwood, softwood, green, at logyard, INW	b1e0f215-31c8-36c2-9f8a-9e45b90d0c22	Bark, softwood, green, at logyard, INW	kg	
+2a9a4868-cf47-3ac8-87a7-d6291290a664	Roundwood, softwood, green, at logyard, INW	6b389668-3d89-3840-a8be-24c9f1aa1c87	Roundwood, softwood, green, at logyard, INW	kg	
+ff599dd1-991f-3153-99c0-04e79a093703	Sawn lumber, softwood, rough, green, at sawmill, INW	08d65348-ea0a-3677-ac84-1ec8aed9e497	Sawn lumber, softwood, rough, green, at sawmill, INW	kg	
+bbfe537d-76d5-3553-8f87-72fe52b34f7d	Sawn lumber, softwood, rough, green, at sawmill, NE-NC	9f20c997-a3d2-3f5d-ac02-bc2d23cc8994	Sawdust, softwood, green, at sawmill, NE-NC	kg	
+bbfe537d-76d5-3553-8f87-72fe52b34f7d	Sawn lumber, softwood, rough, green, at sawmill, NE-NC	dc26efac-fc19-3ee8-ae18-f42efc7f9575	Bark, softwood, green, at sawmill, NE-NC	kg	
+05f5c104-9b3a-3df1-82eb-b6756e226b40	Roundwood, softwood, green, at logyard, NE-NC	84313b91-c9d5-3254-9f81-a610ec9d3c1d	Bark, softwood, green, at logyard, NE-NC	kg	
+bbfe537d-76d5-3553-8f87-72fe52b34f7d	Sawn lumber, softwood, rough, green, at sawmill, NE-NC	c72b1c6a-4d60-3bba-ba59-10e4758a7003	Sawn lumber, softwood, rough, green, at sawmill, NE-NC	kg	
+245ddcea-0239-37ac-b4da-8eeebde7932e	Rough green lumber processing, at sawmill, US SE	d53ef486-4f8a-393b-9347-c70a58133598	Rough green lumber, at sawmill, US SE	kg	
+f3b8fc97-f519-3da0-80de-72a7d5551fda	Wood Combusted, at boiler, at hardboard mill	80bd7cd8-a4ec-3dd8-888f-1f0f25d355e9	Wood ash, generated on-site, at hardboard mill	kg	
+106bcee8-0d5f-30c6-ac98-fa6dab41d4d1	Wood Combusted, at boiler, at cellulosic fiberboard mill	77cbfa28-85c8-3da1-9f3f-1aa00612d97b	Wood ash, at boiler, at cellulosic fiberboard mill	kg	
+d4647fd6-57bf-3557-b3fe-be8dbc0eb6da	Mixed recyclables, at collection, commercial	e47e7aa2-c798-3c84-bcd3-ce683f06dabe	Mixed recyclables, at collection, commercial	kg	
+cced9535-72f6-3b3a-b3c0-ce21b98eea2b	Cellulosic fiberboard, uncoated, at plant	e7f196a6-da64-3bc6-90c3-853ff5f74b86	Molasses, at cellulosic fiberboard plant	kg	
+cced9535-72f6-3b3a-b3c0-ce21b98eea2b	Cellulosic fiberboard, uncoated, at plant	b2964eb3-b95b-310f-9157-4cfe387dec9e	Pins and fines, at cellulosic fiberboard plant	kg	
+106bcee8-0d5f-30c6-ac98-fa6dab41d4d1	Wood Combusted, at boiler, at cellulosic fiberboard mill	b749402e-e420-3c23-96eb-10e39d0569e3	Wood Combusted, at boiler, at cellulosic fiberboard mill	kg	
+cced9535-72f6-3b3a-b3c0-ce21b98eea2b	Cellulosic fiberboard, uncoated, at plant	b16b7cc3-bf0c-33fe-b598-15ccebbe3981	Culled boards, wood fuel, at cellulosic fiberboard plant	kg	
+cced9535-72f6-3b3a-b3c0-ce21b98eea2b	Cellulosic fiberboard, uncoated, at plant	bb81d0cb-06dc-3614-b69c-3d3780c2c342	Other, not specified, at cellulosic fiberboard plant	kg	
+91663389-8cd1-3272-9f06-cdc87c8ce7d9	Potato, whole plant, at field	54cd924c-48cb-347e-a2d1-dbbf32c93d36	Potato, at field	kg	
+cced9535-72f6-3b3a-b3c0-ce21b98eea2b	Cellulosic fiberboard, uncoated, at plant	bdc5f6f5-2bcc-39b2-8273-211b96e8258d	Cellulosic fiberboard, uncoated, at plant	kg	
+ca1d1dfa-fd3c-35f1-bea7-a037251deb04	Hardboard, at hardboard plant	be9e5186-3414-3d3b-9dfb-183db5b01b7a	Bag house dust, re-pulped, at hardboard plant, North America	kg	
+ca1d1dfa-fd3c-35f1-bea7-a037251deb04	Hardboard, at hardboard plant	186f734c-6126-3e48-9c71-8a256225e000	Bag house dust, wood fuel, at hardboard plant, North America	kg	
+f3b8fc97-f519-3da0-80de-72a7d5551fda	Wood Combusted, at boiler, at hardboard mill	a7c46735-ccde-3b61-8a9a-23810a8683b9	Wood Combusted, at boiler, at hardboard mill	kg	
+ca1d1dfa-fd3c-35f1-bea7-a037251deb04	Hardboard, at hardboard plant	3390eff1-cd0f-3554-8226-c005bc295f84	Sander dust, wood fuel, at hardboard plant, North America	kg	
+ca1d1dfa-fd3c-35f1-bea7-a037251deb04	Hardboard, at hardboard plant	3dc18462-b043-3501-bcd4-d7c5063d238b	Dry sawdust, wood fuel, at hardboard plant, North America	kg	
+d42c11eb-98d2-3cf5-add5-d7c65431bfa3	Potassium sulphate_alum, as K2O, Hardboard	f775ca41-3cd1-31c7-8419-96823b79360a	Potassium sulphate_alum, as K2O, Hardboard	kg	
+ca1d1dfa-fd3c-35f1-bea7-a037251deb04	Hardboard, at hardboard plant	f83f9e69-b2b6-3ab7-992c-2d8f5a2962ea	Other, not specified, hardboard, at hardboard plant, North America	kg	
+ca1d1dfa-fd3c-35f1-bea7-a037251deb04	Hardboard, at hardboard plant	a7158692-bd20-375c-92b0-a3dfd5cd7e53	Culled boards, wood fuel, at hardboard plant, North America	kg	
+ca1d1dfa-fd3c-35f1-bea7-a037251deb04	Hardboard, at hardboard plant	9d6de29f-6d1d-3ca6-bbe5-26d8d2e0c6af	Hardboard, at hardboard plant	kg	
+0b5a14e7-bf8f-380e-87de-af92dd61e21b	Bark, hardwood, average, at forest road,  NE-NC	b397fd68-58b2-3d2c-98ff-982509e10105	Bark, hardwood, average, at forest road, NE-NC	kg	
+4a42fda8-640a-3152-9741-f64c558be34d	Roundwood, hardwood, green, at logyard, SE	a02815b0-8760-3b74-b2b6-ea070b183bbe	Bark, hardwood, green, at logyard, SE	kg	
+6baa9816-6151-3af1-b230-d28bebfb5227	Roundwood, hardwood, green, at mill, SE	cbb91e4a-0a0f-3b79-9f6f-d54d716e05ea	Bark, hardwood, green, at mill, SE	kg	
+e448884b-39a7-3009-9152-3d853592f6cb	Laminated veneer lumber processing, at plant, US PNW	14ad86c2-41fc-3849-80d6-e7191d5ade2f	Co-products of laminated veneer lumber production, unspecified, US PNW	kg	
+e448884b-39a7-3009-9152-3d853592f6cb	Laminated veneer lumber processing, at plant, US PNW	d85e4119-ebd4-39ae-a120-802b53914bcb	Laminated veneer lumber, at plant, US PNW	kg	
+424444d2-67d5-3052-a42e-dde74b5dad37	Trim and saw process, at plywood plant, US PNW	05547ccc-4429-3217-a3cc-22e944035288	Hogfuel, from trim and saw at plywood plant, US PNW	kg	
+424444d2-67d5-3052-a42e-dde74b5dad37	Trim and saw process, at plywood plant, US PNW	d829daf3-de93-3662-a299-9f57864afa12	Sawdust, from trim and saw at plywood plant, US PNW	kg	
+4b57d09d-8c3d-3fb6-b0b8-10a20ce8f92f	Pressed raw plywood, from lay-up, at plywood plant, US PNW	6fc4d235-3e37-32ef-9326-d46ef4000cdf	Pressed raw plywood, from lay-up, at plywood plant, US PNW	kg	
+5665942b-95cc-3aa8-911f-e794905ef044	Dry veneer processing, at plywood  plant, US PNW	7df05a10-3c17-3815-b507-34d6a5ce418b	Dry veneer, sold, at plywood plant, US PNW	kg	
+5665942b-95cc-3aa8-911f-e794905ef044	Dry veneer processing, at plywood  plant, US PNW	492eaafe-94d8-3132-8e63-94685ce43ebc	Dry veneer, at plywood plant, US PNW	kg	
+cdc143eb-fff8-3618-85cd-bce83d96390f	Veneer, hardwood, green, at veneer mill, E	32fd72b1-79cd-3dd0-818e-5f46a8b74c57	Wood chips, hardwood, green, at veneer mill, E	kg	
+4e01da4a-71e5-3d9d-93c3-0f0a230f2735	Medium density fiberboard (MDF), at MDF mill	5eead0e3-01ba-3a72-8e10-f9c865857a61	Wood waste, at MDF mill	kg	
+2468b04f-b9b1-364d-bfbf-8ba12178096e	Sawn lumber, hardwood, rough, green, at sawmill, NE-NC	09158da1-b29b-33c9-9b80-baa6618ee541	Sawdust, hardwood, green, at sawmill, NE-NC	kg	
+4e01da4a-71e5-3d9d-93c3-0f0a230f2735	Medium density fiberboard (MDF), at MDF mill	b1421df2-c303-3605-a1e2-07b564d6b0ca	Bark, at MDF mill	kg	
+ab2ce993-cdfe-3f20-9021-3b8ccdc4b85e	Green veneer processing, at plywood plant, US PNW	add2aef4-5263-37e6-ba11-6c85b1f74fe3	Peeler core, from green veneer production at plywood plant, US PNW	kg	
+ab2ce993-cdfe-3f20-9021-3b8ccdc4b85e	Green veneer processing, at plywood plant, US PNW	8ab1e57f-2bcf-320f-8eda-5b6698dfeb4f	Pulp chips, from green veneer production at plywood plant, US PNW	kg	
+ab2ce993-cdfe-3f20-9021-3b8ccdc4b85e	Green veneer processing, at plywood plant, US PNW	bda477c7-0667-39e1-ba68-300bf793722b	Green veneer, sold, at plywood plant, US PNW	kg	
+ab2ce993-cdfe-3f20-9021-3b8ccdc4b85e	Green veneer processing, at plywood plant, US PNW	237969e2-3249-39cb-860c-dd93873b6c96	Green veneer, at plywood plant, US PNW	kg	
+277ef057-4ad9-3780-a1c0-6d78321131f6	Veneer, hardwood, dry, at veneer mill, E	6a30e246-0363-3085-b466-b3a8c7c49ae1	Clippings, hardwood, dry, at veneer mill, E	kg	
+cdc143eb-fff8-3618-85cd-bce83d96390f	Veneer, hardwood, green, at veneer mill, E	a339abd8-8eaf-3163-862c-85d7eeba2868	Veneer, hardwood, green, at veneer mill, E	kg	
+277ef057-4ad9-3780-a1c0-6d78321131f6	Veneer, hardwood, dry, at veneer mill, E	a8c7720c-363e-37c8-a986-6441c1c12771	Veneer, hardwood, dry, at veneer mill, E	kg	
+640186a9-d4e0-39cd-9c23-95c215738edd	Roundwood, hardwood, green, at mill, E	48b0f233-7280-316f-b0b5-b2527e409446	Bark, hardwood, green, at mill, E	kg	
+5e318a04-0d93-316a-9ec6-25e4ed8ea521	Dry veneer, at plywood plant, US SE	4ba5bb1f-488f-377c-8898-213890c229ec	Dry veneer, at plywood plant, US SE	kg	
+65a8c07e-4e93-35e9-a159-b26192873417	Laminated veneer lumber processing, at plant, US SE	7c95c962-8b14-3328-b6b5-1cfbc2619bb0	Coproducts of laminated veneer lumber production, unspecified, US SE	kg	
+65a8c07e-4e93-35e9-a159-b26192873417	Laminated veneer lumber processing, at plant, US SE	2548b131-3c39-30d6-b3c1-6af382e7786f	Laminated veneer lumber, at plant, US SE	kg	
+57686507-ed6b-3e06-906e-c28a7c6fb8bc	Particleboard, average, softwood, particleboard mill	539abee9-d649-3c9b-bf09-9328c2b212c6	Wood waste, softwood, particleboard mill	kg	
+245ddcea-0239-37ac-b4da-8eeebde7932e	Rough green lumber processing, at sawmill, US SE	517c973b-d234-3676-a78a-9bc9de2c178c	Sawdust, at sawmill, US SE	kg	
+424444d2-67d5-3052-a42e-dde74b5dad37	Trim and saw process, at plywood plant, US PNW	9a0e33fd-0bb4-3e6b-9483-c4c57ea0d296	Panel trim, from trim and saw at plywood plant, US PNW	kg	
+4b835425-fd68-337c-8e35-a4ddfb5b628a	Urea formaldehyde resin, neat, 65% solids	3c6ecea9-ce37-3aa8-829b-f2f163d33d84	Urea formaldehyde resin, neat, 65% solids	kg	
+d1207240-9af9-316b-b1a9-b54e9b4b05cf	Rough green lumber processing, at sawmill, US PNW	5d464bd1-85da-3786-b794-7fee947a227e	Pulp chips, at rough green lumber production, US PNW	kg	
+d1207240-9af9-316b-b1a9-b54e9b4b05cf	Rough green lumber processing, at sawmill, US PNW	36e31371-699a-3223-8587-004c5244e073	Sawdust, at rough green lumber production, US PNW	kg	
+70bfc14c-0e69-36e9-918a-908cc713f7f8	Oriented strand board processsing, at plant, US SE	a44c2f1b-c466-3e65-a304-c659af42233f	Fines, at oriented strand board production, US SE	kg	
+6f680c13-c0b1-39f1-9496-93c1d6e045d3	Green veneer processing, at plywood plant, US SE	51578b95-0822-3d0a-8659-22cad76e2c11	Peeler core, from green veneer production at plywood plant, US SE	kg	
+6f680c13-c0b1-39f1-9496-93c1d6e045d3	Green veneer processing, at plywood plant, US SE	c65f92d9-a49e-381c-8884-e7bee2c97964	Pulp chips, from green veneer production at plywood plant, US SE	kg	
+6f680c13-c0b1-39f1-9496-93c1d6e045d3	Green veneer processing, at plywood plant, US SE	4e090d10-0f0d-3329-9da7-4cc7318d4a46	Green veneer, sold, at plywood plant, US SE	kg	
+6f680c13-c0b1-39f1-9496-93c1d6e045d3	Green veneer processing, at plywood plant, US SE	6390e841-8d76-3bf4-ac1f-5dd5def6ff08	Green veneer, at plywood plant, US SE	kg	
+8e77036f-5c3e-37a9-b87d-d96ab62b50c8	Trim and saw process, at plywood plant, US SE	3b88d49e-521c-31ba-a99f-65f62c5faecf	Panel trim, from trim and saw, at plywood plant, US SE	kg	
+8e77036f-5c3e-37a9-b87d-d96ab62b50c8	Trim and saw process, at plywood plant, US SE	cecdc861-0bd7-370b-8740-32a6931dd5ea	Hogfuel, from trim&saw, plywood plant, US SE	kg	
+8758df86-1307-3ea4-a9a8-8a60d99c9780	Pressed raw plywood, from lay-up, at plywood plant, US SE	944cb519-38a9-3e77-ae37-6c6fcd199b2a	Pressed raw plywood, from lay-up, at plywood plant, US SE	kg	
+8e77036f-5c3e-37a9-b87d-d96ab62b50c8	Trim and saw process, at plywood plant, US SE	5228fdd4-7890-35c1-b67a-0d203156eb02	Sawdust, from trim and saw, plywood plant, US SE	kg	
+3433e67e-014b-3b45-b2c9-5e91c2a1cc51	Debarking, at plywood plant, US PNW	df5d664a-99f2-34db-b7f1-9731168b0e6e	Debarked wood, at plywood plant, US PNW	kg	
+455aaab0-af29-3bcf-8316-5aed18d9b7c2	Conditioned log, at plywood plant, US PNW	361b85cc-3b28-3055-a081-62921e2ab619	Conditioned log, at plywood plant, US PNW	kg	
+5a425809-27f8-33f5-acc7-ffd017af43b6	Debarking, at plywood plant, US SE	7046bd9c-c615-3e63-9369-deb266981a9d	Debarked wood, at plywood plant, US SE	kg	
+8380a79d-cebe-3498-852f-6da478e8b52a	Conditioned log, at plywood plant, US SE	1c5b54b1-8ae9-3ef2-b5ee-70da0fc070ac	Conditioned log, at plywood plant, US SE	kg	
+6693689e-5b52-3a89-8d2b-370235bafbed	Planed dried lumber processing, at planer mill, US SE	50df78d7-7d52-399c-96db-c5a06b2a707e	Planer shavings, at planer mill, US SE	kg	
+6693689e-5b52-3a89-8d2b-370235bafbed	Planed dried lumber processing, at planer mill, US SE	4ad99af9-4302-3047-b08f-0bc8fbb5ed6c	Sawdust, at planer mill, US SE	kg	
+c18e98c1-88a2-3a75-bdcd-f2a788bd74d8	Planed green lumber processing, at planer mill, US PNW	38968ec9-5a08-3782-ae4a-aaf2087299ea	Pulp chips, from green lumber, at planer mill, US PNW	kg	
+d1207240-9af9-316b-b1a9-b54e9b4b05cf	Rough green lumber processing, at sawmill, US PNW	f2ee1f11-92cc-341c-9cb6-b54252746d05	Rough green lumber, softwood, at sawmill, US PNW	kg	
+c18e98c1-88a2-3a75-bdcd-f2a788bd74d8	Planed green lumber processing, at planer mill, US PNW	11528a34-4ebe-3227-babd-c6ada336fff2	Sawdust, from green lumber, at planer mill, US PNW	kg	
+c18e98c1-88a2-3a75-bdcd-f2a788bd74d8	Planed green lumber processing, at planer mill, US PNW	0c2d3385-44c3-3615-b828-d1e7db79a167	Planer shavings, from green lumber, at planer mill, US PNW	kg	
+c18e98c1-88a2-3a75-bdcd-f2a788bd74d8	Planed green lumber processing, at planer mill, US PNW	0c17fb1b-6448-35da-9844-ac5e927fa0e9	Surfaced green lumber, at planer mill, US PNW	kg	
+6951704b-be4b-313d-9965-8561760f733f	Dry rough lumber, at kiln, US PNW	78fd643e-4bcc-3372-8703-ade5d6b1fc04	Dry rough lumber, at kiln, US PNW	kg	
+5291fc77-bbb9-3917-83e7-6b456506e229	Planed dried lumber processing, at planer mill, US PNW	0b01c66e-67e3-38b3-9664-d2e16e673b55	Sawdust, from dried lumber, at planer mill, US PNW	kg	
+5291fc77-bbb9-3917-83e7-6b456506e229	Planed dried lumber processing, at planer mill, US PNW	4a4066bc-1e3a-3df5-b41f-7d1fd01ed01e	Pulp chips, from dried lumber, at planer mill, US PNW	kg	
+5291fc77-bbb9-3917-83e7-6b456506e229	Planed dried lumber processing, at planer mill, US PNW	ce4f8064-98b3-3714-a294-e437bc57767b	Planer shavings, from dried lumber, at planer mill, US PNW	kg	
+dc72e285-719b-318b-9c9c-c838846a9cf4	Crude oil, in refinery	995ebc74-1c16-3ae7-9b0b-c5ace8786a9c	Petroleum refining coproduct, unspecified, at refinery	kg	
+dc72e285-719b-318b-9c9c-c838846a9cf4	Crude oil, in refinery	30a64e63-3583-3f83-8d8d-0b6ea003b888	Bitumen, at refinery	kg	
+0aaf1e13-5d80-37f9-b7bb-81a6b8965c71	Petroleum refining, at refinery	30a64e63-3583-3f83-8d8d-0b6ea003b888	Bitumen, at refinery	kg	
+0aaf1e13-5d80-37f9-b7bb-81a6b8965c71	Petroleum refining, at refinery	471bcc19-36f7-3ad8-b3ae-e39d2ab5fe44	Petroleum refining, at refinery	kg	
+1fe9b61c-f684-3584-a5e9-98677caee0f3	Soy biodiesel, production, at plant	9d4fa335-7916-3bf5-be4d-814cbb176908	Glycerin, at biodiesel plant	kg	
+1fe9b61c-f684-3584-a5e9-98677caee0f3	Soy biodiesel, production, at plant	8bb065f1-654b-3f5c-b9cf-2d66d92e8c19	Soy biodiesel, production, at plant	kg	
+323a15f8-5c89-3deb-aad5-78133e487bef	Ethanol, 85%, blended, at service station, 2022	e3ba395e-fd2f-3668-aee1-311195c02835	Ethanol, 85%, blended, at service station, 2022	kg	
+64c379de-b24a-36d0-9170-d61d9d9d7278	Ethanol, 85%, at blending terminal, 2022	ec45ebbc-909d-347c-b810-ad895485bcba	Ethanol, 85%, at blending terminal, 2022	kg	
+1975f735-687a-39ea-96e7-e890e5a5bb51	Ethanol, denatured, mixed feedstocks, at conversion facility, 2022	12710c09-7d00-3d32-b909-43b096657c03	Ethanol, denatured, mixed feedstocks, at conversion facility, 2022	kg	
+da8e9d9f-c0e2-3c9b-9d0a-f7e5f1667639	Ethanol, denatured, at refueling station, 2022	6a14d14a-c3dd-3605-95b1-bc2abb3f6b51	Ethanol, denatured, at refueling station, 2022	kg	
+18c37a18-0ddd-3944-b9b1-458410215233	Thermoforming, rigid polypropylene part, at plant	e60dcbad-cde4-3c69-8f30-649c401ad2e5	Polypropylene scrap, from PP thermoforming, at plant	kg	
+18c37a18-0ddd-3944-b9b1-458410215233	Thermoforming, rigid polypropylene part, at plant	28543237-bc08-329b-8edc-99c31817a5df	Corrugate packaging, from PP thermoforming, for shipping	kg	
+18c37a18-0ddd-3944-b9b1-458410215233	Thermoforming, rigid polypropylene part, at plant	894d8eff-5aa2-36a0-af0e-e0cadff322f9	Thermoforming, rigid polypropylene part, at plant	kg	
+01152bc2-5e31-3b8c-a40f-42289905c771	Vacuum infusion, rigid composites part, at plant	c5c28cd9-6757-3278-9d9f-a80621ce6f81	Composite scrap, from composites vacuum infusion, at plant	kg	
+01152bc2-5e31-3b8c-a40f-42289905c771	Vacuum infusion, rigid composites part, at plant	432025d7-a621-3e3e-8f5f-48eb0a2a0e1a	Vacuum infusion, rigid composites part, at plant	kg	
+6693689e-5b52-3a89-8d2b-370235bafbed	Planed dried lumber processing, at planer mill, US SE	42f408e1-26cd-3ed2-9bdb-d406ec7b968d	Surfaced dried lumber, at planer mill, US SE	kg	
+ddb25171-80c6-3e14-879b-4371febbc0ad	Open molding, rigid composites part, at plant	beaef37f-0158-3b88-b7fa-02b7243ced78	Plywood, from open molding, for shipping	kg	
+ddb25171-80c6-3e14-879b-4371febbc0ad	Open molding, rigid composites part, at plant	03436c3c-f4c1-3ccb-abdc-bbfc9365745b	Surfaced dried lumber, from open molding, for shipping	kg	
+ddb25171-80c6-3e14-879b-4371febbc0ad	Open molding, rigid composites part, at plant	42e4d830-97a8-36d4-8ebc-98cd55057fbd	Composite scrap, from composites open molding, at plant	kg	
+ddb25171-80c6-3e14-879b-4371febbc0ad	Open molding, rigid composites part, at plant	f5f7593f-f4cd-38d6-a454-4f50b3ae0e31	Corrugate packaging, from open molding, for shipping	kg	
+8e77036f-5c3e-37a9-b87d-d96ab62b50c8	Trim and saw process, at plywood plant, US SE	e00f3562-c739-394b-bf85-3f4f3b0c1536	Plywood, at plywood plant, US SE	kg	
+ddb25171-80c6-3e14-879b-4371febbc0ad	Open molding, rigid composites part, at plant	f6ee09a8-e738-3681-ac66-0e5ce8d9eda9	Open molding, rigid composites part, at plant	kg	
+9fe670f2-0846-377e-8b15-db170d54ac32	Injection molding, rigid LLDPE part, at plant	214111b8-2fa4-3692-a06e-8bf02a3ddac7	Corrugate packaging, from LDPE injection molding, for shipping	kg	
+9fe670f2-0846-377e-8b15-db170d54ac32	Injection molding, rigid LLDPE part, at plant	c9d00a48-24b6-3c31-95a9-bfedb4487f3e	LLDPE scrap, from LLDPE injection molding, at plant	kg	
+9fe670f2-0846-377e-8b15-db170d54ac32	Injection molding, rigid LLDPE part, at plant	dcb34c9b-2519-3942-af74-446eb6885972	Injection molding, rigid LLDPE part, at plant	kg	
+21ca86bd-890c-3ede-a79c-09e42f9b9ca2	Secondary bonding application, rigid composites part, at plant	8bad5285-6bca-380a-89e1-adf554d134f0	Secondary bonding application, rigid composites part, at plant	kg	
+89a2b59a-1ca2-34f5-acc8-a8eaaa6fa870	Injection molding, rigid polypropylene part, at plant	e01a765f-07dd-3e15-809c-292bbb5fb93e	Corrugate packaging, from PP injection molding, for shipping	kg	
+89a2b59a-1ca2-34f5-acc8-a8eaaa6fa870	Injection molding, rigid polypropylene part, at plant	18408cfd-e758-3bf1-9363-063e9ab90c6f	Polypropylene scrap, from PP injection molding, at plant	kg	
+89a2b59a-1ca2-34f5-acc8-a8eaaa6fa870	Injection molding, rigid polypropylene part, at plant	b0533308-3c5a-3a1a-a8e6-4a310e2084bf	Injection molding, rigid polypropylene part, at plant	kg	
+ab334aaf-bfe1-3785-91c5-3de1dc34c01b	Compression molding, rigid composites part, at plant	f10fce4f-c95a-31db-9125-c688878426de	Composite scrap, from composites compression molding, at plant	kg	
+ab334aaf-bfe1-3785-91c5-3de1dc34c01b	Compression molding, rigid composites part, at plant	66cf9eed-4786-30ff-bf36-42f5c3e6353a	Corrugate packaging, from compression molding, for shipping	kg	
+ab334aaf-bfe1-3785-91c5-3de1dc34c01b	Compression molding, rigid composites part, at plant	b02afc35-d93c-3d91-a540-d73cbae63c20	Compression molding, rigid composites part, at plant	kg	
+73b0cd92-2167-3036-b1bc-df05a09828fc	Open mold casting, rigid composites part, at plant	ecf67dd9-f87c-330d-a897-72d3a510da47	Composite scrap, from composites open mold casting, at plant	kg	
+73b0cd92-2167-3036-b1bc-df05a09828fc	Open mold casting, rigid composites part, at plant	8bbd0d6c-f221-3c28-ab31-021e4dc68d9e	Open mold casting, rigid composites part, at plant	kg	
+62993671-574c-3fc5-b66a-6be3bb21ad3d	Portland cement, at plant	277959d5-1a12-33d4-9d7f-1604f2227c09	Portland cement, at plant	kg	
+f0810c41-81cd-3dea-83b2-7a66c7fd9362	copper sulfate; chemical reaction process; at processing plant	43330322-4a73-381c-a4e2-0c017f263032	copper sulfate; chemical reaction process; at processing plant	kg	
+698dff49-7235-39e8-bef9-bd90bf7c35a1	ethoxyquin; chemical reaction process; at processing plant	1f9b4f1d-455b-3831-bcc3-00255b6fe112	ethoxyquin; chemical reaction process; at processing plant	kg	
+0d63c2af-a739-3bad-971a-91850aff1af5	dicalcium phosphate; low-temperature endothermic process; at processing plant	4b9e0730-d0f6-360e-8c01-1e0a8d3edc8a	dicalcium phosphate; low-temperature endothermic process; at processing plant	kg	
+51f92626-bf53-307b-9f7b-50c1c64ee887	Polyol ether, for flexible foam polyurethane production, at plant	9744d9d7-bb0d-3e42-b94c-8a1c2c147b62	Polyol ether, for flexible foam polyurethane production, at plant	kg	
+8b7ca8cd-d3f5-32de-acd1-866da60df926	Methylene diphenyl diisocyanate, resin, at plant	9bb84f6b-2a9c-3bfe-b15d-99cc0af2a647	Methylene diphenyl diisocyanate, resin, at plant	kg	
+e0368d96-44a3-3628-8220-e6ae975b0931	Carbon monoxide, at plant	0461a6e2-75a9-36af-8e1a-c9ad9dcdb99d	Carbon monoxide, at plant	kg	
+49e563d8-0cea-3f97-96b8-15787be48b91	Limestone, at mine	8fe57bef-7504-3270-8dbd-13c0df6ddaac	Limestone, at mine	kg	
+c11e9a47-4f90-3b07-8ea7-ffd845c572ab	Natural gas, extracted	f8f274bf-d047-3676-be1a-753ba2f6f965	Natural gas, extracted	kg	
+dc8ba0cc-e7bb-3e8f-8d07-39f2e873dd24	Polystyrene, general purpose, at plant	c0512b8d-c990-342d-a347-ea31d784040d	Polystyrene, general purpose, at plant	kg	
+0a075756-e4af-3da7-a521-c6f460e8470e	Ethylene dichloride-vinyl chloride monomer, at plant	d9aa7527-5ab6-3052-9b26-07e930d95ec6	Ethylene dichloride-vinyl chloride monomer, at plant	kg	
+60e51fc8-f71e-329e-9e27-4313105cc465	Crude oil, at production	efeff2cc-8166-3237-b6a5-5fbf2cb1ffe1	Crude oil, at production	kg	
+abb55ad3-70d1-3e05-8408-d657fb9c3feb	Paraxylene, at plant	491f0bfc-bb41-3b04-8e84-6628c2b42211	Paraxylene, at plant	kg	
+5d274fc8-65f3-3f3a-a583-f12cace7c494	Butadiene, at plant	73397897-35ba-3539-b474-d4a12f1628d0	Butadiene, at plant	kg	
+a2e7aa17-9318-3bb8-91d6-22a32a9e8019	Acrylonitrile, at plant	aa9ec257-b529-33c9-8028-a99566895383	Acrylonitrile, at plant	kg	
+874dc726-50f1-300b-958f-9335fd1c53cd	White mineral oil, at plant	5b187fd4-1b60-3d48-83b7-bf743efcbd86	White mineral oil, at plant	kg	
+e53e0de4-6c90-3519-850b-eb670f2c641b	Crude oil, extracted	67d71d59-8951-30d6-a5c8-2ddbe3cc92de	Crude oil, extracted	kg	
+268e1ddf-197a-37d5-b229-e559c2d6c677	Toluene diisocyanate, at plant	774255e8-5f9c-3c30-893a-98cc7ac45991	Toluene diisocyanate, at plant	kg	
+0aaf1e13-5d80-37f9-b7bb-81a6b8965c71	Petroleum refining, at refinery	5f96ad43-abab-3b62-bcf8-c71f9d6c7881	Petroleum refining coproduct, at refinery	kg	
+66691548-5be9-3c87-bf87-2f38136bc7bf	EPS insulation board, at plant	34c5d9a7-8301-3088-9f4f-ee200cdccdf3	EPS insulation board, at plant	kg	
+09f2356f-629a-3305-8411-99967cf4a9b3	Phenol resorcinol formaldehyde hardener, at plant	63eac414-b4bb-3e50-b3a0-f85e2b3ba3b3	Phenol resorcinol formaldehyde hardener, at plant	kg	
+3a287ab1-de41-3e89-bf5a-be7f3b97281b	Melamine urea formaldehyde hardener, at plant	1161a48b-0650-3b74-9c13-09e121281ed8	Melamine urea formaldehyde hardener, at plant	kg	
+e281027f-cf37-32f2-af55-234cb0cb4fa4	Polylactide Biopolymer Resin, at plant	5eac1623-b102-36ea-9601-17271ddda1f8	Polylactide Biopolymer Resin, at plant	kg	
+71f1affd-f714-35df-8899-bd516a989f2a	Ethylene glycol, at plant 	4dbab98f-d541-3140-886d-3b4aaaa3e749	Ethylene glycol, at plant 	kg	
+7b69255a-a7b2-318e-9433-54b7c4d13ece	Polyethylene terephthalate, resin, at plant	5f45d3f7-ccd5-32f1-88fa-a5885001d138	Polyethylene terephthalate, resin, at plant	kg	
+91c096d9-987d-34c6-90c0-3c672b467086	Unsaturated polyester, resin, at plant	c25b6819-2963-3148-b431-c84062d99316	Unsaturated polyester scrap, resin, at plant	kg	
+91c096d9-987d-34c6-90c0-3c672b467086	Unsaturated polyester, resin, at plant	b6fd2a6b-1140-3a94-a8df-34a5031ba57a	Unsaturated polyester, resin, at plant	kg	
+401862df-2017-386b-807e-5892047e02be	Phenol resorcinol formaldehyde resin, at plant	00b08f68-2fb1-3f4f-bef3-e6f3f4d70de3	Phenol resorcinol formaldehyde resin, at plant	kg	
+0991445e-ac72-30ac-9bef-aefcbd6be3cd	Methylene diphenyl diisocyanate resin, at plant, US PNW	964865f7-ecdf-3ba9-88bc-29746ccbf09f	Methylene diphenyl diisocyanate resin, at plant, US PNW	kg	
+4b01543f-29f1-3797-a8d7-5957d97a7fd3	Methylene diphenyl diisocyanate resin, at plant, US SE	90203b24-a98a-30f4-9530-8dc988da41e4	Methylene diphenyl diisocyanate resin, at plant, US SE	kg	
+fa755970-7ce9-3226-b268-2e1880bfc42e	Chlor-alkali electrolysis, chlorine for PVC, at plant	0bcf4ff4-9e43-380e-aba6-5722e03fad05	Chlor-alkali electrolysis, chlorine for PVC, at plant	kg	
+dfa7acbc-4a41-3329-951d-b6cde899c91e	Sulfur, at plant	48187a93-fc4e-3c80-98c2-5b0eaafc07d4	Sulfur, at plant	kg	
+a9114429-6fce-3296-b5d3-f0163e3fd76f	Glycerine, at plant	15a3f4f0-891f-34ed-8b59-ae817a22aff4	Glycerine, at plant	kg	
+b15aa6b2-a8be-3afc-a149-0a1a13facb12	Recycled postconsumer HDPE pellet	c0e21190-462d-3466-b90f-a32b241a70f4	Recycled postconsumer HDPE pellet	kg	
+cf1241fd-8c01-3412-9030-8650b8e75669	EPS virgin resin manufacture; batch suspension polymerization; industry average, at plant	cc5415fd-2095-31f1-8e53-c5fcd2fd8c54	EPS virgin resin; batch suspension polymerization; industry average, at plant	kg	
+22ebc7fb-f03f-37dc-be57-b73d2c577414	Recycled postconsumer PET pellet	0cce541b-c427-3bc0-bc0b-349945225c9c	Recycled postconsumer PET pellet	kg	
+42b2337d-39cb-37d5-b62a-5e1d87142486	phosphate fertilizer storage; average production mix, at US regional storehouse	7e0184de-1400-3ae1-8f34-9d279b4936f9	phosphate fertilizer mix; average production, at US regional storehouse	kg	
+280bc9cc-af90-386e-acbf-c407ba0310d7	application of nitrogen fertilizer mix; at field	800e4d4c-c5cd-379a-8c0b-0090ca911aa6	emissions; application of nitrogen fertilizer mix; at field	kg	
+6b946d9a-1c41-3562-a74a-087d472a1031	nitrogen fertilizer storage; average production mix, at US regional storehouse; as N	595dac66-60dc-3905-962a-bc08c52608cb	nitrogen fertilizer mix; average production, at US regional storehouse; as N	kg	
+62191b65-affb-3656-91b4-d2652b4e2f80	application of lime fertilizer; at field	99d7f419-e235-3cc5-bb92-bf1cd7b5a699	emissions; application lime fertilizer; at field	kg	
+9a933516-bef6-3b6c-80cb-b339638eeff6	lime fertilizer storage; at regional storehouse	f993d17c-ccf0-30bf-b2ba-abc2954cea95	lime; at regional storehouse	kg	
+e60014c2-ffdf-3831-ae99-ac1c52a4a32e	potash fertilizer storage; average production mix, at US regional storehouse	5c75e620-cbe5-3216-aed2-d0c168b8f15a	potash fertilizer mix; average production, at US regional storehouse	kg	
+fadc1941-94ca-3a5d-aea9-429cd0d76a08	Deposit containers, at collection, CRV	feb3d390-bacc-37ce-8568-1776c96a78a1	Deposit containers, at collection, CRV	kg	
+b5c35450-2b29-3f72-b6bf-1836a9d55100	Mixed recyclables, sorted at MRF	2be6ce29-93cb-3106-8a99-4b9cf7dd27ef	Mixed recyclables, sorted at MRF	kg	
+cd7fcea7-4b13-36ad-be07-e6fa09cb680b	Deposit containers, at collection	0fe54247-1f28-3597-bd5e-98431dc2f685	Deposit containers, at collection	kg	
+f7b7280d-f372-3a4b-86cf-caa588ca67ea	Recycled postconsumer PET flake	83f59491-2195-3f40-a111-15459445aa9c	Recycled postconsumer PET flake	kg	
+d9cadd89-4203-375a-903a-63197cd29c6a	Ethanol, denatured, forest residues, thermochem	80e4ff02-d959-3ec5-a5df-3ed385d7df0c	Sulfur, thermochemical process	kg	
+0853441e-0b11-30f6-87c5-00ca7df78e21	Heat, indirect, heated zones, softwood, plywood veneer drying, AP-42	4b5cad63-18f1-30c7-ae7c-79f60094c8f0	Heat, indirect, heated zones, softwood, plywood veneer drying, AP-42	kg	
+d9cadd89-4203-375a-903a-63197cd29c6a	Ethanol, denatured, forest residues, thermochem	2656bfd3-ed3c-3fb8-ab93-6597836a463b	Ethanol, denatured, forest residues, thermochem	kg	
+d9cadd89-4203-375a-903a-63197cd29c6a	Ethanol, denatured, forest residues, thermochem	0cdd9079-9cf3-33c9-ab62-9d734c03f7df	Mixed Alcohols, thermochemical process	kg	
+dacaeae9-aeed-3366-912d-6a31de09eef9	Nitrogen fertilizer, production mix, at plant	45f1fd00-2093-3e05-9b41-e942b9e8cec9	Nitrogen fertilizer, production mix, at plant	kg	
+8504caf4-bea5-3ab2-b8f9-d4861e819f92	Corn grain, harvested and stored	510d2c9a-5542-30fb-b8e6-2d9460fe055c	Corn grain, harvested and stored	kg	
+8e3e47ea-ed49-329e-8931-29115917bc81	Ethanol, denatured, corn dry mill	0a61808a-df04-3ec0-8c2b-93d4f5cf9fbf	Distillers dried grains with solubles, 2022	kg	
+8e3e47ea-ed49-329e-8931-29115917bc81	Ethanol, denatured, corn dry mill	f4364ab6-cb8c-3b5c-a9d7-dfe57ac7bceb	Ethanol, denatured, corn dry mill	kg	
+0898854c-e38f-3d23-880f-f8da7d65ca0c	Ethanol, denatured, switchgrass, biochemical	005db14f-6fc8-32d3-95a6-c7b8b8d30fb1	Ethanol, denatured, switchgrass, biochemical	kg	
+0879167f-989b-3e3b-b9c5-3c07ea0a3f8e	Ethanol, denatured, corn stover, biochemical	7f49cac3-84a7-345a-abaa-c3671a78c38f	Ethanol, denatured, corn stover, biochemical	kg	
+1654c887-0b9c-3434-b9c1-371e3adb3dde	Phosphorous fertilizer, production mix, at plant	91feb044-e771-35a3-a81f-ac076c5f9b83	Phosphorous fertilizer, production mix, at plant	kg	
+7aa8e2ff-0e2f-3e6c-b168-ec5168b4be6a	Ethanol, denatured, wheat straw, biochemical	4f541c34-ea5e-3580-a001-80ed28198120	Ethanol, denatured, wheat straw, biochemical	kg	
+136cbdd8-ef76-3834-904d-6fce42b2b660	Ethylene oxide, at plant	4cba2656-7694-3b28-9ced-2b49acaa0f7a	Ethylene oxide, at plant	kg	
+0d1d9f2b-1295-328a-82a0-1f43b135007b	Soy-based polyol, at plant	c4f0f821-74ba-37a7-8ca7-b9a943897f6f	Soy-based polyol, at plant	kg	
+d65a4cea-4732-3b43-b305-a876438bfe51	Soy-based resin, at plant	50823733-e9a7-3485-9248-d44dfc5dcd96	Soy-based resin, at plant	kg	
+e2884390-2613-3d46-81d2-6051ecadc9c2	Ethylbenzene styrene, at plant	4a72778b-37b3-3c70-bcdc-b47701e7fe74	Ethylbenzene styrene, at plant	kg	
+182abb98-80e5-3218-9474-ccacb504f7b4	Xylenes, mixed, at plant	ddf8108d-b0fd-3b97-b3dd-fab7d66e73fc	Xylenes, mixed, at plant	kg	
+ced3ee5d-f820-3c02-bb17-c2f49f2997bf	Propylene, at plant	e86e8b04-8e64-3a17-95c3-04c07229f0ac	Propylene, at plant	kg	
+faa85914-ec68-377e-aee5-0e0af4e27fc8	Chlorine, production mix, at plant	a1167c39-1c98-360a-b834-c22a9726c001	Chlorine, production mix, at plant	kg	
+fa3871c0-d563-3300-9ec7-f26aafdabfa5	Propylene oxide, at plant	e3e36b0b-cd9f-3394-924d-2e565e97d38d	Propylene oxide, at plant	kg	
+d1bf60a0-272b-3ef0-951c-7febc0546d58	Methylene diphenyl diisocyanate resin, at plant, CTR	8850417f-b844-34b8-8f39-b373e9783d52	Methylene diphenyl diisocyanate resin, at plant, CTR	kg	
+391ccf45-4b61-37e9-a2f2-3e19afc0d4ef	Enzyme, Alpha-amylase, Novozyme Liquozyme	00b5c8b4-682d-3000-a2df-246e333f6344	Enzyme, Alpha-amylase, Novozyme Liquozyme	kg	
+5dacfb93-571f-3502-bf9e-1ce678de151d	Sodium chloride, at plant	c28f9211-98eb-3509-95cc-771d8fefae51	Sodium chloride, at plant	kg	
+3dd59224-ecba-3fb1-a2c9-9c01947b08b1	Enzyme, Cellulase, Novozyme Celluclast	644ee222-fe19-3f61-a4ed-5258d34ff2eb	Enzyme, Cellulase, Novozyme Celluclast	kg	
+68f4d066-5043-34cc-a944-5041732f8e7a	Corn steep liquor	96adbc9c-2708-34ab-86af-18ae6560f616	Corn steep liquor	kg	
+44a82a4a-95fd-3c31-9829-cf0763dd3a93	Polyol ether, for flexible foam polyurethane production, at plant, CTR	4ac24077-b1ac-38ac-8d0d-ef1e772ede6e	Polyol ether, for flexible foam polyurethane production, at plant, CTR	kg	
+cfcb6755-e408-30e7-9ab6-165de9b7d11d	Polyvinyl chloride, resin, at plant, CTR	2bb0cd6b-941b-38da-856c-1b7bd0cc5f49	Polyvinyl chloride, resin, at plant, CTR	kg	
+7095d0dc-7ae2-3d72-845e-9158ad075fc1	Polyol ether, for rigid foam polyurethane production, at plant, CTR	e788cf0b-9dbd-341c-9ab2-5a80db504bc0	Polyol ether, for rigid foam polyurethane production, at plant, CTR	kg	
+5a782377-d196-304c-baec-fea559a4dfe2	Enzyme, Glucoamylase, Novozyme Spirizyme	d818c190-7b73-33b1-b0d4-9f4339e3b117	Enzyme, Glucoamylase, Novozyme Spirizyme	kg	
+6f2532e9-d9c0-368e-89a2-0bd48adb4dab	Toluene diisocyanate, at plant, CTR	178c0a07-27f6-3f39-94cd-dc10874c8560	Toluene diisocyanate, at plant, CTR	kg	
+9bdfa7ed-cc24-3b65-9fdf-7d7e62b3c007	Polyethylene, linear low density, resin, at plant, CTR	7a62c88b-00ba-36a0-8a4a-137367f3e282	Polyethylene, linear low density, resin, at plant, CTR	kg	
+e4a61018-9f98-3049-95c1-33b1acaa904e	Acetic acid, at plant	2c696e73-bd01-3f7b-a6c5-a56dee44d66e	Acetic acid, at plant	kg	
+0e42a306-ee2d-362e-8bc3-580000096459	Acrylonitrile-butadiene-styrene copolymer resin, at plant, CTR	fa5304ba-de40-35cf-a5d6-3e09d9b79205	Acrylonitrile-butadiene-styrene copolymer resin, at plant, CTR	kg	
+2d57ab6d-6b06-32e6-a44b-8ffcd5d94176	Toluene, at plant	dc052870-f71b-3775-824c-2936683a57f5	Toluene, at plant	kg	
+ce38752e-c414-3175-9482-ce663a909a0c	Polyethylene, high density, resin, at plant, CTR	fa2aabaa-cfb7-3ee7-b7b1-606d681ff15a	Polyethylene, high density, resin, at plant, CTR	kg	
+097d2f2c-d006-3b27-84de-98e6a364e411	Corn wet mill, gluten drying, AP-42	28b025c1-5897-3e01-8aa2-166cd2c9f86d	Corn wet mill, gluten drying, AP-42	kg	
+bc119cdf-7143-35e8-9adb-c3a92dc376b6	Soy oil, refined, at plant	52effa32-8328-32c3-87aa-ac40ebf3aff2	Soap stock, at plant	kg	
+bc119cdf-7143-35e8-9adb-c3a92dc376b6	Soy oil, refined, at plant	f126c700-2f3b-3477-9e1d-e73f5741a8b7	Soy oil, refined, at plant	kg	
+d1c572b0-c244-3193-81fb-3a64bfb13e4d	Polystyrene, high impact, resin, at plant, CTR	53cf5851-1608-3f85-8846-d15fceeb2de6	Polystyrene, high impact, resin, at plant, CTR	kg	
+88aee762-4aa0-301f-b579-cca5d636aa0d	Soybean oil, crude, degummed, at plant	0a09b436-a529-3355-b5b7-120a90eac178	Soybean oil, crude, degummed, at plant	kg	
+956b53b9-dd05-35ae-a072-69f1f6906290	Soybean grains, at field	8f745171-c4af-3e23-a468-fbde8d7af364	Soybean grains, at field	kg	
+88aee762-4aa0-301f-b579-cca5d636aa0d	Soybean oil, crude, degummed, at plant	263fb8d0-8df5-3cee-834b-b7e2de1dac4a	Soy meal, at plant	kg	
+e4822728-95ae-3360-9870-c363a214611e	Polyethylene terephthalate, resin, at plant, CTR	749ccf4c-514f-35fc-ad76-8cde2b3800e6	Polyethylene terephthalate, resin, at plant, CTR	kg	
+ba5df01a-626b-35b8-859f-f1df42dd54a0	Polyethylene, low density, resin, at plant, CTR	0debe6c9-212b-3dda-9705-b0e78efe7161	Polyethylene, low density, resin, at plant, CTR	kg	
+19b638bc-033c-3812-a020-18eb2ff8e8eb	Pyrolysis gasoline, at plant	f3d6e4c6-0323-3d9f-a843-b741d2a9b982	Pyrolysis gasoline, at plant	kg	
+9a2fa4bc-32f7-31a1-99d4-7b8c6e0c9aa9	Natural gas, processed, for olefins production, at plant	5346e475-e7c4-38bf-b1b7-8c23549d2081	Natural gas, processed, for olefins production, at plant	kg	
+b04c9662-b353-3d13-a485-296acbd68840	Petroleum refining, for olefins production, at plant	3b7c9d95-04b9-3278-9a85-c153903d594c	Petroleum refining, for olefins production, at plant	kg	
+15761bf7-4eff-374b-b9e7-b44b790cc939	Ethylene, at plant	8a2f201e-cf8a-3017-9247-a4f98b9e1aba	Ethylene, at plant	kg	
+21ed2ebb-54bf-324d-9865-af8265d2d49c	Palm kernel oil, processed, at plant	00de148e-2b26-385c-8ddb-7adb76d6bf61	Palm kernel oil, processed, at plant	kg	
+13821cca-f344-37b9-a367-0467be778061	Polystyrene, general purpose, at plant, CTR	67b50031-6239-3514-a37f-2b17de803c88	Polystyrene, general purpose, at plant, CTR	kg	
+8e32a674-5963-374d-92d1-466e2c78c91b	Polypropylene, resin, at plant, CTR	d0477b6a-115f-350d-bbb4-7f62243e3476	Polypropylene, resin, at plant, CTR	kg	
+c7fec37a-a023-3563-84d6-fa33a6b19f2f	Corn wet milling, operations, AP-42	d6bfc1d8-069b-3604-9685-9ed45c6dfce4	Corn wet milling, operations, AP-42	kg	
+e07beee7-4b4c-350a-bcaf-ec71882bbb69	Benzene, at plant	db548272-c05b-39c4-926e-ba9e10a29195	Benzene, at plant	kg	
+4eaec911-05e8-304e-b7a6-98ce06fc9820	Hydrogen, liquid, synthesis gas, at plant	3a8cda88-d05e-3a52-82ff-e7aa2caefd0d	Hydrogen, liquid, synthesis gas, at plant	kg	
+33f08f48-349e-31f1-b600-aa7e9713ca50	Ammonia, steam reforming, liquid, at plant	072a4586-44d6-3428-a15c-8e1e8a0031cc	Ammonia, steam reforming, liquid, at plant	kg	
+363e9105-a6ea-356e-a537-06c9facf5b14	Aniline, at plant	2293e639-39a3-3cbf-99cc-8cf01797aa99	Aniline, at plant	kg	
+c11f6f12-269d-3c4c-9ab0-6995cd5d8af2	Melamine urea formaldehyde resin, at plant	2319eed6-941a-32b8-967a-3f5e33019e0b	Melamine urea formaldehyde resin, at plant	kg	
+fa60e60f-73f0-3e20-bb3a-073e4a9469cc	Polybutadiene, at plant	cba81a11-592f-3984-9f10-86b0607258d1	Polybutadiene, at plant	kg	
+726dea3f-ddee-3b80-89d9-a86dc464308d	Scanner, packaging and information sheets	38d31926-8577-36d0-8c3b-d152010c9af8	Scanner, packaging and information sheets	kg	
+84d335bb-f2ce-38dc-b81f-55d4eb7408c7	Office scanner	72617478-fdf2-3581-a069-d3ccf23ed07a	Office scanner	kg	
+1296738e-d64f-3837-a793-bc33f491e292	Packaging and information sheets, i2900 desktop scanner	f048b817-44dd-35fd-b5c9-57049decec7b	Packaging and information sheets, i2900 desktop scanner	kg	
+2d50471f-ae3a-337b-9e53-6ff319e39b55	E-glass, at plant	406c4d5a-ada0-349f-be88-0b9708780f42	E-glass, at plant	kg	
+cd082abe-1655-3803-9a92-e951947a3034	Acrylonitrile-butadiene-styrene copolymer, resin, at plant	798d6174-a580-3568-a02b-ca90f0428386	Acrylonitrile-butadiene-styrene copolymer, resin, at plant	kg	
+e10de570-42e6-3cb6-98fe-7bf6da57046c	Polystyrene, high impact, resin, at plant	dbbb1705-6acf-3025-b225-8c9480d79a32	Polystyrene, high impact, resin, at plant	kg	
+6c0996a5-8104-3770-ae44-aba5a65fa3c3	Packaging, Production Scanners	cc3c0e1a-8425-3bd9-ad9a-d4fc62032589	Packaging, production scanners	kg	
+285cfc08-fc23-3bfc-b304-1bb4a60d2f8a	Paper, mechanical, uncoated, average production, at mill	d795055d-1963-3208-8144-213d7b71343b	Tall oil, at uncoated mechanical paper mill	kg	
+285cfc08-fc23-3bfc-b304-1bb4a60d2f8a	Paper, mechanical, uncoated, average production, at mill	0c271dfc-bbe6-33a3-b79c-5a9d20a22a7b	Turpentine, at uncoated mechanical paper mill	kg	
+285cfc08-fc23-3bfc-b304-1bb4a60d2f8a	Paper, mechanical, uncoated, average production, at mill	3515e633-ae0d-3417-a0ed-496c045476fd	Paper, mechanical, uncoated, average production, at mill	kg	
+51cb18c8-eb65-36b7-a20a-bc1ed819ff88	Paper, freesheet, coated, average production, at mill	d6172330-9884-338f-8e65-9663a136ca10	Tall oil, at coated freesheet mill	kg	
+9ee66dd5-dcc9-3e94-9da3-3a7cc6cddeb3	Hydrochloric acid, at plant 	1a0678a7-09b1-339d-8f05-259a14f0ab84	Hydrochloric acid, at plant 	kg	
+51cb18c8-eb65-36b7-a20a-bc1ed819ff88	Paper, freesheet, coated, average production, at mill	6acc3588-b251-37e3-833b-70725f9a7a7f	Turpentine, at coated freesheet mill	kg	
+51cb18c8-eb65-36b7-a20a-bc1ed819ff88	Paper, freesheet, coated, average production, at mill	171c5462-de33-38ad-8de6-0d026ed2b051	Paper, freesheet, coated, average production, at mill	kg	
+3fa61250-2a76-30f5-aa5e-267f99ca3ee5	Paper, mechanical, coated, average production, at mill	6746e730-ca6c-30b3-bf94-81de71c3696a	Tall oil, at coated mechanical paper mill	kg	
+3fa61250-2a76-30f5-aa5e-267f99ca3ee5	Paper, mechanical, coated, average production, at mill	46853287-b433-3e17-a1d5-3e9672a2996a	Turpentine, at coated mechanical paper mill	kg	
+3fa61250-2a76-30f5-aa5e-267f99ca3ee5	Paper, mechanical, coated, average production, at mill	7c08fe4d-f534-3bca-94fb-ed2b3e48e142	Paper, mechanical, coated, average production, at mill	kg	
+732a5578-1750-3738-b0f2-607106574358	Paper, freesheet, uncoated, average production, at mill, 2006	29a5cb8d-2d6d-30af-9446-0e7a554c71e8	Turpentine, at uncoated freesheet mill	kg	
+732a5578-1750-3738-b0f2-607106574358	Paper, freesheet, uncoated, average production, at mill, 2006	19bd554c-7902-368c-988f-5cc80d6b7cae	Paper, freesheet, uncoated, average production, at mill	kg	
+732a5578-1750-3738-b0f2-607106574358	Paper, freesheet, uncoated, average production, at mill, 2006	60ecb9c4-23ed-3332-8693-d13a4d279bb4	Tall oil, at uncoated freesheet mill	kg	
+f9cf891e-fd8c-304c-9707-4a7e390b9e75	Paper, bag and sack, unbleached kraft, average production, at mill	afa955a6-954e-33e2-8bfb-e1ff7d414c83	Turpentine, at unbleached kraft bag and sack paper mill	kg	
+f9cf891e-fd8c-304c-9707-4a7e390b9e75	Paper, bag and sack, unbleached kraft, average production, at mill	4f98f36d-fdb0-3dd0-a8a4-b04a38e10338	Tall oil, at unbleached kraft bag and sack paper mill	kg	
+f9cf891e-fd8c-304c-9707-4a7e390b9e75	Paper, bag and sack, unbleached kraft, average production, at mill	0871432e-9009-3056-8387-d73d5b0d2da3	Paper, bag and sack, unbleached kraft, average production, at mill	kg	
+a515132e-c816-34ea-9773-d56c11dc1cb0	TDF, combusted in industrial boiler, at pulp and paper mill (EXCL.)	73f6d99c-51b9-3e90-b358-b7caa6cbfe21	TDF, combusted in industrial boiler, at pulp and paper mill (EXCL.)	kg	
+7906c042-7330-3046-9b9a-92a4af4f2150	Hog fuel, self-gen., combusted in ind. boiler, at pulp and paper mill (EXCL.)	64aec2f1-a029-3332-8f3b-8e8e2a865f61	Hog fuel, self-gen., combusted in ind. boiler, at pulp and paper mill (EXCL.)	kg	
+accc6b3b-6793-3964-b89d-82066f6977fc	Bituminous coal, combusted in industrial boiler, at pulp and paper mill (EXCL.)	f1e8d961-1c36-3b57-a3fa-73b1be2bc1c5	Bituminous coal, combusted in industrial boiler, at pulp and paper mill (EXCL.)	kg	
+b6884185-30b8-391a-9dff-dbded4429a66	Hog fuel, pur., combusted in industrial boiler, at pulp and paper mill (EXCL.)	cd2343aa-210e-3d54-87df-c939bc9296b5	Hog fuel, pur., combusted in industrial boiler, at pulp and paper mill (EXCL.)	kg	
+cbf4023b-71f7-36b7-8c45-ea43bc2f108c	Pulp, kraft market, bleached, average production, at mill	8c24c11a-be36-3121-94c1-36ab7b919d1a	Turpentine, at bleached kraft market pulp mill	kg	
+cbf4023b-71f7-36b7-8c45-ea43bc2f108c	Pulp, kraft market, bleached, average production, at mill	d87221d8-e9f6-3054-86c1-3fab2ed1fd37	Tall oil, at bleached kraft market pulp mill	kg	
+1e5b1ac8-2464-394e-b20b-b5753fe3ebfb	Methanol, at plant	0a086de3-ddb0-3c48-b5db-2f36f5322de4	Methanol, at plant	kg	
+2468b04f-b9b1-364d-bfbf-8ba12178096e	Sawn lumber, hardwood, rough, green, at sawmill, NE-NC	de3af1d1-ce3e-329c-9ca7-6323adb9f172	Wood chips, hardwood, green, at sawmill, NE-NC	kg	
+ce587724-1be4-3da0-b7a2-988592c28b9a	Sawn lumber, hardwood, rough, green, at sawmill, SE	37274c29-9496-3511-a777-132644f96b4e	Wood chips, hardwood, green, at sawmill, SE	kg	
+4cb0c558-b0ac-3656-bc1f-95b477c14921	Soda powder, at plant	0f797f27-2207-3571-84cc-0835a943be09	Soda powder, at plant	kg	
+245ddcea-0239-37ac-b4da-8eeebde7932e	Rough green lumber processing, at sawmill, US SE	327ed9bd-38ac-39ca-aeef-616f1e5df8a1	Pulp chips, at sawmill, US SE	kg	
+cbf4023b-71f7-36b7-8c45-ea43bc2f108c	Pulp, kraft market, bleached, average production, at mill	b8dc8889-932a-3517-8d7d-c663d1373227	Pulp, kraft market, bleached, average production, at mill	kg	
+bbfe537d-76d5-3553-8f87-72fe52b34f7d	Sawn lumber, softwood, rough, green, at sawmill, NE-NC	88357e8d-f022-3551-bdb6-6755889e68a7	Wood chips, softwood, green, at sawmill, NE-NC	kg	
+6ce2af92-11dd-3e96-8f77-4d215ac13b96	Melamine urea formaldehyde resin, neat, 60% solids	cfbc5b82-c59c-330b-a12a-134699842889	Melamine urea formaldehyde resin, neat, 60% solids	kg	
+1b6afe73-a064-33a3-87b0-265ae10851e9	Sulfuric acid, at plant	f867896e-830f-31f9-975d-465b212262ef	Sulfuric acid, at plant	kg	
+245ddcea-0239-37ac-b4da-8eeebde7932e	Rough green lumber processing, at sawmill, US SE	789d8270-5342-3f4f-86dc-c4f963708230	Bark, at  sawmill, US SE	kg	
+12ba204b-7438-49df-abbb-b8cbe817927e	Containerboard, 100% recycled, at mill	d333b561-b475-319e-9204-7ef75f373308	Containerboard, 100% recycled, at mill	kg	
+9c10be0f-e38e-4551-b8b5-eef65fa27dcc	Corrugated product, 100% recycled, at mill	beaa8db7-97f9-4db4-a4c7-112ede974b62	Corrugated product, 100% recycled, at mill	kg	
+2c79b9d3-e5f9-34a8-990e-b7d6f9e4dd08	Slack wax, at plant, US SE	3dd4ac49-3a6e-3886-a04c-b5b95d41b4de	Slack wax, at plant, US SE	kg	
+226ed3c2-e020-4c95-b1fc-4559fc2d18ac	Corrugated product, average production, at mill	f806b9df-b77c-3369-a00f-feda82b0778c	Corrugated product, average production, at mill	kg	
+4139499a-c7ed-3b60-ab08-f86c7cd3af3b	chlorotetracycline antibiotic; fermentation-batch processes; at processing plant	b0065893-b46f-346f-ad9b-45d54311cb62	chlorotetracycline antibiotic; fermentation-batch pro- cesses; at processing plant	kg	
+e0243fb9-6002-447c-b878-ac90d826c22e	Steel plate; Blast furnace route; Production mix; 85% recovery rate	f5fc0230-23b0-41e8-8583-266c8c92f2c6	Steel plate; Blast furnace route; Production mix; 85% recovery rate	kg	
+e0243fb9-6002-447c-b878-ac90d826c22e	Steel plate; Blast furnace route; Production mix; 85% recovery rate	6191e72b-9f8a-4c56-be72-6649199a988d	Non-allocated byproducts; Production mix	kg	
+91150a40-c29d-4eff-891b-0e3fd56df1a4	Steel reinforcement bar; Blast furnace route; Production mix	6191e72b-9f8a-4c56-be72-6649199a988d	Non-allocated byproducts; Production mix	kg	
+91150a40-c29d-4eff-891b-0e3fd56df1a4	Steel reinforcement bar; Blast furnace route; Production mix	be127e1f-720b-4e31-82ee-4499e2714d11	Steel reinforcement bar; Blast furnace route; Production mix	kg	
+91150a40-c29d-4eff-891b-0e3fd56df1a4	Steel reinforcement bar; Blast furnace route; Production mix	f24aafe3-8c41-466a-97c8-001dd37c60de	Solid waste; For disposal; Production mix	kg	
+c19569ac-f0ab-453a-b70b-43f73bad11f8	Stainless steel; Manufacture; Production mix, at plant; 316 2B, 80% recycled	f24aafe3-8c41-466a-97c8-001dd37c60de	Solid waste; For disposal; Production mix	kg	
+e0243fb9-6002-447c-b878-ac90d826c22e	Steel plate; Blast furnace route; Production mix; 85% recovery rate	c6b5d060-66cd-42d0-99dc-669f4baebb57	Solid waste; From steel works, for disposal; Production mix	kg	
+c19569ac-f0ab-453a-b70b-43f73bad11f8	Stainless steel; Manufacture; Production mix, at plant; 316 2B, 80% recycled	c6b5d060-66cd-42d0-99dc-669f4baebb57	Solid waste; From steel works, for disposal; Production mix	kg	
+c19569ac-f0ab-453a-b70b-43f73bad11f8	Stainless steel; Manufacture; Production mix, at plant; 316 2B, 80% recycled	69fece29-f722-4dc4-acfb-a9cbbebfcb11	Stainless steel; Manufacture; Production mix, at plant; 316 2B, 80% recycled	kg	
+5f23939e-be70-364e-95c2-baef329a95fe	Steel, liquid, at plant	2593a8b8-4eff-373f-b50c-cb4cf610ecb7	Steel, liquid, at plant	kg	
+49f5324b-fc33-36e9-b5af-3c80d73492bd	Steel, stainless 304, flat rolled coil	3f2fed05-f530-32e9-b0f9-0dcb5280aa9d	Steel, stainless 304, flat rolled coil	kg	
+8560388b-7ea1-38b7-befc-fd25d5deb450	Steel, stainless 304, quarto plate	99620b27-83a1-301d-8290-1d94cd81af3f	Steel, stainless 304, quarto plate	kg	
+ac54bc7d-5db5-3b4f-9175-5dd02f678312	Steel, billets, at plant	fb35ea76-3255-3543-b943-8e358d2489d5	Steel, billets, at plant	kg	
+34897ebd-aa3d-347c-91ee-876c3f835fdb	Steel, stainless 304, scrap	0178afd7-c74a-3a8f-8f15-d57904d3c377	Steel, stainless 304, scrap	kg	
+76a47261-8a9c-30a2-93a6-f5a029aded6f	Bauxite, at mine	3ca71da3-edfd-3ad6-b756-f08a12542156	Bauxite, at mine	kg	
+88b44b36-2322-39a8-9c54-6b89b1b43cd4	Iron and steel, production mix	e3d97362-bb7a-3a33-acbf-c2d69c622ed0	Iron and steel, production mix	kg	
+076898a5-e1ce-3c50-9df4-6445fc0bb6aa	Iron, sand casted	7f83f353-12a6-31fa-9d49-23c6c0ae7863	Iron, sand casted	kg	
+eb50f56e-3104-3eb1-8d18-7add74f841e7	Aluminum, secondary, extruded	db6a6bc6-fc77-3d70-ad69-54c6a2ac64fd	Aluminum, secondary, extruded	kg	
+a9fd0eec-60dd-3506-8a22-6f8715f80f4e	Aluminum, secondary, shape casted	a0c8c666-421f-30b3-80b4-2ea09817e105	Aluminum, secondary, shape casted	kg	
+a8c3ad24-992e-31e0-9e18-fdf0280875df	Lost foam casting, aluminum	dd148031-4f7d-3a55-a0da-f5b96675ae71	Alumimum scrap, at lost foam casting	kg	
+a8c3ad24-992e-31e0-9e18-fdf0280875df	Lost foam casting, aluminum	34e560b1-5686-32f7-9dd3-e1dc8d9bbc46	Aluminum, cast, lost foam, at plant	kg	
+faa85914-ec68-377e-aee5-0e0af4e27fc8	Chlorine, production mix, at plant	bf2b1e5a-4c92-3974-a2fd-a68898833086	Sodium hydroxide, production mix, at plant	kg	
+f61ecd3b-fdba-3739-8051-1d4bb0c2d98e	Precision sand casting, aluminum	5b669606-74bf-3601-be6b-248cb1160ac9	Aluminum scrap, at precision sand casting	kg	
+0bb53c29-31b1-3e8c-87ac-a2ef6793f8f2	Phenol formaldehyde, at plant	b53bd8bb-b9b1-3c7d-812b-97adb96f8ba6	Phenol formaldehyde, at plant	kg	
+f61ecd3b-fdba-3739-8051-1d4bb0c2d98e	Precision sand casting, aluminum	25f336c6-26fd-3635-978d-ae53e771c989	Byproduct of aluminum casting, precision sand, liquid residuals	kg	
+f61ecd3b-fdba-3739-8051-1d4bb0c2d98e	Precision sand casting, aluminum	fc1ee789-e922-3e7c-bbab-7a8ba489aea7	Aluminum, cast, precision sand casting	kg	
+ab2436bc-97db-3154-898e-2c49ca4b698e	Semi-permanent mold (SPM) casting, aluminum	4bdb6faa-e48f-3f6b-9f39-4fe99814592a	Byproduct of aluminum casting, SPM, liquid residuals	kg	
+ab2436bc-97db-3154-898e-2c49ca4b698e	Semi-permanent mold (SPM) casting, aluminum	86330173-3836-3299-b413-83d829fb604b	Aluminum scrap, at semi-permanent mold casting	kg	
+7a2565f8-4a48-3263-9bc9-bcb28dbd58ad	Oxygen, liquid, at plant	055e3f80-da33-3f27-be5f-8d0c59872b9a	Oxygen, liquid, at plant	kg	
+ab2436bc-97db-3154-898e-2c49ca4b698e	Semi-permanent mold (SPM) casting, aluminum	5acf07ec-9122-3be0-96be-9362ef4f1463	Aluminum, cast, semi-permanent mold (SPM), at plant	kg	
+7a0942f9-5fe3-3a78-aff1-9399fea7c14b	Zinc, sheet	808f834e-a34b-37a0-952c-57d6d404de92	Zinc, sheet	kg	
+230e8d51-1f4d-3459-be47-429b0b828add	Zinc, Special High Grade	23942f4b-21e8-374d-83be-1c799aea1cd4	Zinc, Special High Grade 	kg	
+a8eb9a6a-e8e6-3da6-a3ab-20dcf68e883a	Aluminum ingot, production mix, at plant	aec9945f-f19c-3834-8e26-5f4f92cfcb2b	Aluminum ingot, production mix, at plant	kg	
+f525f32d-e3e4-3434-883d-e4b224a47524	Aluminum, secondary, ingot, at plant, 1998	787b3f81-78b2-3588-b3b5-31179527a929	Aluminum, secondary, ingot, at plant, 1998	kg	
+9cc8fafa-e232-3d86-a473-6b5d04431999	Aluminum, secondary, ingot, from beverage cans, at plant	31fe03e1-7475-3898-b444-3ac1212c78ad	Aluminum, secondary, ingot, from beverage cans, at plant	kg	
+2b196386-eb1a-352a-aeda-4d003144f6df	Aluminum, cold rolling, at plant	e929f473-7780-3eca-94e4-a2d0f7d4b8b0	Aluminum, cold rolling, at plant	kg	
+21aeedbf-933a-3570-8b9e-a44dc6fa6637	Aluminum, primary, ingot, at plant, 1998	a0fb699f-0085-3ad2-99bf-e4ea891e61ba	Aluminum, primary, ingot, at plant, 1998	kg	
+d20197e1-967f-35cb-95c1-0dbde806c367	Aluminum recovery, transport, to plant	13d77c80-5c2a-324a-b125-19dd287c71b2	Aluminum recovery, transport, to plant	kg	
+3d53c055-f03b-381f-966e-6d61abbe88a0	Aluminum, secondary, ingot, from automotive scrap, at plant	90c60c75-922b-392d-8f83-072da6aabf41	Aluminum, secondary, ingot, from automotive scrap, at plant	kg	
+9c0c2415-126f-3162-8479-f002f315a8c7	Quicklime, at plant	c34c4451-297f-3b5c-a15f-2c16cdb52ad9	Quicklime, at plant	kg	
+bcc68f88-debb-3fc3-93ee-5ceadcef0b14	Aluminum, secondary ingot, at plant	36549ddd-3dca-3b48-a1b0-7c6889afba05	Aluminum, secondary, ingot, at plant	kg	
+3f888c9f-35e2-3162-bc14-49700cff888c	Aluminum, secondary, rolled	09744a4a-5791-3218-afef-bc6ad0253d67	Aluminum, secondary, rolled	kg	
+77fe2197-8861-3569-8d85-07151789b1e7	Aluminum, extrusion, at plant	8f715a36-b36b-3b20-81ea-7a7e1cdc47fe	Aluminium, extrusion, at plant	kg	
+381d3e3d-29ae-3101-a95b-56a4cec08486	Aluminum, hot rolling, at plant	dc4d39f5-33ce-3633-8b50-0ebd40aa06cf	Aluminum, hot rolling, at plant	kg	
+99963138-ddf9-3b32-9e93-69593d76cb08	Aluminum, primary ingot, at plant	87afb279-60ef-3174-ab6a-7353dd006dd7	Aluminum, primary, ingot, at plant	kg	
+91beb684-4d04-38b9-8800-a274762a9d44	Alumina, at plant	46e66bb8-2bdc-31d2-9a6f-260e69dc464b	Alumina, at plant	kg	
+4b0fe164-84c7-31e2-a3fc-ff570cd264e1	Aluminum, primary, smelt, at plant	5fabff2e-1d64-35e7-9528-7ff23586c5e9	Aluminum, primary, smelt, at plant	kg	
+c378e883-97fc-3714-b923-d7271b8fcbac	Cold rolled sheet, steel, at plant	5d5319f2-727c-343d-aaba-32517583a0a4	Cold rolled sheet, steel, at plant	kg	
+2250f2f2-7faa-3307-9534-ca78b371b4dd	Steel, cold-formed studs and track, at plant	7defe4d2-ac83-3d7b-a764-ce00ee2d5f51	CUTOFF Galvanized steel scrap, at plant	kg	
+2250f2f2-7faa-3307-9534-ca78b371b4dd	Steel, cold-formed studs and track, at plant	88f1219a-d464-3e29-b43d-7a4d6ca4db8d	Steel, cold-formed studs and track, at plant	kg	
+fb97ca58-8d24-3147-b08f-7788b67ab151	Metallurgical coke, at plant	0ad02910-742a-31a0-a960-415b61e5fe71	Metallurgical coke, at plant	kg	
+dc72e285-719b-318b-9c9c-c838846a9cf4	Crude oil, in refinery	4f1bfabb-f0d3-3f1f-a905-2fd9b36bbfa0	Petroleum coke, at refinery	kg	
+0aaf1e13-5d80-37f9-b7bb-81a6b8965c71	Petroleum refining, at refinery	4f1bfabb-f0d3-3f1f-a905-2fd9b36bbfa0	Petroleum coke, at refinery	kg	
+caefe875-8560-3e7f-a8b7-a002485f75d6	Anode, at plant	f9130933-0414-3a68-8fb0-40f4bac7e13f	Anode, at plant	kg	
+22b1bab0-c987-3728-9c44-f383f9ef98c7	Polyethylene, linear low density, resin, at plant	272dd0b6-7b8e-3c35-b35c-89f540ea30f8	Polyethylene, linear low density, resin, at plant	kg	
+b19fe3da-392e-36af-9342-910be1d2160a	Polyvinyl chloride, resin, at plant	f5d9a8c8-53d8-37a2-8b48-49412b0b9fad	Polyvinyl chloride, resin, at plant	kg	
+1ba8424c-2bdb-353e-8ea4-5e8d3bd477b8	Polypropylene, resin, at plant	6979d8c0-c21a-387e-81d4-48355af98265	Polypropylene resin, at plant	kg	
+05561830-e889-31a3-b2be-7c52ee2ea545	Polyethylene, low density, resin, at plant	050234ce-b360-3b94-a283-4af00f8a86c1	Polyethylene, low density, resin, at plant	kg	
+0f02f4bf-055b-35ff-ac40-1a21be06165f	Aluminum, sheet, coated, at plant	218f8159-44ed-3f71-8d24-de81476cc8a6	Aluminum, sheet, coated, at plant	kg	
+7f4424b8-da85-3804-ad14-2650343af83c	Polyol ether, for rigid foam polyurethane production, at plant	1ada3cba-253f-3aad-8f2b-5ed447b39f26	Polyol ether, for rigid foam polyurethane production, at plant	kg	
+424444d2-67d5-3052-a42e-dde74b5dad37	Trim and saw process, at plywood plant, US PNW	ea72f92a-274c-380d-834a-01752bd795e7	Plywood, at plywood plant, US PNW	kg	
+70bfc14c-0e69-36e9-918a-908cc713f7f8	Oriented strand board processsing, at plant, US SE	74b5de55-91a1-3edc-99d4-bac3b6da2b2a	Oriented strand board product, US SE	kg	
+5291fc77-bbb9-3917-83e7-6b456506e229	Planed dried lumber processing, at planer mill, US PNW	91c0f74d-2ce7-3ae0-8216-7a78568f949d	Surfaced dried lumber, at planer mill, US PNW	kg	
+704d1ff7-6f9e-3f8c-84c3-b8340c3bccad	Metal panels, roof, at plant	b68a47d0-a96b-3d15-801d-6d1a41338394	Metal panels, roof, at plant	kg	
+7ba5512f-6769-3c2f-a676-75d2b860f4f5	Metal panels, wall, at plant	9af1df3c-c4b0-3397-8aca-f22701557d09	Metal panels, wall, at plant	kg	
+60b5e1ee-3f9c-39e4-ad2f-68cfe3a71956	Steel product, primary structural, beams and columns, at plant	51447292-5c8a-3369-8ab1-092bdaf61c38	Steel product, primary structural, beams and columns, at plant	kg	
+d6510d2d-d29c-3705-b686-b7903cd6e6bd	Galvanized steel sheet, at plant	a117f4f3-8ff6-34a0-a284-b9dfa94b87d5	Galvanized steel sheet, at plant	kg	
+bc251c04-d2b2-366f-af0c-99d8fc2ed467	Hot rolled sheet, steel, at plant	a0db1861-d492-3a3a-b73e-8727727b91e9	Hot rolled sheet, steel, at plant	kg	
+d7c36a39-fdcc-3eb8-a8cd-c6c2b5a11c9a	Polyethylene, high density, resin, at plant 	d740bd91-542d-3ac4-818e-120e38546536	Polyethylene, high density, resin, at plant 	kg	
+41ecdfe1-8026-3373-96c4-ee1921f2525c	Galvanized steel coil, coated, at plant	55725953-49d5-3d31-97ab-40077034f62d	Galvanized steel coil, coated, at plant	kg	
+c245a252-0860-41d2-9789-802bab7984ab	Containerboard, average production, at mill	42385daf-e0a4-35de-9a68-931400275c60	Containerboard, average production, at mill	kg	
+f337d438-49db-3078-b1dd-3e6e7ca1e9b5	Dry rough lumber, at kiln, US SE	549ad7af-b32f-3273-bef2-3af7a816b8fd	Dry rough lumber, at kiln, US SE	kg	
+e0aa6dd1-b3ac-30ab-bd56-64f96bfa4a1b	Steel product, secondary structural, girts and purlins, at plant	20defd6e-b3f3-3a98-94e0-c5db9818a2c8	Steel product, secondary structural, girts and purlins, at plant	kg	
+9f9e378b-7faa-4d4c-a419-3374b3632021	vitamin premix production; cow feed vitamin mix; at processing plant gate	d5da1ef1-969d-458f-a586-72f8757ee51b	vitamin premix; cow feed vitamin mix; at processing plant gate	kg	
+8e0cfdc0-092e-3fb8-9633-151e1203960e	DL-methionine; chemical synthesis; at processing plant	4cd8a390-bb43-34d8-9aa8-5df7b24592ad	DL-methionine; chemical synthesis; at processing plant	kg	
+23b49467-35fb-37ae-a8d3-492cef12c5b6	vitamin premix; swine feed vitamin mix; at processing plant gate	fae283df-18eb-3a83-b242-a42750291838	vitamin premix; swine feed vitamin mix; at processing plant gate	kg	
+013128a5-17cf-3dd5-921b-eb06b0c5f2d4	L-lysine; fermentation process; at processing plant	c99d17f6-3956-349d-b7b9-6f09983b46d9	L-lysine; fermentation process; at processing plant	kg	
+54ec9a8c-c515-4e8f-abaf-0bf8256ecabd	sodium selenite, at plant	d15851f1-f090-3d08-8595-21816f05adb8	sodium selenite	kg	
+d407476c-2de5-390e-9aa0-d0f5607f57a2	trace minerals mixture; swine feed mineral mix; at processing plant	ea9098bf-b128-3059-8acf-e7d6d8c0dc87	trace minerals mixture; swine feed mineral mix; at processing plant	kg	
+e8b45995-4810-340f-a903-5fab9d76e031	soybean meal production; solvent-extracted; region 3; at soybean processing plant	2b080e28-cb18-3a4b-a53d-bf60090323aa	soybean oil; solvent-extracted; region 3; at soybean processing plant	kg	
+2a7211da-f431-4a70-a6d3-bb6a4422b727	wheat flour milling; US average; at wheat mill	5143f7e8-8616-4a56-a46f-b09f0e7799f7	wheat bran; dry milling; US average; at mill	kg	
+2a7211da-f431-4a70-a6d3-bb6a4422b727	wheat flour milling; US average; at wheat mill	95c2becd-2f05-4da8-b5fd-252b5a281bdc	wheat middlings; dry milling; US average; at mill	kg	
+f09b83e0-e0f9-43df-8349-5fbaa5820146	winter wheat production; conventional tillage; US average; at regional storage; 14% MC	25be2455-cd19-47ca-b54b-ddb082c387b7	winter wheat; conventional tillage; US average; at regional storage; 14% MC	kg	
+2a7211da-f431-4a70-a6d3-bb6a4422b727	wheat flour milling; US average; at wheat mill	822f6428-e5ba-4153-9863-0973750bd7c0	wheat flour; dry milling; US average; at mill	kg	
+cb87d199-4e78-3398-a9b4-c7083f61afe4	soybean meal; solvent-extracted; region 1; at soybean processing plant	ab5be94b-e856-3196-a463-255932b4f3ee	soybean oil; solvent-extracted; region 1; at soybean processing plant	kg	
+83aa70d6-5a8a-3795-a006-5632fb26c8c5	soybean meal; solvent-extracted; region 2; at soybean processing plant	b58ce729-7d54-36ff-bf1c-cab16516bf8b	soybean oil; solvent-extracted; region 2; at soybean processing plant	kg	
+885cba3c-fed7-33cc-834c-270bb1313e32	soybean meal; solvent-extracted; region 4; at soybean processing plant	1299ba37-aeb7-3003-bf10-6316e2e07631	soybean oil; solvent-extracted; region 4; at soybean processing plant	kg	
+937c6881-adb1-3f08-9100-b583463e5589	soybean meal; solvent-extracted; region 5; at soybean processing plant	d181d683-cdd6-324c-b5ac-d631128c7956	soybean oil; solvent-extracted; region 5; at soybean processing plant	kg	
+e8b45995-4810-340f-a903-5fab9d76e031	soybean meal production; solvent-extracted; region 3; at soybean processing plant	e30ff4c2-bcb5-376c-b77d-f2f9dbdcdb2f	soybean meal; solvent-extracted; region 3; at soybean processing plant	kg	
+cb87d199-4e78-3398-a9b4-c7083f61afe4	soybean meal; solvent-extracted; region 1; at soybean processing plant	80bac33a-3582-3d63-8acc-c52a0ce34e45	soybean meal; solvent-extracted; region 1; at soybean processing plant	kg	
+937c6881-adb1-3f08-9100-b583463e5589	soybean meal; solvent-extracted; region 5; at soybean processing plant	25cdfef2-4b94-3e87-b067-0f9eb63ac1b8	soybean meal; solvent-extracted; region 5; at soybean processing plant	kg	
+885cba3c-fed7-33cc-834c-270bb1313e32	soybean meal; solvent-extracted; region 4; at soybean processing plant	0c755302-aa73-35e4-ad17-5cafef45ac82	soybean meal; solvent-extracted; region 4; at soybean processing plant	kg	
+83aa70d6-5a8a-3795-a006-5632fb26c8c5	soybean meal; solvent-extracted; region 2; at soybean processing plant	41ebdf26-81c0-30b5-8917-2800c005ba16	soybean meal; solvent-extracted; region 2; at soybean processing plant	kg	
+13c8d70d-1e74-33bd-92d5-6311665e43d6	soybean meal; regional mix; NOPA processing; at farm	cbf18e05-0109-31f7-a001-608fca5d7ea8	soybean meal; regional mix; NOPA processing; at farm	kg	
+7840fafb-82e1-3865-9783-2486e3ba9261	feed grade dry whey; from cheese production;at dairy plant;dry weight basis	62d49ec3-be49-362c-9f10-2dba1824da30	feed grade dry whey; from cheese production;at dairy plant;dry weight basis	kg	
+97970125-ad36-3919-8af8-69a053c5eefa	fishmeal; indirect steam dried press cake; at plant; moisture content 5-10%	d9aa3d3f-4ea2-3d8c-8ae6-4db391beb969	fishmeal; indirect steam dried press cake; at plant; moisture content 5-10%	kg	
+d84ded07-b093-3a08-9f90-e768e2a84921	galvanized nails; at manufacturer	b9ddc4d0-fd8e-3954-bea2-f537c30d79ca	galvanized nails; at manufacturer	kg	
+a4bc779f-e814-3371-b89e-88737703bc92	aluminum roofing and siding; at manufacturer	2fe06e94-9351-3f9d-a0b0-5880bb82639e	aluminum roofing and siding; at manufacturer	kg	
+a626a6b9-3877-36f5-ac98-f5844b6348dd	Fuel grade uranium, at regional storage	64e4081e-3bbf-3576-ad3e-d760aa93c187	Fuel grade uranium, at regional storage	kg	
+027d304f-00e4-380e-9bba-4e6bde2d685a	Solid strip and plank flooring, hardwood, E	abb8daef-4e1b-3db7-a8e4-723bbdd497de	Wood fuel, hardwood, from flooring production, E	kg	
+2c6df723-416e-3164-a5f1-bb97081fc64f	Wood fuel, hardwood,gen at flooring prod plant, combusted in industrial boiler, E	c32b394d-ee04-332c-a310-7b3f17bbb95d	Wood fuel, hardwood,gen at flooring prod plant, combusted in industrial boiler, E	kg	
+3a98c0e1-2ba4-33f1-8d88-35b7f92af534	Wood fuel, softwood, purchased, combusted in industrial boiler, NE-NC	eb188759-a3a8-35f9-8827-bccffc0a68eb	Wood fuel, softwood, purchased, combusted in industrial boiler, NE-NC	kg	
+db291182-7d45-38c4-8529-a9abc78e55e9	Wood fuel, hardwood, purchased, combusted in industrial boiler, SE	96d5f5d2-a720-395c-950d-e8ad00063f6a	Wood fuel, hardwood, purchased, combusted in industrial boiler, SE	kg	
+bbfe537d-76d5-3553-8f87-72fe52b34f7d	Sawn lumber, softwood, rough, green, at sawmill, NE-NC	ca6db999-3eaa-3aa7-a522-853af42c5be3	Fuel wood, softwood, green, at sawmill, NE-NC	kg	
+1cd0e864-1ec2-377a-a0dd-7b9872eba81a	Sawn lumber, softwood, planed, kiln dried, at planer, NE-NC	1513327d-cc80-37e8-86b7-7e4302984e4a	Wood fuel, softwood, kiln dried, NE-NC	kg	
+66cf43e1-e3fe-36b4-8653-bb5b739b0f5e	Wood fuel, softwood, gen at lumber mill, combusted in industrial boiler, NE-NC	7790c31b-ad49-308e-8909-f1af0931f198	Wood fuel, softwood, gen at lumber mill, combusted in industrial boiler, NE-NC	kg	
+2d43bb55-3817-37dc-a7b4-20c3304f07af	Wood fuel, hardwood, purchased, combusted in industrial boiler, E	ccf86743-6a0f-39d5-949e-6b2950bae209	Wood fuel, hardwood, purchased, combusted in industrial boiler, E	kg	
+de182d9f-35b5-333a-8012-445b93549447	Anthracite coal, at mine	81b85c3d-aeef-3a29-81d1-b39e1de928a8	Anthracite coal, at mine	kg	
+27e8fce4-a5c1-37af-84b9-763582a5ca3e	Anthracite coal, combusted in industrial boiler	46495019-6f20-3587-8624-0399a6c016c9	Anthracite coal, combusted in industrial boiler	kg	
+ae8c5758-4473-3791-9339-22ff52cacb23	Lignite coal, at surface mine	90247271-0884-3a25-af40-be7abccb922c	Lignite coal, at surface mine	kg	
+3b1cd62b-7788-3096-8b6e-9cb6cdc359f2	Engineered flooring, hardwood, unfinished, E	115967d8-5c6a-32ee-9868-6a786b34ecf2	Wood fuel, hardwood, dry, at engineered wood flooring plant, E	kg	
+277ef057-4ad9-3780-a1c0-6d78321131f6	Veneer, hardwood, dry, at veneer mill, E	cf678567-6e5e-35ac-8fcd-4c3e003e1461	Wood fuel, hardwood, dry, at veneer mill, E	kg	
+cdc143eb-fff8-3618-85cd-bce83d96390f	Veneer, hardwood, green, at veneer mill, E	086e1013-f898-357f-b6af-da332554166e	Wood fuel, hardwood, green, at veneer mill, E	kg	
+bf3d3ce7-aac2-3a3c-b3e8-5c0a29bfb678	Bucked and debarked log, hardwood, green, at veneer mill, E	086e1013-f898-357f-b6af-da332554166e	Wood fuel, hardwood, green, at veneer mill, E	kg	
+bf3d3ce7-aac2-3a3c-b3e8-5c0a29bfb678	Bucked and debarked log, hardwood, green, at veneer mill, E	7beb2597-d87c-32ba-83c4-336f5dc23a19	Bark, hardwood, green, at veneer mill, E	kg	
+a555a537-a0f1-3e54-9008-1d56c5e342a6	Wood fuel, hardwood, generated at mill, combusted in industrial boiler, E	9f913cbd-c240-3516-963f-8041f59b066e	Wood fuel, hardwood, generated at mill, combusted in industrial boiler, E	kg	
+317adcbc-b3e3-3ec3-80c3-82b18d0f3207	Bituminous coal, at mine	55b4aeab-0576-3a9b-b476-b561197ec3f2	Bituminous coal, at mine	kg	
+61d04f2c-c8df-3b9c-8def-60328506efd2	Wood fuel, hardwood, purchased, combusted in industrial boiler, NE-NC	02c0cb72-4af1-3aa4-921a-0270c2e7debe	Wood fuel, hardwood, purchased, combusted in industrial boiler, NE-NC	kg	
+ce587724-1be4-3da0-b7a2-988592c28b9a	Sawn lumber, hardwood, rough, green, at sawmill, SE	2909fb0c-1996-31cb-9321-a60a7cb07b1f	Wood fuel, hardwood, green,at sawmill, SE	kg	
+35bd31d8-b0b1-3da8-a553-df33ccd9e452	Sawn lumber, hardwood, planed, kiln dried, at planer mill, SE	23de2b44-d931-39f7-b2c8-d56346794608	Wood fuel, hardwood, kiln-dried, at planer mill, SE	kg	
+8a62a285-537e-36b0-bdc3-3af4bfd205a3	Wood fuel, hardwood, generated at lumber mill, combusted in industrial boiler, SE	add1f946-48f6-3c71-b9d2-9751a9c7a6ed	Wood fuel, hardwood, generated at lumber mill, combusted in industrial boiler, SE	kg	
+2468b04f-b9b1-364d-bfbf-8ba12178096e	Sawn lumber, hardwood, rough, green, at sawmill, NE-NC	851dabd1-801f-3582-8b29-a3cdd6f65473	Wood fuel, hardwood, green, at sawmill, NE-NC	kg	
+eb664f4e-2615-3b3a-aac4-b09b91fe8f1f	Sawn lumber, hardwood, planed, kiln dried, at planer mill, NE-NC	c1946202-1261-35c4-bccb-a068fc8dc03c	Fuel wood, hardwood, kiln-dried, at planer mill, NE-NC	kg	
+5b12a6bf-921f-3e80-9bd4-1c250a6696fb	Wood fuel, hardwood, gen at lumber mill, combusted in industrial boiler, NE-NC	75c3bc19-9aeb-30a9-a43f-c862c7354c85	Wood fuel, hardwood, gen at lumber mill, combusted in industrial boiler, NE-NC	kg	
+5dd973e3-0fc2-38d8-a25b-51b82ee2c2de	Wood fuel, unspecified	ba4fbc4f-a9ab-387c-8bdd-9308dc19f404	Wood fuel, unspecified	kg	
+e389edf2-979a-372c-b6e0-8de8bfd28c93	Wood fuel, MDF, purchased, combusted in industrial boiler	fd1b9790-c033-3bac-b9b3-056b187b3f32	Wood fuel, MDF, purchased, combusted in industrial boiler	kg	
+57686507-ed6b-3e06-906e-c28a7c6fb8bc	Particleboard, average, softwood, particleboard mill	d57c30eb-3b8d-3ee5-8c79-c66a859531ae	Wood fuel, hogfuel, particleboard mill	kg	
+57686507-ed6b-3e06-906e-c28a7c6fb8bc	Particleboard, average, softwood, particleboard mill	ad78a50f-def9-3337-84ab-61e9196b0042	Wood fuel, sanderdust, particleboard mill	kg	
+80fa4691-56d0-3019-a021-30c3b187e63e	Wood, particleboard, generated on-site, combusted in industrial boiler	03c57be6-9cea-337b-9b0a-b642dff77173	Wood, particleboard, generated onsite, combusted in industrial boiler	kg	
+ff599dd1-991f-3153-99c0-04e79a093703	Sawn lumber, softwood, rough, green, at sawmill, INW	557bbf10-7300-3761-ae9b-64bfa6317b81	Wood fuel, softwood, green, at sawmill, INW	kg	
+c7aaeef5-a019-304e-959d-92fdccaf0896	Wood, softwood, INW, generated at lumber mill, combusted in industrial boiler	67bbd497-5260-37b7-ac17-555c6e822712	Wood, softwood, INW, generated at lumber mill, combusted in industrial boiler	kg	
+4e01da4a-71e5-3d9d-93c3-0f0a230f2735	Medium density fiberboard (MDF), at MDF mill	360d59b6-0f7a-3b5d-8d61-b6f9e73a4b0a	Wood fuel, sanderdust, at MDF mill	kg	
+4e01da4a-71e5-3d9d-93c3-0f0a230f2735	Medium density fiberboard (MDF), at MDF mill	4ba384f6-f15b-3ef3-ae39-2248e3f54aef	Wood fuel, at MDF mill	kg	
+2fdc10ce-f75d-30d0-b1e7-672af0eb98fe	Wood fuel, MDF, generated on-site, combusted in industrial boiler	c2605713-0601-3252-a78d-63d1f9e27936	Wood fuel, MDF, generated on-site, combusted in industrial boiler	kg	
+26465530-69ff-3c68-834f-c67ccb6ee1b2	Bituminous coal, combusted in industrial boiler	73cd1596-214d-3403-87f1-f69fc3818886	Bituminous coal, combusted in industrial boiler	kg	
+1b0f75b8-e749-3eb2-8727-de6a22f60646	Lignite coal, combusted in industrial boiler	eb6394c1-0d19-3be3-99ab-ec572dec9926	Lignite coal, combusted in industrial boiler	kg	
+3455f918-4a43-3b09-b06e-7402c12b8d45	Wood waste, unspecified, combusted in industrial boiler	1a76ed77-b97d-3070-85b7-b1f41906cece	Wood waste, unspecified, combusted in industrial boiler	kg	
+0fc3aa0c-865f-33b1-92d7-4db5ad1c8c1c	whole tree chips production; softwood; at sawmill, INW	7597d8b1-16c8-39c4-bab9-01c327626f08	whole tree chips; softwood; at sawmill, INW	kg	
+64dec5f5-ce97-40f2-a767-2fc665dfb473	wood chip pyrolysis; Tucker Renewable Natural Gas (RNG) thermochemical conversion process; at plant	7d1ffffe-eac6-4e83-9b69-3ded4a3193a9	biochar; produced from thermochemical conversion; at plant; 1.84% moisture	kg	
+64dec5f5-ce97-40f2-a767-2fc665dfb473	wood chip pyrolysis; Tucker Renewable Natural Gas (RNG) thermochemical conversion process; at plant	8afb5cc3-26fc-416c-991e-afe07bb06bd4	tar; from thermochemical conversion; at plant	kg	

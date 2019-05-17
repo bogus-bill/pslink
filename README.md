@@ -6,6 +6,8 @@ with LCI data from background databases like the
 [LCA Commons](https://www.lcacommons.gov/). To achieve this, different
 functions are implemented in `pslink` which are described below.
 
+![](./pslink.png)
+
 ## Usage
 Checkout the project and install it (preferably in a
 [virtual environment](https://docs.python.org/3/library/venv.html)):
