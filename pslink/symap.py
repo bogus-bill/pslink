@@ -26,6 +26,11 @@ def stopwords() -> set:
     return _stop_words
 
 
+def add_stopword(w: str):
+    sw = stopwords()
+    sw.add(w.strip().lower())
+
+
 def is_stopword(word: str) -> bool:
     """ Returns `True` when the given word is a stopword. """
     if word is None:

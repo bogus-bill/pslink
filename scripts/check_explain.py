@@ -28,6 +28,7 @@ def main():
     product_infos = backs.read_products("../data/background_products.txt")
     g.link_products(product_infos)
 
+    symap.add_stopword("class")
     g.explain("rubber fluorocarbon class fpm", matcher=words_equality, max_level=3)
 
 

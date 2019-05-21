@@ -1,6 +1,7 @@
 # checks the product linking (syntactic mapping) of products from the
 # background system to the product graph
 
+import pslink.symap as symap
 import pslink.semap as semap
 import pslink.backs as backs
 import pslink.partatts as partatts
@@ -30,4 +31,5 @@ def main():
 
 
 if __name__ == "__main__":
+    symap.add_stopword("class")
     main()
