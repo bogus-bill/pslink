@@ -250,9 +250,9 @@ class Graph(object):
         # a queue of tuples: (relation_factor, node) of the
         # nodes that still need to be visited
         queue = matches.copy()
-        visited = {}
+        scores = {}
         for score, node in matches:
-            visited[node] = score
+            scores[node] = score
 
         # the selected products as list of tuples:
         # (syn_factor * relation_factor, product_info)
@@ -274,14 +274,14 @@ class Graph(object):
                 next_factor = rel_factor * rel.factor()
                 if next_factor < 1e-16:
                     continue
-                if target not in visited:
+                if target not in scores:
                     queue.append((next_factor, target))
-                    visited[target] = next_factor
+                    scores[target] = next_factor
                 else:
-                    old_factor = visited[target]
+                    old_factor = scores[target]
                     if (next_factor - old_factor) > 1e-9:
                         queue.append((next_factor, target))
-                        visited[target] = next_factor
+                        scores[target] = next_factor
 
         if len(products) == 0:
             return []
@@ -307,6 +307,43 @@ class Graph(object):
             selected.append(info)
 
         return selected
+
+    def explain(self, name):
+        """Prints the traversal tree with mapping scores for a product with the
+           given name."""
+
+        def explain_rec(nscore, scores: dict, level: int):
+            score, node = nscore
+            print(level * " ", "=> [node]", node, "::", score)
+
+            products = self._product_infos.get(node)
+            if products is not None:
+                syn_factor = self._syn_factors.get(node, 0.0)
+                for product in products:  # type: backs.ProductInfo
+                    p_score = score * syn_factor
+                    print((level + 1) * " ", "=> [product]",
+                          product.product_name, "::", p_score)
+
+            relations = self.relations_of(node)
+            for rel in relations:  # type: Relation
+                target = rel.target
+                next_score = score * rel.factor()
+                old_factor = scores.get(target, 0.0)
+                if (next_score - old_factor) > 1e-9:
+                    scores[target] = next_score
+                    explain_rec((next_score, target), scores, level + 1)
+
+        matches = self.find_nodes(name, symap.words_equality)
+        if len(matches) == 0:
+            print("found no mathing nodes for", name)
+            return
+
+        print("=>", name)
+        init_scores = {}
+        for s, n in matches:
+            init_scores[n] = s
+        for m in matches:
+            explain_rec(m, init_scores, 1)
 
 
 def parse_text(text: str) -> Graph:
