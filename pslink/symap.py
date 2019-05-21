@@ -4,10 +4,12 @@ based on string similarity measures.
 """
 
 import os
+from functools import reduce
 
 import jellyfish
 import numpy
 import scipy.optimize
+
 
 _stop_words = None
 
@@ -136,13 +138,18 @@ def words_similarity(words_a, words_b) -> float:
 
 
 def words_equality(phrase_a: str, phrase_b: str) -> float:
+    def len_red(x: int, y: str):
+        return x + len(y)
+
     a = keywords(phrase_a)
+    len_a = reduce(len_red, a, 0)
     b = keywords(phrase_b)
-    n = max(len(a), len(b))
+    len_b = reduce(len_red, b, 0)
+    n = max(len_a, len_b)
     s = 0
     for wa in a:
         if wa in b:
-            s += 1
+            s += len(wa)
             b.remove(wa)
     return s / n
 
