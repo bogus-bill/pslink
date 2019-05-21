@@ -308,11 +308,13 @@ class Graph(object):
 
         return selected
 
-    def explain(self, name):
+    def explain(self, name, matcher=symap.words_equality, max_level=-1):
         """Prints the traversal tree with mapping scores for a product with the
            given name."""
 
         def explain_rec(nscore, scores: dict, level: int):
+            if 0 < max_level < level:
+                return
             score, node = nscore
             print(level * " ", "=> [node]", node, "::", score)
 
@@ -333,7 +335,7 @@ class Graph(object):
                     scores[target] = next_score
                     explain_rec((next_score, target), scores, level + 1)
 
-        matches = self.find_nodes(name, symap.words_equality)
+        matches = self.find_nodes(name, matcher)
         if len(matches) == 0:
             print("found no mathing nodes for", name)
             return
