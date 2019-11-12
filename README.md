@@ -71,10 +71,10 @@ data/
 ```
 
 ### `components/`
-This folder containts simple text files that contain component attributes like
+This folder contains simple text files that contain component attributes like
 dimensions or material compositions as key-value pairs. The files are stored
 with the respective component IDs as names. In such a file, each line contains
-a key-value pair seperated by semicolon (leading and trailing whitespaces are
+a key-value pair separated by semicolon (leading and trailing whitespaces are
 ignored):
 
 ```
