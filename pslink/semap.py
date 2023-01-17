@@ -304,6 +304,7 @@ class Graph(object):
             if pkey in selected_keys:
                 continue
             selected_keys.add(pkey)
+            info.score = score
             selected.append(info)
 
         return selected

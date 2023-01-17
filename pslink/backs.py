@@ -1,15 +1,22 @@
+from dataclasses import asdict, dataclass
 import csv
 
 
-class ProductInfo(object):
+@dataclass
+class ProductInfo:
     """Instances of this class describe a product in a background database."""
+    process_uuid : str = ''
+    process_name : str = ''
+    product_uuid : str = ''
+    product_name : str = ''
+    product_unit : str = ''
+    process_country : str = ''
 
-    def __init__(self):
-        self.process_uuid = ''
-        self.process_name = ''
-        self.product_uuid = ''
-        self.product_name = ''
-        self.product_unit = ''
+    def as_dict(self):
+        return {k: str(v) for k, v in asdict(self).items()}
+
+    def print(self):
+        return f"{self.product_name} - {self.score} - {self.process_name}"
 
 
 def read_products(fpath: str) -> list:
@@ -22,8 +29,9 @@ def read_products(fpath: str) -> list:
             pinfo = ProductInfo()
             pinfo.process_uuid = row[0]
             pinfo.process_name = row[1]
-            pinfo.product_uuid = row[2]
-            pinfo.product_name = row[3]
-            pinfo.product_unit = row[4]
+            pinfo.process_country = row[2]
+            pinfo.product_uuid = row[3]
+            pinfo.product_name = row[4]
+            pinfo.product_unit = row[5]
             infos.append(pinfo)
     return infos

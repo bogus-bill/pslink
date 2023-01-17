@@ -1,7 +1,9 @@
 # aluminium
-"aluminium alloy"                           , "alloy"^, "aluminium"^
-"aluminum alloy 2024"                       , "aluminium alloy"^
-"aluminum alloy 2117"                       , "aluminium alloy"^
+
+"aluminium alloy"                           , "alloy"^, "aluminium"^, "aluminum alloy"=
+"aluminium alloy 2024"                      , "aluminium alloy"^
+"aluminium alloy 2117"                      , "aluminium alloy"^
+"aluminum"                                  , "aluminium"=
 
 "copper alloy"                              , "alloy"^, "copper"^
 "iron alloy 660"                            , "stainless steel alloy 660"= , "stainless steel alloy"^
@@ -25,6 +27,7 @@
 "steel comp e51100"                         , "e51100 steel"=, "high carbon steel"^, "steel alloy"^
 "iron alloy 660"                            , "stainless steel alloy 660"= , "stainless steel alloy"^
 
+
 # rubbers
 "synthetic rubber"                          , "artificial elastomer"= , "elastomer"^
 "fluoroelastomer"                           , "fluorocarbon-based synthetic rubber"= , "synthetic rubber"^ , "fluoropolymer"^, "fluorocarbon"^
@@ -34,9 +37,18 @@
 "rubber fluorocarbon class fpm"             , "fluoroelastomer"^
 "rubber butadiene nitrile"                  , "nitrile rubber"^
 
+# plastics
+"polypropylene"                             , "plastic"<
+"melamine"                                  , "plastic"<
+"polypropylene granulate"                   , "polypropylene"=
+# "melamine product"                        , "melamine"=
+
+
 # metal products
 "metal product"                             , "metal"<
 "aluminium product"                         , "metal product"^, "aluminium"<
 "steel product"                             , "metal product"^, "steel"<
 "chromium steel product"                    , "steel product"^, "chromium steel"<
 "copper product"                            , "metal product", "copper"<
+"copper wire"                               , "copper product"=
+"chromium steel"                            , "metal product"<
